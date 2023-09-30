@@ -1,0 +1,476 @@
+Apis of which Static data requirements are mentioned:
+
+fetchAllPublicApis
+fetchMyPrivateApis
+fetchMyPublicApis
+fetchMyUnderDevelopmentApis
+getApiIdeaFullInfo
+
+***** VERSIONING CASE ******
+
+fetchMyApiTestingSubscriptions
+fetchMyApiSubscription
+fetchApiReviews
+fetchMyApiToken
+
+***** VERSIONING CASE ******
+
+Create these users:
+uzair
+tanzeel
+muneeb
+
+
+Create these two companies:
+id: 515969afd7-5c73-4b03-9155-65a5f1cfcd30
+id: 515969afd7-5c73-4b03-9155-65a5f1cfcd31
+
+
+--> createOpenApi for fetchMyUnderdevelopmentApis
+
+-->create all these apis for fetchMyUnderdevelopementApis
+
+#user
+{apiId: "01",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "uzair",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+{apiId: "02",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "uzair",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+#company
+{apiId: "03",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+{apiId: "04",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+-->create these api for fetchPublicApi Query
+
+#User:
+{apiId: "05",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "uzair",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+{apiId: "06",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "uzair",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+#Company
+
+{apiId: "07",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+{apiId: "08",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+-->create these api for fetchPrivateApi Query
+
+#User:
+{apiId: "09",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "uzair",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+{apiId: "10",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "uzair",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+#Company
+
+{apiId: "11",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+{apiId: "12",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+
+***********  VERSIONING START *************
+
+-->create this openApi for fetchMyApiTestingSubscriptions Query
+
+{apiId: "15",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "uzair",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+# Create openApiVersion of above api to use for testingSubscriptionQuery
+
+{apiId: "15",
+ apiRootUrl: "apiurl.com",
+ entityId: "uzair",
+ openApiDef: "test def",
+ releaseNotes: "test release notes"}
+
+The above mutation will return version id, which will be used in subscription mutation
+
+#createNewTestingSubscription mutation for fetchMyApiTestingSubscriptions
+
+{entityId: "uzair",
+ versionId: "`${VersionId from above openApiVersion Mutation}`"}
+
+Run the above createNewTestinfSubscription 2 times for two pages
+
+
+--> create this openApi for fetchMyApiSubscription Query:
+
+"In this, api will be created by tanzeel and subscribe by uzair"
+
+
+{apiId: "16",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "tanzeel",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+# Create openApiVersion of above api to use for fetchMyApiSubscription Query
+
+{apiId: "16",
+ apiRootUrl: "apiurl.com",
+ entityId: "tanzeel",
+ openApiDef: "test def",
+ releaseNotes: "test release notes"}
+
+The above mutation will return version id, which will be used in subscription mutation
+
+
+#SubscribeToApi mutation using version Id from above mutation
+
+{entityId: "uzair", 
+ versionId: "`${VersionId from above openApiVersion Mutation}`"}
+
+
+--> create 4 openApis for fetchApiReviews Query:
+
+"""In this, all 4 apis will be created by tanzeel, then For User:
+1 api subscribed by uzair
+1 api subscribed by muneeb
+
+For Company:
+
+1 api subscribed by 515969afd7-5c73-4b03-9155-65a5f1cfcd30
+1 api subscribed by 515969afd7-5c73-4b03-9155-65a5f1cfcd31"""
+
+#Creation of 4 open apis:
+
+{apiId: "17",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "tanzeel",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+{apiId: "18",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "tanzeel",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+{apiId: "19",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "tanzeel",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+{apiId: "20",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "tanzeel",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+#Creating version for all these apis:
+
+# Create openApiVersion of above api to use for fetchMyApiReviews Query
+
+{apiId: "17",
+ apiRootUrl: "apiurl.com",
+ entityId: "tanzeel",
+ openApiDef: "test def",
+ releaseNotes: "test release notes"}
+
+
+{apiId: "18",
+ apiRootUrl: "apiurl.com",
+ entityId: "tanzeel",
+ openApiDef: "test def",
+ releaseNotes: "test release notes"}
+
+
+{apiId: "19",
+ apiRootUrl: "apiurl.com",
+ entityId: "tanzeel",
+ openApiDef: "test def",
+ releaseNotes: "test release notes"}
+
+
+{apiId: "20",
+ apiRootUrl: "apiurl.com",
+ entityId: "tanzeel",
+ openApiDef: "test def",
+ releaseNotes: "test release notes"}
+
+The above mutations will return version id, which will be used in subscription mutation
+
+#subscribed api as user:
+
+1. Subscribe by uzair
+
+{entityId: "uzair", 
+ versionId: "`${VersionId from above openApiVersion id 17 Mutation}`"}
+
+
+2. Subscribe by muneeb
+
+{entityId: "uzair", 
+ versionId: "`${VersionId from above openApiVersion id 18 Mutation}`"}
+
+
+#subscribed api as company:
+
+1. Subscribe by 515969afd7-5c73-4b03-9155-65a5f1cfcd30
+
+{entityId: "uzair", 
+ versionId: "`${VersionId from above openApiVersion id 19 Mutation}`"}
+
+
+2. Subscribe by 515969afd7-5c73-4b03-9155-65a5f1cfcd31
+
+{entityId: "uzair", 
+ versionId: "`${VersionId from above openApiVersion id 20 Mutation}`"}
+
+#Now createApiReview mutation for above 4 subscribed apis
+
+#user
+{apiId: "17",
+ by: "uzair",
+ stars: 3,
+ text: "Nice!",
+ title: "test api Review"}
+
+{apiId: "18",
+ by: "muneeb",
+ stars: 4,
+ text: "Great Work!",
+ title: "test api Review"}
+
+
+#company
+{apiId: "19",
+ by: "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+ stars: 3,
+ text: "Nice!",
+ title: "test api Review"}
+
+{apiId: "20",
+ by: "515969afd7-5c73-4b03-9155-65a5f1cfcd31",
+ stars: 4,
+ text: "Great Work!",
+ title: "test api Review"}
+
+--> fetchMyApiToken Query
+
+--> create this openApi for fetchMyApiToken Query:
+
+"In this, api will be created by uzair"
+
+
+{apiId: "21",
+ apiRootUrl: "apiurl.com",
+ apiType: CRM,
+ entityId: "uzair",
+ longDescription: "test long description",
+ openApiDef: "test def",
+ releaseNotes: "test release notes",
+ shortDescription: "test short description",
+ title: "test open api"}
+
+# Create openApiVersion of above api to use for fetchMyApiToken Query
+
+{apiId: "21",
+ apiRootUrl: "apiurl.com",
+ entityId: "uzair",
+ openApiDef: "test def",
+ releaseNotes: "test release notes"}
+
+The above mutation will return version id, which will be used in fetchMyApiToken
+
+
+
+***********  VERSIONING END *************
+
+#ChangeApiStatus of above 8 apis, first 4 to public and last 4 to private
+
+#user
+{apiId: "05",
+ entityId: "uzair",
+ status: PUBLIC}
+
+
+{apiId: "06",
+ entityId: "uzair",
+ status: PUBLIC}
+
+#company
+
+{apiId: "07",
+ entityId: "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+ status: PUBLIC}
+
+
+{apiId: "08",
+ entityId: "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+ status: PUBLIC}
+
+#user
+{apiId: "09",
+ entityId: "uzair",
+ status: PRIVATE}
+
+
+{apiId: "10",
+ entityId: "uzair",
+ status: PRIVATE}
+
+#company
+
+{apiId: "11",
+ entityId: "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+ status: PRIVATE}
+
+
+{apiId: "12",
+ entityId: "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+ status: PRIVATE}
+
+--> getApiIdeaFullInfo
+
+#create api idea to run query getApiIdeaFullInfo:
+
+#user
+
+{apiIdeaId: "13",
+ apiKind: OPENAPI,
+ apiType: CRM,
+ description: "test description",
+ entityId: "uzair",
+ title: "test api idea"}
+
+#company
+{apiIdeaId: "14",
+ apiKind: OPENAPI,
+ apiType: CRM,
+ description: "test description",
+ entityId: "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+ title: "test api idea"}
+
+
+Workflow for createApiQuestion and respondApiQuestion:
+
+createApi
+publishApi
+changeApiStatus (Public)
+createApiQuestion (from different user not owner)
+respondToQuestion (by owner)
+

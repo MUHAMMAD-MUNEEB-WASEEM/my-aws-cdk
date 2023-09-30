@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --amplify-primary-color: #3072be;
+  --amplify-primary-tint: #3072be;
+  --amplify-primary-shade: #3072be;
+}

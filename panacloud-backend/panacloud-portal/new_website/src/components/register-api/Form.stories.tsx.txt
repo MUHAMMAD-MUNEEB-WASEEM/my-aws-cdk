@@ -1,0 +1,28 @@
+import React from "react";
+import APIForm from ".";
+
+export default {
+  title: "APIRegistrationForm/GraphQL Form",
+  component: APIForm,
+};
+
+export const BasicStyle = (args) => <APIForm {...args} />;
+BasicStyle.args = {
+  variant: "standard",
+  backgroundColor: "transparent",
+  color: "primary",
+};
+
+export const StandardStyle = (args) => <APIForm {...args} />;
+StandardStyle.args = {
+  variant: "outlined",
+  backgroundColor: "transparent",
+  color: "secondary",
+};
+
+export const DarkMode = (args) => <APIForm {...args} />;
+DarkMode.args = {
+  variant: "filled",
+  backgroundColor: "#000000",
+  color: "primary",
+};

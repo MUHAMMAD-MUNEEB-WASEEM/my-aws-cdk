@@ -1,0 +1,1059 @@
+"Note: Design your schema based on how data is used, not based on how it's stored."
+
+"Workflow 1 is a Workflow for API Developers who create and use APIs"
+"Workflow 2 is a Workflow for Social Media API Bazaar News"
+"Workflow 3 is a Workflow for Developer Recommendation"
+"Workflow 4 is a Workflow for Developer Training"
+"Workflow 5 is a Workflow for Developer Quizzes"
+
+type Mutation {
+
+  "Workflow 1.1: Developer creates an API"
+  createApi(entityID: String!, api: Api): String!
+
+  "Workflow 1.3: After development complete developer publishes the API to public store"
+  publishApiToPublicStore(apiId: String!): String
+
+  "Workflow 1.5: Both API developers register payment instrument to send and receive money"
+  addPaymentInstrument(entityId: String!, financialInstrument: FinancialInstrument!)
+
+  "Workflow 1.6: Another developers comes and subscribe to a API in public store"
+  subscribeToApi(entityId: String!, apiId: String!): ApiSubscription
+
+  "Worflow 1.11: review the API which I am subscribed to i.e. customer"
+  reviewTheApi(review: CustomerApiReview)
+
+  "Worflow 2.2: User starts following another User"
+  follow(followerEntityID:String!, entity:String!)
+
+  "Worflow 2.3: User posts API news"
+  publishSocialMediaPost(entityId: String!, socialMediaPost: SocialMediaPost): String
+
+  "Worflow 2.4: User makes comment on social media entry"
+  commentOnSocialMediaEntry(entityId: String!, socialMediaEntry: SocialMediaEntry): String
+
+ "Worflow 2.6: User likes a social media entry"
+  commentOnSocialMediaEntry(entityId: String!, socialMediaEntry: SocialMediaEntry): String
+
+  "Workflow 3.1a: Developer updates his or her developer profile"
+  publishDeveloperProfile(entityId: String!, developerProfile: DeveloperProfile!)
+
+  "Workflow 3.1b: Developer saves his or her github credentials"
+  saveGithubCredential(githubCredentials: GithubCredential)
+
+  "Workflow 3.2: Developer is recommended by a user"
+  recommendDeveloper(recommendation: Recommendation!)
+
+  "Workflow 3.4: Approve the pending developer recommendation for me"
+  approveRecommendation(entityFor: String!, recommendationId: String!)
+  
+  """
+  Workflow 4.1: A developer requests to start a SaaS Training Program
+  Training Program are stored in Contentful and using Sync API copied to Neptune: 
+  https://www.contentful.com/developers/docs/concepts/sync/
+  """
+  startTrainingProgram(entityId: String!, programId: String!)
+
+  "Workflow 4.2: Set a bookmark when a developer completes watching a SaaS Training Class Video Section every minute"
+  setBookmark(bookmark: Bookmark!)
+
+  "Workflow 4.3: when the user submits that he or she has completed the class"
+  classCompleted(class: TrainingClass!)
+
+  "Workflow 4.5: Project becomes due after user have completed designated classes, it will done automatically"
+  setProjectDue(projectDue: projectDue!)
+
+  "Workflow 4.6: User submits project before the due date"
+  submitProject(project: ProjectSubmitted!)
+
+  "Workflow 4.8: Only Faculty UserType can evaluate a project"
+  evaluateProject(project: ProjectEvaluated)
+  
+}
+
+type Subscription {
+  "Workflow 1.4: if developer logged-in he will be notified if someone subscribes to his API"
+  apiSubscribered(apiId: String!): ApiSubscription
+  
+  "Workflow 1.7: user listens to info about the new API published to the store"
+  apiPublishedToPublicStore([SaaSType]): Api 
+  
+  "Worflow 2.1: User starts listening who have started following me"
+  followerAddedToEntity(entity:String!): Entity
+
+   """
+  Worflow 1.4: Social Media Posts recommended to me posted
+  We will have to build a recommendation engine
+  https://aws.amazon.com/getting-started/hands-on/recommendation-engine-for-games-amazon-neptune/
+  https://pages.awscloud.com/Build-Efficient-and-Accurate-Recommendation-Engines-with-Amazon-Personalize_2019_0521-MCL_OD.html
+  """
+  socialMediaPosted(entity:String!): SocialMediaPost
+ 
+  "Worflow 2.5: comment added to social media entry that I am watching"
+  commentAddedOnPost(postID:String!): Comment 
+
+  "Worflow 2.7: someone likes the social media entry that I am watching"
+  likeAddedOnSocialMediaEntry(id:String): Entity
+
+}
+
+type Query {
+  "Workflow 1.2: Develops develops the APIs and gets subscription tokens for testing"
+  fetchMyApiTestingSubscriptions(entityId: String!, apiId: String!): [ApiSubscription]
+  
+  "Workflow 1.8: get the APIs which currently I am developing"
+  fetchMyUnderDevelopmentApis(entityId: String!): [Api]
+
+  "Worflow 1.9: get the APIs which I have published on the public store"
+  fetchMyPublishedApis(entityId: String!): [Api]
+
+  "Worflow 1.10: get the APIs which I have subscribted to on the public store"
+  fetchMyAPISubscriptions(entityID: String!): [ApiSubscription]
+
+  "Worflow 1.12: review the API which I am subscribed to i.e. customer"
+  fetchApiReviews(apiId: String!): [CustomerApiReview]
+
+  "Workflow 3.3: Get the pending developer recommendations which have not been approved by me"
+  fetchPendingRecommendations(entityId: String!): [Recommendation]
+ 
+  "Workflow 3.5: Get the developer recommendations which have been approved by me"
+  fetchRecommendations(entityId: String!): [Recommendation]
+
+  "Get the entity i.e. user or a company"
+  fetchEntity(entityId: String!): Entity
+
+  "Workflow 4.4: Get the bookmark of user doing a training program"
+  fetchBookmark(userId: String!, programId: String!):Bookmark!
+
+  "Workflow 4.7: Only Faculty UserType can fetch all the projects for evaluation"
+  fetchSubmitedProjects(projectId: String!): [ProjectSubmitted]
+
+  "Workflow 4.9: Has the user submitted this project"
+  isProjectSubmitted(userId: String!, programId: String!, projectId: String!):Boolean
+
+  "Workflow 4.10: Has the user submit this project?"
+  isProjectSubmitable(userId: String!, programId: String!, projectId: String!):Boolean
+
+  "Workflow 4.11: Has the submitted project been evaluated"
+  isProjectEvaluated(userId: String!, programId: String!, projectId: String!):Boolean
+
+  "Workflow 4.12: Get my evaluated project"
+  fetchProjectEvaluation(userId: String!, programId: String!, projectId: String!):ProjectEvaluated
+
+  "Workflow 4.13: Get all my evaluated projects in the program"
+  fetchProjectEvaluation(userId: String!, programId: String!):[ProjectEvaluated]
+  
+}
+
+
+
+
+interface Entity {
+  """
+  The id must be unique within a Panacloud. 
+  It should not have any spaces because it will be used as a slug. 
+  """  
+  id: String!
+
+  "The Name of the Entity"
+  name: String!
+  
+  "The city in which the entity lives"
+  city: String!
+
+  "The country in which the entity lives"
+  country: String!
+
+  "The email address of the entity"
+  email: String!
+  
+  "The mobile phone number of the entity"
+  phone_number: String!
+
+  "The url of the picture of the entity"
+  picture: String!
+
+  headline: String
+
+  cashFlowHistory: [CashFlow]
+
+  balance: float!
+
+  defaultBillingInstrument: CreditCard
+
+  otherBillingInstruments: [CreditCard]
+
+  defaultPaymentInstrument: BankAccount
+
+  otherPaymentInstruments: [BankAccount]
+
+  paymentSchedule: PaymentScheduleType
+
+  posts: [SocialMediaPost]
+}
+
+"Schedule for Automatic Payment https://support.upwork.com/hc/en-us/articles/211063708-Automatic-Payment-Schedule"
+type PaymentSchedule {
+   scheduleType: PaymentScheduleType
+
+   "Your balance is only withdrawn automatically when it exceeds a specific limit (e.g. $100 or more) on your scheduled withdrawal date."
+   limit: float
+}
+
+type PaymentScheduleType {
+  "Last Monday of each quarter"
+  QUARTERLY
+  
+  "Last Wednesday of each month"
+  MONTHLY
+
+  "1st and 3rd Wednesday of each month"
+  TWICE_PER_MONTH
+
+  "Every Wednesday"
+  WEEKLY
+}
+
+type CashFlow {
+    date: String!
+    title: String!
+    amount: float!
+}
+
+
+type CreditCard {
+    "Only return partial number"
+    accountNumber: String!
+
+    nameOnAccount: String!
+    address: String!
+    city: String!
+    country: String! 
+    expirationDate: String!
+    CVV: String!
+}
+
+"Get details from https://support.upwork.com/hc/en-us/articles/211063908-Wire-Transfer"
+type BankAccount {
+    """
+    Only return partial number
+    SWIFT Code
+    """
+    accountNumber: String!
+
+    nameOnAccount: String!
+
+    "Address of Bank"
+    address: String!
+
+    "City of Bank"
+    city: String!
+
+    "Country of Bank"
+    country: String! 
+
+}
+
+"https://www.businessinsider.com/facebook-digital-currency-to-finally-launch-q1-2021-2"
+type Diem {
+    accountNumber: String!
+    nameOnAccount: String!
+    address: String!
+    city: String!
+    country: String! 
+}
+
+type Recommendation {
+  id: String!
+  for: Entity 
+  from: Entity
+  text: String!
+  dateCreated: String!
+}
+
+type CustomerApiReview {
+  id: String!
+  for: ApiSubscription
+  from: Entity
+  title: String!
+  text: String!
+  dateCreated: String!
+  "0-5 Stars"
+  stars: int!
+}
+
+type Bookmark {
+  userId: String!
+  programId: String!
+  classId: String!
+  videoTime: float!
+}
+
+type TrainingClass {
+  userId: String!
+  programId: String!
+  classId: String!
+}
+
+interface ClassProject {
+  userId: String!
+  programId: String!
+  projectId: String!
+  projectUrl: String!
+}
+
+type ProjectDue implements ClassProject {
+  userId: String!
+  programId: String!
+  projectId: String!
+  projectUrl: String!
+  projectAssignmentDate: String!
+  projectDueDate: String!
+}
+
+type ProjectSubmitted implements ClassProject {
+  userId: String!
+  programId: String!
+  projectId: String!
+  projectUrl: String!
+  projectAssignmentDate: String!
+  projectDueDate: String!
+  projectSumittedDate: String!
+  projectSubmittedGithubUrl: String!
+}
+
+"Only Teachers can evaluate a project"
+type ProjectEvaluated implements ClassProject {
+  userId: String!
+  programId: String!
+  projectId: String!
+  projectUrl: String!
+  projectAssignmentDate: String!
+  projectDueDate: String!
+  projectSumittedDate: String!
+  projectSubmittedGithubUrl: String!
+  evaluatorUserId: String!
+  evaluationDate: String!
+  
+  "0-5 Stars"
+  stars: int!
+
+}
+
+
+
+
+"""
+The user of the Panacloud Portal.
+It will automatically be created when user is created in Cognito. 
+"""
+type User implements Entity {
+
+  """
+  The id is username for User and it must be unique within a Panacloud user pool. 
+  It should not have any spaces becuase it will be used as a slug. 
+  """  
+  id: String!
+
+  "The Name of the user"
+  name: String!
+  
+  "The city in which the user lives"
+  city: String!
+
+  "The country in which the user lives"
+  country: String!
+
+  "The email address of the user"
+  email: String!
+  
+  "The mobile phone number of the user"
+  phone_number: String!
+
+  "The url of the picture of the user"
+  picture: String!
+
+  headline: String
+
+  """
+  The type of user of Panacloud Portal.
+  In the Portal UI we wil automatically set this type to Normal user, becuase there will be only a few admins or Teachers
+  therefore we can set the Admin or Teacher type manually the in database i.e. not through UI. 
+  """
+  type: UserType!
+
+  "The role of user in Serverless SaaS Eco System"
+  role: [SaaSRole]!
+
+  cashFlowHistory: [CashFlow]
+
+  balance: float!
+
+  defaultPaymentInstrument: FinancialInstrument
+
+  otherPaymentInstruments: [FinancialInstrument]
+
+  developerProfile: DeveloperProfile
+
+  posts: [SocialMediaPost]
+
+  follows: [Entity]
+
+  followers: [Entity]
+}
+
+type Company implements Entity {
+
+  """
+  The id for company and it must be unique within a Panacloud. 
+  It should not have any spaces because it will be used as a slug. 
+  """  
+  id: String!
+
+  "The Name of the company"
+  name: String!
+  
+  "The city in which the company headoffice is located"
+  city: String!
+
+  "The country in which the company headoffice is located"
+  country: String!
+
+  "The email address of the company"
+  email: String!
+  
+  "The mobile phone number of the company"
+  phone_number: String!
+
+  "The url of the logo of the company"
+  picture: String!
+
+  headline: String
+  
+  owner: Entity!
+
+  developers: [User]
+
+  otherEmployees: [User]
+
+  partners: [Entity]
+
+  cashFlowHistory: [CashFlow]
+
+  balance: float!
+
+  defaultPaymentInstrument: FinancialInstrument
+
+  otherPaymentInstruments: [FinancialInstrument]
+
+  posts: [SocialMediaPost]
+
+  follows: [Entity]
+
+  followers: [Entity]
+}
+
+type SocialMediaEntry {
+  id: String
+  text: String!
+  creationDate: String!
+  by: Entity
+  likes: [Entity]
+  comments: [SocialMediaEntry]
+}
+
+type SocialMediaPost implements SocialMediaEntry {
+  id: String
+  text: String!
+  creationDate: String!
+  by: Entity
+  likes: [Entity]
+  comments: [SocialMediaEntry]
+}
+
+type Comment implements SocialMediaEntry {
+  id: String
+  text: String!
+  creationDate: String!
+  by: Entity
+  likes: [Entity]
+  comments: [SocialMediaEntry]
+}
+
+
+type DeveloperRatingEvent {
+  id: String!
+  title: String!
+
+  "0-5 Stars"
+  stars: int!
+}
+
+"The Serverless SaaS API"
+interface Api {
+
+  """
+  The unique API ID.
+  It should should be unique across Panacloud. 
+  It should not have any spaces becuase it will be used as a slug. 
+  """
+  apiId: String!
+
+  owner: Entity!
+
+  title: String!
+
+  description: String!
+
+  "Categories not more than three"
+  saasType: [SaaSType]!
+
+  "Logo or image to show for marketing"
+  imageUrl: String
+
+  "Secret Text to generate the subscription tokens"
+  secretText: String
+
+  """
+  The the API that are used to develop this API
+  """
+  dependencies: [ApiSubscription]
+
+  team: ProjectTeam
+
+}
+
+
+type GraphQLApi implements Api {
+  """
+  The unique API ID.
+  It should should be unique across Panacloud. 
+  It should not have any spaces becuase it will be used as a slug. 
+  """
+  apiId: String!
+
+  owner: Entity!
+
+  title: String!
+
+  description: String!
+
+  "Categories not more than three"
+  saasType: [SaaSType]!
+
+  "Logo or image to show for marketing"
+  imageUrl: String
+
+  "Secret Text to generate the subscription tokens"
+  secretText: String
+
+  
+  """
+  The the API subscriptions that are used to develop this API
+  """
+  dependencies: [ApiSubscription]
+
+  team: ProjectTeam
+
+  "The URL of QraphQL API"
+  apiUrl: String! 
+
+  graphQlSchema: String 
+
+
+}
+
+"https://en.wikipedia.org/wiki/OpenAPI_Specification"
+type OpenApi implements Api {
+  """
+  The unique API ID.
+  It should should be unique across Panacloud. 
+  It should not have any spaces becuase it will be used as a slug. 
+  """
+  apiId: String!
+
+  owner: Entity!
+
+  title: String!
+
+  description: String!
+
+  "Categories not more than three"
+  saasType: [SaaSType]!
+
+  "Logo or image to show for marketing"
+  imageUrl: String
+
+  "Secret Text to generate the subscription tokens"
+  secretText: String
+
+  
+  """
+  The the API subscriptions that are used to develop this API
+  """
+  dependencies: [ApiSubscription]
+
+  team: ProjectTeam
+
+  "The root URL of Open API/REST"
+  apiRootUrl: String! 
+
+  openApiDef: String! 
+}
+
+type ProjectTeam {
+  id: String!
+  dateCreated: String!
+  name: String!
+  developers: [User]!
+}
+
+
+type ApiSubscription {
+  subscriptionId: String!
+  subscriptionCreationDate: String!
+  paymentDayEveryMonth: int!
+  api: API!
+
+  """
+  The the API subscriptions that are used to develop this API
+  """
+  dependencies: [ApiSubscription]
+
+  token: String!
+  bills: [Bill]
+}
+
+interface Bill {
+    billID: String!
+    startDate: String!
+    endDate: String!
+    lineItems: [BillLineItem]
+
+    "Total Amount Payable by the Subscriber"
+    totalAmountPayable: float!
+
+}
+
+type BillLineItem {
+    resourceName: String!
+    resourceDescription: String!
+    consumptionMetrics: float!
+    perUnitPrice: float!
+    amount: float!
+}
+
+
+type PaidBill implements Bill {
+    billID: String!
+    startDate: String!
+    endDate: String!
+    lineItems: [BillLineItem]
+
+    "Total Amount Payable by the Subscriber"
+    totalAmountPayable: float!
+
+    paymentDate: String
+
+    amountTransferredToApiDeveloper: float
+
+    panacloudCommissionRetained: float
+}
+}
+
+type UnpaidBill implements Bill {
+    billID: String!
+    startDate: String!
+    endDate: String!
+    lineItems: [BillLineItem]
+
+    "Total Amount Payable by the Subscriber"
+    totalAmountPayable: float!
+}
+
+
+"The type of user"
+enum UserType {
+  "The normal user of the Panacloud Portal"
+  NORMAL
+
+  "The admin of the Panacloud Portal"
+  ADMIN
+
+  "Faculty member of the Panacloud Teaching Team"
+  FACULTY
+}
+
+"The role of user in Serverless SaaS Eco-System"
+enum SaaSRole {
+  "The Serverless SaaS Cloud API and App Developer"
+  DEVELOPER
+
+  "Entrepreneur developing SaaS Apps and APIs, not a developer"
+  ENTREPRENEUR
+
+  "Investor looking for opportunities in SaaS Apps and APIs"
+  INVESTOR
+
+  "Employer looking for SaaS Developers to Hire"
+  EMPLOYER
+
+  "SaaS Application User"
+  APP_USER
+
+  "The Serverless SaaS Company Marketing Staff etc."
+  STAFF
+
+}
+
+type DeveloperProfile {
+
+  about: String!
+
+  experience: [Employment]
+
+  education: [Education]
+
+  languages: [ProgrammingLanguage]
+
+  frontEndFrameworks: [FrontendFramework] 
+
+  hybridMobileFrameworks: [HybridMobileFramework]
+
+  nativeMobiles: [NativeMobile]
+
+  databaseQuerys: [DatabaseQuery]
+
+  cloudComputingPlatforms: [CloudComputingPlatform]
+
+  cloudProviders: [CloudProvider]
+
+  staticSiteGenerators: [StaticSiteGenerator]
+
+  cloudDatabases: [CloudDatabase]
+
+  cloudDataWarehouses: [CloudDataWarehouse]
+
+  cicds: [CICD]
+
+  gits: [Git]
+
+  iacs: [IaC]
+
+  streamProcessors: [StreamProcessor]
+
+  deapLearningLibraries: [DeapLearningLibrary]
+
+  cloudMachineLearnings: [CloudMachineLearning]
+
+  edgeComputing: [EdgeComputing]
+
+  realtimeOSs: [RealtimeOS]
+
+  ioTPlatforms: [IoTPlatform]
+
+  blockchainPlatforms: [BlockchainPlatform] 
+
+  ratingEvents: [DeveloperRatingEvent]
+  
+  averageRating: int
+
+}
+
+type GithubCredential {
+  entityId: String!
+  githubUserName: String!
+
+  """
+  Gethub OAuth 2.0 access token
+  Integrate GitHub authentication into your app by following the developer's documentation. 
+  At the end of the GitHub sign-in flow, you will receive an OAuth 2.0 access token.
+  https://docs.github.com/en/developers/apps/authorizing-oauth-apps#web-application-flow
+  """
+  accessToken: String!
+
+}
+
+
+type Employment {
+  title: String!
+  employmentType: EmploymentType
+  company: String!
+  location: String!
+  startDate: String!
+  endDate: String!
+}
+
+enum EmploymentType {
+  FULLTIME
+  PARTTIME
+  SELFEMPLOYED
+  FREELANCE
+  CONTRACT
+  INTERNSHIP
+  SEASONAL
+}
+
+type Education {
+  school: String!
+  degree: String!
+  fieldOfStudy: String!
+  location: String!
+  grade: String!
+  startDate: String!
+  endDate: String!
+}
+
+type DeveloperRatingEvent {
+  title: String!
+
+  "0-5 Stars"
+  stars: int!
+}
+
+
+enum ProgrammingLanguage {
+  JAVASCRIPT
+  TYPESCRIPT
+  PYTHON
+  JAVA 
+  RUST 
+  GO 
+  SWIFT 
+  KOTLIN 
+  CSHARP
+  HTML
+  CSS
+  DART
+  C 
+  C_PLUS_PLUS
+}
+
+enum FrontendFramework {
+  REACT
+  ANGULAR
+  VUE
+}
+
+enum HybridMobileFramework {
+  REACT_NATIVE
+  FLUTTER 
+}
+
+enum NativeMobile {
+  ANDROID 
+  IOS 
+}
+
+enum DatabaseQuery {
+  SQL
+  GREMLIN
+}
+
+enum CloudComputingPlatform {
+  SERVERLESS 
+  KUBERNETES
+  VIRTUAL_MACHINE
+}
+
+enum CloudProvider {
+  AWS 
+  AZURE
+  GOOGLE_CLOUD
+  IBM
+  ORACLE
+  ALIBABA_CLOUD
+  NETLIFY
+}
+
+enum StaticSiteGenerator {
+  GATSBY
+  NEXTJS
+}
+
+enum CloudDatabase {
+  AURURA_SERVERLESS
+  NEPTUNE 
+  MONGODB_ATLAS
+  AMAZON_TIMESTREAM
+  DYNAMODB
+  FAUNADB
+  COSMOSDB
+  FIREBASE
+  ORACLE
+  DB2
+}
+
+enum CloudDataWarehouse {
+  REDSHIFT
+  SNOWFLAKE 
+}
+
+enum CICD {
+  GITHUB_ACTIONS
+  GOOGLE_CLOUD_BUILD
+  AWS_CODE_PIPELINE
+}
+
+enum IaC {
+  CDK
+  TERRAFORM
+}
+
+enum Git {
+  GITHUB 
+  GITLAB 
+  BITBUCKET
+}
+
+enum StreamProcessor {
+  KAFKA 
+  KINESIS
+}
+
+enum DeapLearningLibrary {
+  TENSORFLOW
+  PYTORCH
+}
+
+enum CloudMachineLearning {
+  AMAZON_SAGEMAKER 
+  MICROSOFT_AZURE_ML
+  GOOGLE_DATALAB
+  GOOGLE_COLAB
+}
+
+enum EdgeComputing {
+  AWS_IOT_GREENGRASS
+  AZURE_IOT_EDGE
+}
+
+enum RealtimeOS {
+  AWS_FREE_RTOS
+  AZURE_RTOS
+}
+
+enum IoTPlatform {
+  AWS_IOT
+  Azure_IOT
+}
+
+enum BlockchainPlatform {
+    ETHEREUM
+    HYPERLEDGER
+}
+
+
+
+
+"The types of SaaS Solutions"
+enum SaaSType {
+    """
+    The Customer Relation Management solutions automate sales/marketing processes and can prove to be a game changer
+    for growing businesses. These systems allow businesses to develop and foster strong business relationships 
+    and address their queries and complaints in a timely manner. CRMs allow businesses to keep up with their 
+    customers by effectively managing customer profiles and providing them a more personalized experience. 
+    """
+    CRM
+    
+    """
+    These SaaS are used by large companies and enterprises to manage a wide range of business processes. 
+    Among them accounting, risk management, compliance, and budgeting. Such a SaaS allows combining and tracking 
+    all these processes in one place due to the big number of its services.
+    """
+    ERP 
+
+    """
+    These SaaS simplifies managing your financial operations and costs by automating them. 
+    This comes in handy when you are doing lots of financial operations per day. 
+    """
+    ACCOUNTING
+
+    """
+    Project Management SaaS solutions enhance cooperation and progress tracking in teams. 
+    They are much faster and easier to use compared to shared spreadsheets or documents as synchronization 
+    happens in real-time. 
+    """
+    PM 
+
+
+    """
+    CMS is the Content Management System, which allows publishing and editing content, 
+    such as articles and blog posts. 
+    """
+    CMS
+
+
+    """
+    These are widely used SaaS solutions. Their main benefit of communication platforms is instant messaging 
+    and file sharing from any part of the world. These are often used by businesses for communication between 
+    their employees. 
+    """
+    COMMUNICATION
+
+    """
+    E-commerce SaaS solutions allow you to start selling your products immediately, saving money on development.
+    """
+    ECOMMERCE
+    
+    """
+    These SaaS solutions are developed to manage human resources. Such products have features such as
+    recruiting, interview scheduling, performance tracking and analysis, and employee reviews. 
+    """
+    HRM
+
+    """
+    Payment gateways enable businesses to accept payments in a fast and easy way handling hundreds of 
+    transactions each minute. 
+    """
+    PAYMENT_GATEWAY
+
+    BILLING
+
+    FINANCE 
+
+    EDUCATION 
+
+    MEDICAL 
+
+    MUSIC 
+
+    NEWS 
+
+    SOCIAL_NETWORKING 
+
+    WEATHER 
+
+    LIFESTYLE 
+
+    PRODUCTIVITY 
+
+    SPORTS 
+
+    TRAVEL 
+
+    FOOD 
+
+    PHOTO_VIDEO 
+
+    UTILITIES 
+
+    DATA 
+
+    AI 
+
+    IOT 
+
+    BLOCKCHAIN_CRYPTO
+
+    BUSINESS 
+
+    REFERENCE 
+
+    HEALTH_FITNESS 
+
+}
+
+
+
+

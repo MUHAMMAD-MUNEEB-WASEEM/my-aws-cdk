@@ -1,0 +1,2032 @@
+{
+    "entity":{
+        "entityId": "uzair"
+    },
+    "company":{
+      "companyId":"515969afd7-5c73-4b03-9155-65a5f1cfcd30"
+    },
+    "fetchMyApiTestingSubscriptions": [
+      {
+        "api": {
+          "id": "104",
+          "imageUrl": "",
+          "title": "test open api"
+        },
+        "paymentDayEveryMonth": "2",
+        "status": "ACTIVE",
+        "subscriptionCreationDate": "1621307672470",
+        "subscriptionId": "d018c1e3-c94f-4951-945e-6b62abe4f3d9",
+        "subscription_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJURVNUSU5HIiwiYXBpSWQiOiIxMDQiLCJlbnRpdHlJRCI6InV6YWlyIiwic3Vic2NyaXB0aW9uSWQxIjoiZDAxOGMxZTMtYzk0Zi00OTUxLTk0NWUtNmI2MmFiZTRmM2Q5IiwiaWF0IjoxNjIxMzA3NjcyfQ.S0qtzUBnJG6Bh_JhgXsbydejynaMCy3Eg4qBWKxkuDw",
+        "type": "TESTING"
+     },
+     {
+      "api": {
+        "id": "104",
+        "imageUrl": "",
+        "title": "test open api"
+      },
+      "paymentDayEveryMonth": "2",
+      "status": "ACTIVE",
+      "subscriptionCreationDate": "1621307672470",
+      "subscriptionId": "46894843-ccd3-49e1-bdd3-1bcb4ab3969f",
+      "subscription_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJURVNUSU5HIiwiYXBpSWQiOiIxMDQiLCJlbnRpdHlJRCI6InV6YWlyIiwic3Vic2NyaXB0aW9uSWQyIjoiNDY4OTQ4NDMtY2NkMy00OWUxLWJkZDMtMWJjYjRhYjM5NjlmIiwiaWF0IjoxNjIxMzA3NjcyfQ.7ZJjgQfMNNM_WbBocI7PmG7MZCik6gEERNaEMi0Tlkk",
+      "type": "TESTING"
+    }
+    ],
+    "fetchMyApiSubscription": {
+        "api": {
+          "id": "101",
+          "imageUrl": "",
+          "title": " test open api"
+        },
+        "paymentDayEveryMonth": "2",
+        "status": "ACTIVE",
+        "subscriptionId": "521dd254-eb38-4ea8-ac10-80016cca7afd",
+        "subscriptionCreationDate": "1621307498267",
+        "subscription_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJOT1JNQUwiLCJhcGlJZCI6IjEwMSIsImVudGl0eUlkIjoidXphaXIiLCJzdWJzY3JpcHRpb25JZCI6IjUyMWRkMjU0LWViMzgtNGVhOC1hYzEwLTgwMDE2Y2NhN2FmZCIsImlhdCI6MTYyMTMwNzQ5OH0.vcztc-l_vXIsP8wOreiWSa0kpAC4A1yFkNUD0D9MoBw",
+        "type": "NORMAL"
+    },
+    "apiTokenInfo":{
+      "api_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlJZCI6IjEwNCIsImVudGl0eUlEIjoidXphaXIiLCJhcGlfa2luZCI6Ik9QRU5BUEkiLCJpYXQiOjE2MjEzMDc2NzJ9.dm04dQabJAsoTPNgGc30dIoe-pRpKQKr5a8-vtZYxpE",
+      "apiId": "104",
+      "entityId": "uzair"
+    },
+    "fetchMyUnderdevelopmentApisOutputUser": {
+      "apis": [
+        {
+          "apiId": "50",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "numOfSubscribers": 0,
+          "imageUrl": "",
+          "owner": {"firstName":"uzair","lastName":"bangee","picture_url":"entity/uzair/uzair-profile.webp","id":"uzair"},
+          "shortDescription": "",
+          "status": "UNDERDEVELOPMENT",
+          "subscribed": null,
+          "title": "test open api"
+        },
+        {
+          "apiId": "185",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "numOfSubscribers": 0,
+          "imageUrl": "",
+          "owner": {"firstName":"uzair","lastName":"bangee","picture_url":"entity/uzair/uzair-profile.webp","id":"uzair"},
+          "shortDescription": "",
+          "status": "UNDERDEVELOPMENT",
+          "subscribed": null,
+          "title": "test open api"
+        }
+      ],
+      "count": "#number"
+    },
+    "fetchMyUnderdevelopmentApisOutputCompany": {
+      "apis": [
+        {
+          "apiId": "53",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "numOfSubscribers": 0,
+          "imageUrl": "",
+          "owner": {
+            "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+            "picture_url": "http://pic.url.com/",
+            "name": "company-update"
+          },
+          "shortDescription": "",
+          "status": "UNDERDEVELOPMENT",
+          "subscribed": null,
+          "title": "test open api"
+        },
+        {
+          "apiId": "54",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "numOfSubscribers": 0,
+          "imageUrl": "",
+          "owner": {
+            "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+            "picture_url": "http://pic.url.com/",
+            "name": "company-update"
+          },
+          "shortDescription": "",
+          "status": "UNDERDEVELOPMENT",
+          "subscribed": null,
+          "title": "test open api"
+        }
+      ],
+      "count": "#number"
+    },
+    "fetchMyPublicApisOutputUser": {
+      "apis": [
+        {
+          "apiId": "77",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "imageUrl": "",
+          "numOfSubscribers": 0,
+          "owner": {
+            "picture_url": "entity/uzair/uzair-profile.webp",
+            "id": "uzair",
+            "firstName": "uzair",
+            "lastName": "bangee"
+          },
+          "shortDescription": "",
+          "status": "PUBLIC",
+          "subscribed": null,
+          "title": "test open api"
+        },
+        {
+          "apiId": "103",
+          "apiKind": "OPENAPI",
+          "imageUrl": "",
+          "apiType": [
+            "CRM"
+          ],
+          "numOfSubscribers": 0,
+          "owner": {
+            "picture_url": "entity/uzair/uzair-profile.webp",
+            "id": "uzair",
+            "firstName": "uzair",
+            "lastName": "bangee"
+          },
+          "shortDescription": "",
+          "status": "PUBLIC",
+          "subscribed": null,
+          "title": "test open api"
+        }
+      ],
+      "count": "#number"
+    },
+    "fetchMyPublicApisOutputCompany": {
+      "apis": [
+        {
+          "apiId": "52",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "imageUrl": "",
+          "numOfSubscribers": 1,
+          "owner": {
+            "picture_url": "http://pic.url.com/",
+            "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+            "name": "company-update"
+          },
+          "shortDescription": "",
+          "status": "PUBLIC",
+          "subscribed": null,
+          "title": "test open api"        
+        },
+        {
+          "apiId": "270",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "imageUrl": "",
+          "numOfSubscribers": 0,
+          "owner": {
+            "picture_url": "http://pic.url.com/",
+            "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+            "name": "company-update"
+          },
+          "shortDescription": "",
+          "status": "PUBLIC",
+          "subscribed": null,
+          "title": "test open api"
+        }
+      ],
+      "count": "#number"
+    },
+    "fetchMyPrivateApisOutputUser": {
+      "apis": [
+        {
+          "apiId": "66",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "imageUrl": "",
+          "numOfSubscribers": 0,
+          "owner": {
+            "id": "uzair",
+            "picture_url": "entity/uzair/uzair-profile.webp",
+            "firstName": "uzair",
+            "lastName": "bangee"
+          },
+          "shortDescription": "",
+          "status": "PRIVATE",
+          "subscribed": null,
+          "title": "test open api"
+        },
+        {
+          "apiId": "67",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "imageUrl": "",
+          "numOfSubscribers": 0,
+          "owner": {
+            "id": "uzair",
+            "picture_url": "entity/uzair/uzair-profile.webp",
+            "firstName": "uzair",
+            "lastName": "bangee"
+          },
+          "shortDescription": "",
+          "status": "PRIVATE",
+          "subscribed": null,
+          "title": "test open api"
+        }
+      ],
+      "count": "#number"
+    },
+    "fetchMyPrivateApisOutputCompany": {
+      "apis": [
+        {
+          "apiId": "64",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "imageUrl": "",
+          "numOfSubscribers": 0,
+          "owner": {
+            "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+            "picture_url": "http://pic.url.com/",
+            "name": "company-update"
+          },
+          "shortDescription": "",
+          "status": "PRIVATE",
+          "subscribed": null,
+          "title": "test open api"
+        },
+        {
+          "apiId": "65",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "imageUrl": "",
+          "numOfSubscribers": 0,
+          "owner": {
+            "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+            "picture_url": "http://pic.url.com/",
+            "name": "company-update"
+          },
+          "shortDescription": "",
+          "status": "PRIVATE",
+          "subscribed": null,
+          "title": "test open api"
+        }
+      ],
+      "count": "#number"
+    },
+    "fetchApiReviewsOutputUser": {
+      "reviews": [
+        {
+          "apiId": "83",
+          "by": {
+            "id": "uzair",
+            "picture_url": "entity/uzair/uzair-profile.webp",
+            "firstName": "uzair",
+            "lastName": "bangee"
+          },
+          "dateCreated": "1621435725902",
+          "reviewId": "0ebcc28c-dc32-ffab-84bd-e1121acafbf9",
+          "text": "Working fine",
+          "stars": 4,
+          "title": "api review"
+        }
+      ],
+      "count": "#number",
+      "pageNumber": 1,
+      "pageSize": 1
+    },
+    "fetchApiReviewsOutputCompany": {
+      "reviews": [
+        {
+          "apiId": "84",
+          "by": {
+            "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+            "picture_url": "http://pic.url.com/",
+            "name": "company-update"
+          },
+          "reviewId": "80bcc296-2fcc-8c54-30e1-073cabdb3ae7",
+          "dateCreated": "1621436948354",
+          "stars": 4,
+          "text": "Working fine",
+          "title": "api review"
+        }
+      ],
+      "count": "#number",
+      "pageNumber": 1,
+      "pageSize": 1
+    },
+    "fetchallPublicApisOutput":{
+      "apis": [
+        {
+          "apiId": "52",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "imageUrl": "",
+          "numOfSubscribers": 1,
+          "owner": {
+            "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+            "picture_url": "http://pic.url.com/",
+            "name": "company-update"
+          },
+          "shortDescription": "",
+          "status": "PUBLIC",
+          "subscribed": false,
+          "title": "test open api"
+        },
+        {
+          "apiId": "55",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "imageUrl": "",
+          "numOfSubscribers": 1,
+          "owner": {
+            "id": "muneeb",
+            "picture_url": "entity/muneeb/muneeb-profile.webp",
+            "firstName": "muneeb",
+            "lastName": "muneeb"
+          },
+          "shortDescription": "",
+          "status": "PUBLIC",
+          "subscribed": true,
+          "title": "test open api"
+        }
+      ],
+      "count": "#number"
+    },
+    "fetchAllApiIdeasOutput":{
+      "apiIdeas": [
+        {
+          "apiKind": [
+            "OPENAPI"
+          ],
+          "apiType": [
+            "CRM"
+          ],
+          "by": {
+            "id": "uzair",
+            "firstName": "uzair",
+            "lastName": "bangee",
+            "picture_url": "entity/uzair/uzair-profile.webp"
+          },
+          "dateCreated": "1622038752704",
+          "id": "120",
+          "imageUrl": "",
+          "num_of_dislikes": 0,
+          "num_of_likes": 0,
+          "title": "test api idea",
+          "total_proposals": 0,
+          "viewerRelationWithApiIdea": {
+            "linkedApi": false,
+            "reaction": "NONE",
+            "submittedProposal": false
+           }
+        },
+        {
+          "apiKind": [
+            "OPENAPI"
+          ],
+          "apiType": [
+            "CRM"
+          ],
+          "by": {
+            "id": "uzair",
+            "firstName": "uzair",
+            "lastName": "bangee",
+            "picture_url": "entity/uzair/uzair-profile.webp"
+          },
+          "dateCreated": "1621966724113",
+          "id": "119",
+          "imageUrl": "",
+          "num_of_dislikes": 0,
+          "num_of_likes": 0,
+          "title": "test api idea",
+          "total_proposals": 1,
+          "viewerRelationWithApiIdea": {
+            "linkedApi": false,
+            "reaction": "NONE",
+            "submittedProposal": true
+          }
+        }
+      ],
+      "count": "#number"
+    },
+    "apiIdeaFullInfoUser": {
+      "apiKind": [
+        "OPENAPI"
+      ],
+      "apiType": [
+        "CRM"
+      ],
+      "by": {
+        "id": "uzair",
+        "picture_url": "entity/uzair/uzair-profile.webp",
+        "firstName": "uzair",
+        "lastName": "bangee"
+      },
+      "dateCreated": "1621871901939",
+      "graphQl_proposals": null,
+      "id": "91",
+      "imageUrl": "",
+      "num_of_dislikes": 0,
+      "num_of_likes": 0,
+      "openApi_proposals": null,
+      "title": "test api idea",
+      "total_proposals": 0,
+      "viewerRelationWithApiIdea": {
+        "linkedApi": false,
+        "reaction": "NONE",
+        "submittedProposal": false
+      }
+    },
+    "apiIdeaFullInfoCompany": {
+      "apiKind": [
+        "OPENAPI"
+      ],
+      "apiType": [
+        "CRM"
+      ],
+      "by": {
+        "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+        "picture_url": "http://pic.url.com/",
+        "name": "company-update"
+      },
+      "dateCreated": "1621874579933",
+      "graphQl_proposals": null,
+      "id": "92",
+      "imageUrl": "",
+      "num_of_dislikes": 0,
+      "num_of_likes": 0,
+      "openApi_proposals": null,
+      "title": "test api idea",
+      "total_proposals": 0,
+      "viewerRelationWithApiIdea": {
+        "linkedApi": false,
+        "reaction": "NONE",
+        "submittedProposal": false
+      }
+    },
+    "fetchAllCommentsOnAnApiIdeaOutput": {
+      "apiIdeaComments": [
+        {
+          "apiIdeaId": "111",
+          "by": {
+            "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+            "picture_url": "http://pic.url.com/",
+            "name": "company-update"
+          },
+          "createdAt": "1621879384663",
+          "id": "bcbccfc5-b540-70b6-b4bb-d42c22c598fd",
+          "text": "good2"
+        },
+        {
+          "apiIdeaId": "111",
+          "by": {
+            "id": "uzair",
+            "picture_url": "entity/uzair/uzair-profile.webp",
+            "firstName": "uzair",
+            "lastName": "bangee"
+          },
+          "createdAt": "1621879376463",
+          "id": "20bccfc5-a53b-eaf2-4bf3-f9b7a711f3e0",
+          "text": "good1"
+        }
+      ],
+      "count": "#number"
+    },
+    "getLinkedApisForApiIdeaProposalOutputUser": {
+      "count": "#number",
+      "linkedApiShowcaseInfo": [
+        {
+          "apiId": "102",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "imageUrl": "",
+          "linkedApiStatus": "approved",
+          "numOfSubscribers": 0,
+          "owner": {
+            "id": "uzair",
+            "picture_url": "entity/uzair/uzair-profile.webp",
+            "firstName": "uzair",
+            "lastName": "bangee"
+          },
+          "shortDescription": "",
+          "status": "PUBLIC",
+          "subscribed": null,
+          "title": "test open api"
+        },
+        {
+          "apiId": "103",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "imageUrl": "",
+          "linkedApiStatus": "approved",
+          "numOfSubscribers": 0,
+          "owner": {
+            "id": "uzair",
+            "picture_url": "entity/uzair/uzair-profile.webp",
+            "firstName": "uzair",
+            "lastName": "bangee"
+          },
+          "shortDescription": "",
+          "status": "PUBLIC",
+          "subscribed": null,
+          "title": "test open api"
+        }
+      ]
+    },
+    "getLinkedApisForApiIdeaProposalOutputCompany": {
+      "count": "#number",
+      "linkedApiShowcaseInfo": [
+        {
+          "apiId": "107",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "imageUrl": "",
+          "linkedApiStatus": "approved",
+          "numOfSubscribers": 0,
+          "owner": {
+            "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+            "picture_url": "http://pic.url.com/",
+            "name": "company-update"
+          },
+          "shortDescription": "",
+          "status": "PUBLIC",
+          "subscribed": false,
+          "title": "test open api"
+        },
+        {
+          "apiId": "106",
+          "apiKind": "OPENAPI",
+          "apiType": [
+            "CRM"
+          ],
+          "imageUrl": "",
+          "linkedApiStatus": "approved",
+          "numOfSubscribers": 0,
+          "owner": {
+            "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+            "picture_url": "http://pic.url.com/",
+            "name": "company-update"
+          },
+          "shortDescription": "",
+          "status": "PUBLIC",
+          "subscribed": false,
+          "title": "test open api"
+        }
+      ]
+    },
+    "getApiBazaarSideMenuOutput": {
+      "allPublicApis": {
+        "api": [
+          {
+            "count": 24,
+            "type": "CRM"
+          },
+          {
+            "count": 1,
+            "type": "PAYMENT_GATEWAY"
+          },
+          {
+            "count": 1,
+            "type": "ACCOUNTING"
+          },
+          {
+            "count": 0,
+            "type": "ERP"
+          },
+          {
+            "count": 0,
+            "type": "PM"
+          },
+          {
+            "count": 0,
+            "type": "CMS"
+          },
+          {
+            "count": 0,
+            "type": "COMMUNICATION"
+          },
+          {
+            "count": 0,
+            "type": "ECOMMERCE"
+          },
+          {
+            "count": 0,
+            "type": "HRM"
+          },
+          {
+            "count": 0,
+            "type": "BILLING"
+          },
+          {
+            "count": 0,
+            "type": "FINANCE"
+          },
+          {
+            "count": 0,
+            "type": "EDUCATION"
+          },
+          {
+            "count": 0,
+            "type": "MEDICAL"
+          },
+          {
+            "count": 0,
+            "type": "MUSIC"
+          },
+          {
+            "count": 0,
+            "type": "NEWS"
+          },
+          {
+            "count": 0,
+            "type": "SOCIAL_NETWORKING"
+          },
+          {
+            "count": 0,
+            "type": "WEATHER"
+          },
+          {
+            "count": 0,
+            "type": "LIFESTYLE"
+          },
+          {
+            "count": 0,
+            "type": "PRODUCTIVITY"
+          },
+          {
+            "count": 0,
+            "type": "SPORTS"
+          },
+          {
+            "count": 0,
+            "type": "TRAVEL"
+          },
+          {
+            "count": 0,
+            "type": "FOOD"
+          },
+          {
+            "count": 0,
+            "type": "PHOTO_VIDEO"
+          },
+          {
+            "count": 0,
+            "type": "UTILITIES"
+          },
+          {
+            "count": 0,
+            "type": "DATA"
+          },
+          {
+            "count": 0,
+            "type": "AI"
+          },
+          {
+            "count": 0,
+            "type": "IOT"
+          },
+          {
+            "count": 0,
+            "type": "BLOCKCHAIN_CRYPTO"
+          },
+          {
+            "count": 0,
+            "type": "BUSINESS"
+          },
+          {
+            "count": 0,
+            "type": "REFERENCE"
+          },
+          {
+            "count": 0,
+            "type": "HEALTH_FITNESS"
+          }
+        ],
+        "totalCount": 26
+      },
+      "myPublicApis": {
+        "api": [
+          {
+            "count": 8,
+            "type": "CRM"
+          },
+          {
+            "count": 0,
+            "type": "ERP"
+          },
+          {
+            "count": 0,
+            "type": "ACCOUNTING"
+          },
+          {
+            "count": 0,
+            "type": "PM"
+          },
+          {
+            "count": 0,
+            "type": "CMS"
+          },
+          {
+            "count": 0,
+            "type": "COMMUNICATION"
+          },
+          {
+            "count": 0,
+            "type": "ECOMMERCE"
+          },
+          {
+            "count": 0,
+            "type": "HRM"
+          },
+          {
+            "count": 0,
+            "type": "PAYMENT_GATEWAY"
+          },
+          {
+            "count": 0,
+            "type": "BILLING"
+          },
+          {
+            "count": 0,
+            "type": "FINANCE"
+          },
+          {
+            "count": 0,
+            "type": "EDUCATION"
+          },
+          {
+            "count": 0,
+            "type": "MEDICAL"
+          },
+          {
+            "count": 0,
+            "type": "MUSIC"
+          },
+          {
+            "count": 0,
+            "type": "NEWS"
+          },
+          {
+            "count": 0,
+            "type": "SOCIAL_NETWORKING"
+          },
+          {
+            "count": 0,
+            "type": "WEATHER"
+          },
+          {
+            "count": 0,
+            "type": "LIFESTYLE"
+          },
+          {
+            "count": 0,
+            "type": "PRODUCTIVITY"
+          },
+          {
+            "count": 0,
+            "type": "SPORTS"
+          },
+          {
+            "count": 0,
+            "type": "TRAVEL"
+          },
+          {
+            "count": 0,
+            "type": "FOOD"
+          },
+          {
+            "count": 0,
+            "type": "PHOTO_VIDEO"
+          },
+          {
+            "count": 0,
+            "type": "UTILITIES"
+          },
+          {
+            "count": 0,
+            "type": "DATA"
+          },
+          {
+            "count": 0,
+            "type": "AI"
+          },
+          {
+            "count": 0,
+            "type": "IOT"
+          },
+          {
+            "count": 0,
+            "type": "BLOCKCHAIN_CRYPTO"
+          },
+          {
+            "count": 0,
+            "type": "BUSINESS"
+          },
+          {
+            "count": 0,
+            "type": "REFERENCE"
+          },
+          {
+            "count": 0,
+            "type": "HEALTH_FITNESS"
+          }
+        ],
+        "totalCount": 8
+      },
+      "privateApis": {
+        "api": [
+          {
+            "count": 2,
+            "type": "CRM"
+          },
+          {
+            "count": 0,
+            "type": "ERP"
+          },
+          {
+            "count": 0,
+            "type": "ACCOUNTING"
+          },
+          {
+            "count": 0,
+            "type": "PM"
+          },
+          {
+            "count": 0,
+            "type": "CMS"
+          },
+          {
+            "count": 0,
+            "type": "COMMUNICATION"
+          },
+          {
+            "count": 0,
+            "type": "ECOMMERCE"
+          },
+          {
+            "count": 0,
+            "type": "HRM"
+          },
+          {
+            "count": 0,
+            "type": "PAYMENT_GATEWAY"
+          },
+          {
+            "count": 0,
+            "type": "BILLING"
+          },
+          {
+            "count": 0,
+            "type": "FINANCE"
+          },
+          {
+            "count": 0,
+            "type": "EDUCATION"
+          },
+          {
+            "count": 0,
+            "type": "MEDICAL"
+          },
+          {
+            "count": 0,
+            "type": "MUSIC"
+          },
+          {
+            "count": 0,
+            "type": "NEWS"
+          },
+          {
+            "count": 0,
+            "type": "SOCIAL_NETWORKING"
+          },
+          {
+            "count": 0,
+            "type": "WEATHER"
+          },
+          {
+            "count": 0,
+            "type": "LIFESTYLE"
+          },
+          {
+            "count": 0,
+            "type": "PRODUCTIVITY"
+          },
+          {
+            "count": 0,
+            "type": "SPORTS"
+          },
+          {
+            "count": 0,
+            "type": "TRAVEL"
+          },
+          {
+            "count": 0,
+            "type": "FOOD"
+          },
+          {
+            "count": 0,
+            "type": "PHOTO_VIDEO"
+          },
+          {
+            "count": 0,
+            "type": "UTILITIES"
+          },
+          {
+            "count": 0,
+            "type": "DATA"
+          },
+          {
+            "count": 0,
+            "type": "AI"
+          },
+          {
+            "count": 0,
+            "type": "IOT"
+          },
+          {
+            "count": 0,
+            "type": "BLOCKCHAIN_CRYPTO"
+          },
+          {
+            "count": 0,
+            "type": "BUSINESS"
+          },
+          {
+            "count": 0,
+            "type": "REFERENCE"
+          },
+          {
+            "count": 0,
+            "type": "HEALTH_FITNESS"
+          }
+        ],
+        "totalCount": 2
+      },
+      "subscribedApis": {
+        "api": [
+          {
+            "count": 9,
+            "type": "CRM"
+          },
+          {
+            "count": 0,
+            "type": "EDUCATION"
+          },
+          {
+            "count": 0,
+            "type": "ERP"
+          },
+          {
+            "count": 0,
+            "type": "ACCOUNTING"
+          },
+          {
+            "count": 0,
+            "type": "PM"
+          },
+          {
+            "count": 0,
+            "type": "CMS"
+          },
+          {
+            "count": 0,
+            "type": "COMMUNICATION"
+          },
+          {
+            "count": 0,
+            "type": "ECOMMERCE"
+          },
+          {
+            "count": 0,
+            "type": "HRM"
+          },
+          {
+            "count": 0,
+            "type": "PAYMENT_GATEWAY"
+          },
+          {
+            "count": 0,
+            "type": "BILLING"
+          },
+          {
+            "count": 0,
+            "type": "FINANCE"
+          },
+          {
+            "count": 0,
+            "type": "MEDICAL"
+          },
+          {
+            "count": 0,
+            "type": "MUSIC"
+          },
+          {
+            "count": 0,
+            "type": "NEWS"
+          },
+          {
+            "count": 0,
+            "type": "SOCIAL_NETWORKING"
+          },
+          {
+            "count": 0,
+            "type": "WEATHER"
+          },
+          {
+            "count": 0,
+            "type": "LIFESTYLE"
+          },
+          {
+            "count": 0,
+            "type": "PRODUCTIVITY"
+          },
+          {
+            "count": 0,
+            "type": "SPORTS"
+          },
+          {
+            "count": 0,
+            "type": "TRAVEL"
+          },
+          {
+            "count": 0,
+            "type": "FOOD"
+          },
+          {
+            "count": 0,
+            "type": "PHOTO_VIDEO"
+          },
+          {
+            "count": 0,
+            "type": "UTILITIES"
+          },
+          {
+            "count": 0,
+            "type": "DATA"
+          },
+          {
+            "count": 0,
+            "type": "AI"
+          },
+          {
+            "count": 0,
+            "type": "IOT"
+          },
+          {
+            "count": 0,
+            "type": "BLOCKCHAIN_CRYPTO"
+          },
+          {
+            "count": 0,
+            "type": "BUSINESS"
+          },
+          {
+            "count": 0,
+            "type": "REFERENCE"
+          },
+          {
+            "count": 0,
+            "type": "HEALTH_FITNESS"
+          }
+        ],
+        "totalCount": 9
+      },
+      "underDevelopmentApis": {
+        "api": [
+          {
+            "count": 8,
+            "type": "EDUCATION"
+          },
+          {
+            "count": 15,
+            "type": "CRM"
+          },
+          {
+            "count": 0,
+            "type": "ERP"
+          },
+          {
+            "count": 0,
+            "type": "ACCOUNTING"
+          },
+          {
+            "count": 0,
+            "type": "PM"
+          },
+          {
+            "count": 0,
+            "type": "CMS"
+          },
+          {
+            "count": 0,
+            "type": "COMMUNICATION"
+          },
+          {
+            "count": 0,
+            "type": "ECOMMERCE"
+          },
+          {
+            "count": 0,
+            "type": "HRM"
+          },
+          {
+            "count": 0,
+            "type": "PAYMENT_GATEWAY"
+          },
+          {
+            "count": 0,
+            "type": "BILLING"
+          },
+          {
+            "count": 0,
+            "type": "FINANCE"
+          },
+          {
+            "count": 0,
+            "type": "MEDICAL"
+          },
+          {
+            "count": 0,
+            "type": "MUSIC"
+          },
+          {
+            "count": 0,
+            "type": "NEWS"
+          },
+          {
+            "count": 0,
+            "type": "SOCIAL_NETWORKING"
+          },
+          {
+            "count": 0,
+            "type": "WEATHER"
+          },
+          {
+            "count": 0,
+            "type": "LIFESTYLE"
+          },
+          {
+            "count": 0,
+            "type": "PRODUCTIVITY"
+          },
+          {
+            "count": 0,
+            "type": "SPORTS"
+          },
+          {
+            "count": 0,
+            "type": "TRAVEL"
+          },
+          {
+            "count": 0,
+            "type": "FOOD"
+          },
+          {
+            "count": 0,
+            "type": "PHOTO_VIDEO"
+          },
+          {
+            "count": 0,
+            "type": "UTILITIES"
+          },
+          {
+            "count": 0,
+            "type": "DATA"
+          },
+          {
+            "count": 0,
+            "type": "AI"
+          },
+          {
+            "count": 0,
+            "type": "IOT"
+          },
+          {
+            "count": 0,
+            "type": "BLOCKCHAIN_CRYPTO"
+          },
+          {
+            "count": 0,
+            "type": "BUSINESS"
+          },
+          {
+            "count": 0,
+            "type": "REFERENCE"
+          },
+          {
+            "count": 0,
+            "type": "HEALTH_FITNESS"
+          }
+        ],
+        "totalCount": 23
+      }
+    },
+    "getApiIdeaSideMenuOutput": {
+      "allPublicApiIdeas": {
+        "apiIdeas": [
+          {
+            "count": 54,
+            "type": "CRM"
+          },
+          {
+            "count": 1,
+            "type": "ACCOUNTING"
+          },
+          {
+            "count": 0,
+            "type": "ERP"
+          },
+          {
+            "count": 0,
+            "type": "PM"
+          },
+          {
+            "count": 0,
+            "type": "CMS"
+          },
+          {
+            "count": 0,
+            "type": "COMMUNICATION"
+          },
+          {
+            "count": 0,
+            "type": "ECOMMERCE"
+          },
+          {
+            "count": 0,
+            "type": "HRM"
+          },
+          {
+            "count": 0,
+            "type": "PAYMENT_GATEWAY"
+          },
+          {
+            "count": 0,
+            "type": "BILLING"
+          },
+          {
+            "count": 0,
+            "type": "FINANCE"
+          },
+          {
+            "count": 0,
+            "type": "EDUCATION"
+          },
+          {
+            "count": 0,
+            "type": "MEDICAL"
+          },
+          {
+            "count": 0,
+            "type": "MUSIC"
+          },
+          {
+            "count": 0,
+            "type": "NEWS"
+          },
+          {
+            "count": 0,
+            "type": "SOCIAL_NETWORKING"
+          },
+          {
+            "count": 0,
+            "type": "WEATHER"
+          },
+          {
+            "count": 0,
+            "type": "LIFESTYLE"
+          },
+          {
+            "count": 0,
+            "type": "PRODUCTIVITY"
+          },
+          {
+            "count": 0,
+            "type": "SPORTS"
+          },
+          {
+            "count": 0,
+            "type": "TRAVEL"
+          },
+          {
+            "count": 0,
+            "type": "FOOD"
+          },
+          {
+            "count": 0,
+            "type": "PHOTO_VIDEO"
+          },
+          {
+            "count": 0,
+            "type": "UTILITIES"
+          },
+          {
+            "count": 0,
+            "type": "DATA"
+          },
+          {
+            "count": 0,
+            "type": "AI"
+          },
+          {
+            "count": 0,
+            "type": "IOT"
+          },
+          {
+            "count": 0,
+            "type": "BLOCKCHAIN_CRYPTO"
+          },
+          {
+            "count": 0,
+            "type": "BUSINESS"
+          },
+          {
+            "count": 0,
+            "type": "REFERENCE"
+          },
+          {
+            "count": 0,
+            "type": "HEALTH_FITNESS"
+          }
+        ],
+        "totalCount": 55
+      },
+      "apisLinkedToProposals": {
+        "approved": {
+          "apiIdeas": [
+            {
+              "count": 3,
+              "type": "CRM"
+            },
+            {
+              "count": 0,
+              "type": "ERP"
+            },
+            {
+              "count": 0,
+              "type": "ACCOUNTING"
+            },
+            {
+              "count": 0,
+              "type": "PM"
+            },
+            {
+              "count": 0,
+              "type": "CMS"
+            },
+            {
+              "count": 0,
+              "type": "COMMUNICATION"
+            },
+            {
+              "count": 0,
+              "type": "ECOMMERCE"
+            },
+            {
+              "count": 0,
+              "type": "HRM"
+            },
+            {
+              "count": 0,
+              "type": "PAYMENT_GATEWAY"
+            },
+            {
+              "count": 0,
+              "type": "BILLING"
+            },
+            {
+              "count": 0,
+              "type": "FINANCE"
+            },
+            {
+              "count": 0,
+              "type": "EDUCATION"
+            },
+            {
+              "count": 0,
+              "type": "MEDICAL"
+            },
+            {
+              "count": 0,
+              "type": "MUSIC"
+            },
+            {
+              "count": 0,
+              "type": "NEWS"
+            },
+            {
+              "count": 0,
+              "type": "SOCIAL_NETWORKING"
+            },
+            {
+              "count": 0,
+              "type": "WEATHER"
+            },
+            {
+              "count": 0,
+              "type": "LIFESTYLE"
+            },
+            {
+              "count": 0,
+              "type": "PRODUCTIVITY"
+            },
+            {
+              "count": 0,
+              "type": "SPORTS"
+            },
+            {
+              "count": 0,
+              "type": "TRAVEL"
+            },
+            {
+              "count": 0,
+              "type": "FOOD"
+            },
+            {
+              "count": 0,
+              "type": "PHOTO_VIDEO"
+            },
+            {
+              "count": 0,
+              "type": "UTILITIES"
+            },
+            {
+              "count": 0,
+              "type": "DATA"
+            },
+            {
+              "count": 0,
+              "type": "AI"
+            },
+            {
+              "count": 0,
+              "type": "IOT"
+            },
+            {
+              "count": 0,
+              "type": "BLOCKCHAIN_CRYPTO"
+            },
+            {
+              "count": 0,
+              "type": "BUSINESS"
+            },
+            {
+              "count": 0,
+              "type": "REFERENCE"
+            },
+            {
+              "count": 0,
+              "type": "HEALTH_FITNESS"
+            }
+          ],
+          "totalCount": 3
+        },
+        "disapproved": {
+          "apiIdeas": [
+            {
+              "count": 0,
+              "type": "CRM"
+            },
+            {
+              "count": 0,
+              "type": "ERP"
+            },
+            {
+              "count": 0,
+              "type": "ACCOUNTING"
+            },
+            {
+              "count": 0,
+              "type": "PM"
+            },
+            {
+              "count": 0,
+              "type": "CMS"
+            },
+            {
+              "count": 0,
+              "type": "COMMUNICATION"
+            },
+            {
+              "count": 0,
+              "type": "ECOMMERCE"
+            },
+            {
+              "count": 0,
+              "type": "HRM"
+            },
+            {
+              "count": 0,
+              "type": "PAYMENT_GATEWAY"
+            },
+            {
+              "count": 0,
+              "type": "BILLING"
+            },
+            {
+              "count": 0,
+              "type": "FINANCE"
+            },
+            {
+              "count": 0,
+              "type": "EDUCATION"
+            },
+            {
+              "count": 0,
+              "type": "MEDICAL"
+            },
+            {
+              "count": 0,
+              "type": "MUSIC"
+            },
+            {
+              "count": 0,
+              "type": "NEWS"
+            },
+            {
+              "count": 0,
+              "type": "SOCIAL_NETWORKING"
+            },
+            {
+              "count": 0,
+              "type": "WEATHER"
+            },
+            {
+              "count": 0,
+              "type": "LIFESTYLE"
+            },
+            {
+              "count": 0,
+              "type": "PRODUCTIVITY"
+            },
+            {
+              "count": 0,
+              "type": "SPORTS"
+            },
+            {
+              "count": 0,
+              "type": "TRAVEL"
+            },
+            {
+              "count": 0,
+              "type": "FOOD"
+            },
+            {
+              "count": 0,
+              "type": "PHOTO_VIDEO"
+            },
+            {
+              "count": 0,
+              "type": "UTILITIES"
+            },
+            {
+              "count": 0,
+              "type": "DATA"
+            },
+            {
+              "count": 0,
+              "type": "AI"
+            },
+            {
+              "count": 0,
+              "type": "IOT"
+            },
+            {
+              "count": 0,
+              "type": "BLOCKCHAIN_CRYPTO"
+            },
+            {
+              "count": 0,
+              "type": "BUSINESS"
+            },
+            {
+              "count": 0,
+              "type": "REFERENCE"
+            },
+            {
+              "count": 0,
+              "type": "HEALTH_FITNESS"
+            }
+          ],
+          "totalCount": 3
+        },
+        "pending": {
+          "apiIdeas": [
+            {
+              "count": 0,
+              "type": "CRM"
+            },
+            {
+              "count": 0,
+              "type": "ERP"
+            },
+            {
+              "count": 0,
+              "type": "ACCOUNTING"
+            },
+            {
+              "count": 0,
+              "type": "PM"
+            },
+            {
+              "count": 0,
+              "type": "CMS"
+            },
+            {
+              "count": 0,
+              "type": "COMMUNICATION"
+            },
+            {
+              "count": 0,
+              "type": "ECOMMERCE"
+            },
+            {
+              "count": 0,
+              "type": "HRM"
+            },
+            {
+              "count": 0,
+              "type": "PAYMENT_GATEWAY"
+            },
+            {
+              "count": 0,
+              "type": "BILLING"
+            },
+            {
+              "count": 0,
+              "type": "FINANCE"
+            },
+            {
+              "count": 0,
+              "type": "EDUCATION"
+            },
+            {
+              "count": 0,
+              "type": "MEDICAL"
+            },
+            {
+              "count": 0,
+              "type": "MUSIC"
+            },
+            {
+              "count": 0,
+              "type": "NEWS"
+            },
+            {
+              "count": 0,
+              "type": "SOCIAL_NETWORKING"
+            },
+            {
+              "count": 0,
+              "type": "WEATHER"
+            },
+            {
+              "count": 0,
+              "type": "LIFESTYLE"
+            },
+            {
+              "count": 0,
+              "type": "PRODUCTIVITY"
+            },
+            {
+              "count": 0,
+              "type": "SPORTS"
+            },
+            {
+              "count": 0,
+              "type": "TRAVEL"
+            },
+            {
+              "count": 0,
+              "type": "FOOD"
+            },
+            {
+              "count": 0,
+              "type": "PHOTO_VIDEO"
+            },
+            {
+              "count": 0,
+              "type": "UTILITIES"
+            },
+            {
+              "count": 0,
+              "type": "DATA"
+            },
+            {
+              "count": 0,
+              "type": "AI"
+            },
+            {
+              "count": 0,
+              "type": "IOT"
+            },
+            {
+              "count": 0,
+              "type": "BLOCKCHAIN_CRYPTO"
+            },
+            {
+              "count": 0,
+              "type": "BUSINESS"
+            },
+            {
+              "count": 0,
+              "type": "REFERENCE"
+            },
+            {
+              "count": 0,
+              "type": "HEALTH_FITNESS"
+            }
+          ],
+          "totalCount": 0
+        }
+      },
+      "myApiIdeas": {
+        "apiIdeas": [
+          {
+            "count": 41,
+            "type": "CRM"
+          },
+          {
+            "count": 0,
+            "type": "ERP"
+          },
+          {
+            "count": 0,
+            "type": "ACCOUNTING"
+          },
+          {
+            "count": 0,
+            "type": "PM"
+          },
+          {
+            "count": 0,
+            "type": "CMS"
+          },
+          {
+            "count": 0,
+            "type": "COMMUNICATION"
+          },
+          {
+            "count": 0,
+            "type": "ECOMMERCE"
+          },
+          {
+            "count": 0,
+            "type": "HRM"
+          },
+          {
+            "count": 0,
+            "type": "PAYMENT_GATEWAY"
+          },
+          {
+            "count": 0,
+            "type": "BILLING"
+          },
+          {
+            "count": 0,
+            "type": "FINANCE"
+          },
+          {
+            "count": 0,
+            "type": "EDUCATION"
+          },
+          {
+            "count": 0,
+            "type": "MEDICAL"
+          },
+          {
+            "count": 0,
+            "type": "MUSIC"
+          },
+          {
+            "count": 0,
+            "type": "NEWS"
+          },
+          {
+            "count": 0,
+            "type": "SOCIAL_NETWORKING"
+          },
+          {
+            "count": 0,
+            "type": "WEATHER"
+          },
+          {
+            "count": 0,
+            "type": "LIFESTYLE"
+          },
+          {
+            "count": 0,
+            "type": "PRODUCTIVITY"
+          },
+          {
+            "count": 0,
+            "type": "SPORTS"
+          },
+          {
+            "count": 0,
+            "type": "TRAVEL"
+          },
+          {
+            "count": 0,
+            "type": "FOOD"
+          },
+          {
+            "count": 0,
+            "type": "PHOTO_VIDEO"
+          },
+          {
+            "count": 0,
+            "type": "UTILITIES"
+          },
+          {
+            "count": 0,
+            "type": "DATA"
+          },
+          {
+            "count": 0,
+            "type": "AI"
+          },
+          {
+            "count": 0,
+            "type": "IOT"
+          },
+          {
+            "count": 0,
+            "type": "BLOCKCHAIN_CRYPTO"
+          },
+          {
+            "count": 0,
+            "type": "BUSINESS"
+          },
+          {
+            "count": 0,
+            "type": "REFERENCE"
+          },
+          {
+            "count": 0,
+            "type": "HEALTH_FITNESS"
+          }
+        ],
+        "totalCount": 41
+      },
+      "myProposals": {
+        "apiIdeas": [
+          {
+            "count": 6,
+            "type": "CRM"
+          },
+          {
+            "count": 0,
+            "type": "ERP"
+          },
+          {
+            "count": 0,
+            "type": "ACCOUNTING"
+          },
+          {
+            "count": 0,
+            "type": "PM"
+          },
+          {
+            "count": 0,
+            "type": "CMS"
+          },
+          {
+            "count": 0,
+            "type": "COMMUNICATION"
+          },
+          {
+            "count": 0,
+            "type": "ECOMMERCE"
+          },
+          {
+            "count": 0,
+            "type": "HRM"
+          },
+          {
+            "count": 0,
+            "type": "PAYMENT_GATEWAY"
+          },
+          {
+            "count": 0,
+            "type": "BILLING"
+          },
+          {
+            "count": 0,
+            "type": "FINANCE"
+          },
+          {
+            "count": 0,
+            "type": "EDUCATION"
+          },
+          {
+            "count": 0,
+            "type": "MEDICAL"
+          },
+          {
+            "count": 0,
+            "type": "MUSIC"
+          },
+          {
+            "count": 0,
+            "type": "NEWS"
+          },
+          {
+            "count": 0,
+            "type": "SOCIAL_NETWORKING"
+          },
+          {
+            "count": 0,
+            "type": "WEATHER"
+          },
+          {
+            "count": 0,
+            "type": "LIFESTYLE"
+          },
+          {
+            "count": 0,
+            "type": "PRODUCTIVITY"
+          },
+          {
+            "count": 0,
+            "type": "SPORTS"
+          },
+          {
+            "count": 0,
+            "type": "TRAVEL"
+          },
+          {
+            "count": 0,
+            "type": "FOOD"
+          },
+          {
+            "count": 0,
+            "type": "PHOTO_VIDEO"
+          },
+          {
+            "count": 0,
+            "type": "UTILITIES"
+          },
+          {
+            "count": 0,
+            "type": "DATA"
+          },
+          {
+            "count": 0,
+            "type": "AI"
+          },
+          {
+            "count": 0,
+            "type": "IOT"
+          },
+          {
+            "count": 0,
+            "type": "BLOCKCHAIN_CRYPTO"
+          },
+          {
+            "count": 0,
+            "type": "BUSINESS"
+          },
+          {
+            "count": 0,
+            "type": "REFERENCE"
+          },
+          {
+            "count": 0,
+            "type": "HEALTH_FITNESS"
+          }
+        ],
+        "totalCount": 22
+      }
+    }    
+}

@@ -1,0 +1,23 @@
+.footer {
+    font-size: 0.7em;
+    color: #F979DA;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+.pc{
+    font-size: 17px;
+}  
+.ptext{
+    font-size: 25px;
+}
+a:link,
+a:visited {
+    color: #eee;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    color: #eee;
+    border-bottom: solid 1px #eee;
+}

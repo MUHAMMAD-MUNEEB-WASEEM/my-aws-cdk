@@ -1,0 +1,177 @@
+
+
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  API:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+        
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+         aws-access-key-id:  ${{ secrets.AWS_ACCESS_KEY_ID }}
+         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+         aws-region: us-east-1
+         
+         
+      - name: Installing Nodejs
+        uses: actions/setup-node@v2-beta
+        with:
+           node-version: '12'
+           
+      - name: JAVA Setup
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt' # See 'Supported distributions' for available options
+          java-version: '11'
+          
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v4
+        with:
+          maven-version: 3.5.4
+
+           
+           
+      - name: Installing AWS-CDK
+        run: npm install -g aws-cdk
+        
+      - name: Install Dependencies
+        run: |
+          cd neptune_api
+          npm i
+          cd lambda-layer/nodejs
+          npm i
+          
+          
+      - name: Build Typescript
+        run: |
+          cd neptune_api
+          npm run build
+          
+          
+#       - name: Deploy Test Stack
+#         run: |
+#           cd neptune_api
+#           DEPLOY_ENV=test cdk deploy --require-approval never
+      
+      # - name: Store ENV from AWS SecretManager
+      #   uses: say8425/aws-secrets-manager-actions@v2
+      #   with:
+      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     AWS_DEFAULT_REGION: us-east-2
+      #     SECRET_NAME: api_info
+
+
+      # - name: 'Call signup API'
+      #   uses: indiesdev/curl@v1
+      #   id: signup
+      #   with:
+      #     url: ${{ env.signup_url }}
+      #     method: 'POST'
+      #     accept: 200
+      #     timeout: 10000
+      #     body: '{ "email": "uzairbangee@gmail.com",  "password": "Uzair12345!", "username": "uzairbangee" }'
+
+
+      # - name: 'Call login API'
+      #   uses: indiesdev/curl@v1
+      #   id: login
+      #   with:
+      #     url: ${{ env.login_url }}
+      #     method: 'POST'
+      #     accept: 200
+      #     timeout: 10000
+      #     body: '{ "password": "Uzair12345!", "username": "uzairbangee" }'
+
+
+      # - name: 'Use response'
+      #   run: echo ${{ steps.login.outputs.response.data }}
+          
+      # - name: Run Api tests
+      #   run: |
+      #     cd api-testing
+      #     mvn test -Dkarate.env=dev -Dkarate.API_KEY=$api_key -Dkarate.API_URL=$url
+        
+          
+      # - name: Destroy Tk destroy --forest Stack
+      #   run: |
+      #     cd neptune_api
+      #     DEPLOY_ENV=test cdk destroy --force
+          
+          
+#       - name: Deploy Live Stack
+#         id: cdk-main
+#         run: |
+#           cd neptune_api
+#           DEPLOY_ENV=main cdk deploy --require-approval never
+
+
+#       - name: Read secrets from AWS Secrets Manager into environment variables
+#         uses: abhilash1in/aws-secrets-manager-action@v1.0.1
+#         id: secret-key
+#         with:
+#           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           aws-region: us-east-2
+#           secrets: |
+#             api_url
+#           # parse-json: true
+        
+#       - name: Get result API
+#         run: echo "${{api_url}}"
+
+          
+          
+#   Website:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v2
+#       - name: ls
+#         run: ls
+#       - name: Configure AWS Credentials
+#         uses: aws-actions/configure-aws-credentials@v1
+#         with:
+#          aws-access-key-id:  ${{ secrets.AWS_ACCESS_KEY_ID }}
+#          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#          aws-region: us-east-1
+#       - name: Installing Nodejs
+#         uses: actions/setup-node@v2-beta
+#         with:
+#            node-version: '12'
+#       - name: Installing AWS-CDK
+#         run: npm install -g aws-cdk@1.87.1
+
+#       - name: Installing Gatsby
+#         run: npm install -g gatsby-cli
+
+#       - name: Installing Frontend dependencies and run test
+#         run: cd panacloud_website && npm install && cd cdk && npm install && cd .. && npm run test
+
+
+#       - name : build Frontend
+#         run : cd panacloud_website && npm run build && cd cdk && npm run build && cdk deploy --require-approval never
+
+
+#       - name: cdk deploy
+#         uses: youyo/aws-cdk-github-actions@v2
+#         with:
+#           cdk_subcommand: 'deploy'
+#           cdk_args: '--require-approval never'
+#           working_dir: 'panacloud_api/infrastructure/'
+#           actions_comment: false
+#         env:
+#           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           AWS_DEFAULT_REGION: 'us-east-2'

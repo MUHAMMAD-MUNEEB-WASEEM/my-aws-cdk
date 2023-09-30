@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "typeRoots": ["./node_modules/@types"]
+  }
+}

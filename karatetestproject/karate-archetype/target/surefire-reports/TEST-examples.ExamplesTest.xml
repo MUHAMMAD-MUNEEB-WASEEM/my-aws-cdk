@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="examples.ExamplesTest" time="4.897" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Github_1\Aws\AWS CDK\karatetestproject\karate-archetype\target\test-classes;C:\Github_1\Aws\AWS CDK\karatetestproject\karate-archetype\target\classes;C:\Users\abc\.m2\repository\com\intuit\karate\karate-junit5\1.0.1\karate-junit5-1.0.1.jar;C:\Users\abc\.m2\repository\com\intuit\karate\karate-core\1.0.1\karate-core-1.0.1.jar;C:\Users\abc\.m2\repository\org\graalvm\js\js-scriptengine\21.0.0\js-scriptengine-21.0.0.jar;C:\Users\abc\.m2\repository\org\graalvm\sdk\graal-sdk\21.0.0\graal-sdk-21.0.0.jar;C:\Users\abc\.m2\repository\org\graalvm\js\js\21.0.0\js-21.0.0.jar;C:\Users\abc\.m2\repository\org\graalvm\regex\regex\21.0.0\regex-21.0.0.jar;C:\Users\abc\.m2\repository\org\graalvm\truffle\truffle-api\21.0.0\truffle-api-21.0.0.jar;C:\Users\abc\.m2\repository\com\ibm\icu\icu4j\67.1\icu4j-67.1.jar;C:\Users\abc\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\abc\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\abc\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\abc\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\abc\.m2\repository\com\jayway\jsonpath\json-path\2.5.0\json-path-2.5.0.jar;C:\Users\abc\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\abc\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\abc\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\abc\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\abc\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\abc\.m2\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;C:\Users\abc\.m2\repository\de\siegmar\fastcsv\1.0.4\fastcsv-1.0.4.jar;C:\Users\abc\.m2\repository\info\picocli\picocli\4.5.2\picocli-4.5.2.jar;C:\Users\abc\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\abc\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\abc\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\abc\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\abc\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\abc\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Karachi"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\abc\AppData\Local\Temp\surefire8812766040991730083\surefirebooter16529172689866637178.jar C:\Users\abc\AppData\Local\Temp\surefire8812766040991730083 2021-04-23T13-09-37_524-jvmRun1 surefire11699120731021135558tmp surefire_012222013374057013426tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Github_1\Aws\AWS CDK\karatetestproject\karate-archetype\target\test-classes;C:\Github_1\Aws\AWS CDK\karatetestproject\karate-archetype\target\classes;C:\Users\abc\.m2\repository\com\intuit\karate\karate-junit5\1.0.1\karate-junit5-1.0.1.jar;C:\Users\abc\.m2\repository\com\intuit\karate\karate-core\1.0.1\karate-core-1.0.1.jar;C:\Users\abc\.m2\repository\org\graalvm\js\js-scriptengine\21.0.0\js-scriptengine-21.0.0.jar;C:\Users\abc\.m2\repository\org\graalvm\sdk\graal-sdk\21.0.0\graal-sdk-21.0.0.jar;C:\Users\abc\.m2\repository\org\graalvm\js\js\21.0.0\js-21.0.0.jar;C:\Users\abc\.m2\repository\org\graalvm\regex\regex\21.0.0\regex-21.0.0.jar;C:\Users\abc\.m2\repository\org\graalvm\truffle\truffle-api\21.0.0\truffle-api-21.0.0.jar;C:\Users\abc\.m2\repository\com\ibm\icu\icu4j\67.1\icu4j-67.1.jar;C:\Users\abc\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\abc\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\abc\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\abc\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\abc\.m2\repository\com\jayway\jsonpath\json-path\2.5.0\json-path-2.5.0.jar;C:\Users\abc\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\abc\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\abc\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\abc\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\abc\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\abc\.m2\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;C:\Users\abc\.m2\repository\de\siegmar\fastcsv\1.0.4\fastcsv-1.0.4.jar;C:\Users\abc\.m2\repository\info\picocli\picocli\4.5.2\picocli-4.5.2.jar;C:\Users\abc\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\abc\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\abc\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\abc\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\abc\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\abc\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\abc"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-15.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Github_1\Aws\AWS CDK\karatetestproject\karate-archetype"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\abc\AppData\Local\Temp\surefire8812766040991730083\surefirebooter16529172689866637178.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="15.0.2+7-27"/>
+    <property name="user.name" value="abc"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\abc\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\abc\AppData\Local\Temp\"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="user.dir" value="C:\Github_1\Aws\AWS CDK\karatetestproject\karate-archetype"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Tesseract-OCR;C:\Program Files (x86)\Brackets\command;C:\Program Files\MATLAB\R2019a\runtime\win64;C:\Program Files\MATLAB\R2019a\bin;C:\Program Files\MATLAB\R2019a\polyspace\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files\apache-maven-3.8.1\bin;C:\Users\abc\.cargo\bin;C:\Users\abc\Anaconda3;C:\Users\abc\Anaconda3\Library\mingw-w64\bin;C:\Users\abc\Anaconda3\Library\usr\bin;C:\Users\abc\Anaconda3\Library\bin;C:\Users\abc\Anaconda3\Scripts;C:\Users\abc\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\abc\AppData\Local\Programs\Python\Python37-32\;C:\Users\abc\AppData\Local\Microsoft\WindowsApps;C:\Users\abc\AppData\Local\atom\bin;C:\Program Files\Tesseract-OCR;C:\Users\abc\AppData\Local\Microsoft\WindowsApps;C:\Users\abc\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\abc\AppData\Local\GitHubDesktop\bin;C:\Users\abc\AppData\Roaming\npm;C:\Users\abc\AppData\Local\Yarn\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="15.0.2+7-27"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="testParallel" classname="examples.ExamplesTest" time="4.881">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 719, url: https://jsonplaceholder.typicode.com/users, response: &#10;&lt;!DOCTYPE html&gt;&#10;&lt;html&gt;&#10;&lt;head&gt;&#10;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;No such app&lt;/title&gt;&#10;&lt;style media=&quot;screen&quot;&gt;&#10;		  html,body,iframe {&#10;			margin: 0;&#10;			padding: 0;&#10;		  }&#10;		  html,body {&#10;			height: 100%;&#10;			overflow: hidden;&#10;		  }&#10;		  iframe {&#10;			width: 100%;&#10;			height: 100%;&#10;			border: 0;&#10;		  }&#10;		&lt;/style&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;iframe src=&quot;//www.herokucdn.com/error-pages/no-such-app.html&quot;&gt;&lt;/iframe&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;classpath:examples/users/users.feature:10 ==&gt; expected: &lt;0&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 719, url: https://jsonplaceholder.typicode.com/users, response: 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>No such app</title>
+<style media="screen">
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		</style>
+</head>
+<body>
+<iframe src="//www.herokucdn.com/error-pages/no-such-app.html"></iframe>
+</body>
+</html>
+classpath:examples/users/users.feature:10 ==> expected: <0> but was: <1>
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:16)
+]]></failure>
+    <system-out><![CDATA[13:09:39.648 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:09:39.656 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1619165379648
+13:09:40.680 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:09:41.160 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:09:41.903 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 719
+1 < 404
+1 < Date: Fri, 23 Apr 2021 08:09:41 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=43200
+1 < CF-Cache-Status: HIT
+1 < Age: 16869
+1 < cf-request-id: 099f601cfd0000c37c36951000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=NynfdLgJQO0QZbMGPV7esVkGbOyZpEeyfxfaLstwcRUpbs4q8DNBnkKXXYatdM8SyZdte0CpehYix6QA%2BSlF0zCdabBPo9kkafnP8ugJAL36S9AXXijrv6NxUW1H"}]}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 64459c74ce50c37c-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < Set-Cookie: __cfduid=d3d4182702a0f5b692acbfa0df448948f1619165381; Max-Age=1621757381000; Expires=Sat, 03 Oct 53412 09:33:01 GMT; Domain=typicode.com
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>No such app</title>
+<style media="screen">
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		</style>
+</head>
+<body>
+<iframe src="//www.herokucdn.com/error-pages/no-such-app.html"></iframe>
+</body>
+</html>
+13:09:41.919 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/users.feature:10
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 719, url: https://jsonplaceholder.typicode.com/users, response: 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>No such app</title>
+<style media="screen">
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		</style>
+</head>
+<body>
+<iframe src="//www.herokucdn.com/error-pages/no-such-app.html"></iframe>
+</body>
+</html>
+classpath:examples/users/users.feature:10
+---------------------------------------------------------
+feature: classpath:examples/users/users.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 1.1583
+---------------------------------------------------------
+
+13:09:42.892 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
+Karate version: 1.0.1
+======================================================
+elapsed:   4.07 | threads:    5 | thread time: 1.16 
+features:     1 | skipped:    0 | efficiency: 0.06
+scenarios:    1 | passed:     0 | failed: 1
+======================================================
+>>> failed features:
+status code was: 404, expected: 200, response time in milliseconds: 719, url: https://jsonplaceholder.typicode.com/users, response: 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>No such app</title>
+<style media="screen">
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		</style>
+</head>
+<body>
+<iframe src="//www.herokucdn.com/error-pages/no-such-app.html"></iframe>
+</body>
+</html>
+classpath:examples/users/users.feature:10
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.0.1
+file:///C:/Github_1/Aws/AWS%20CDK/karatetestproject/karate-archetype/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

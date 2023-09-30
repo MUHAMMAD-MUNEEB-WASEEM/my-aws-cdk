@@ -1,0 +1,9 @@
+*.js
+!jest.config.js
+!hackolade-schema-elements-name-generator-script.js
+*.d.ts
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out

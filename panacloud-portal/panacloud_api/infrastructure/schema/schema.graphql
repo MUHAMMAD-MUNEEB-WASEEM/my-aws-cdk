@@ -1,0 +1,90 @@
+type Api {
+  pk1: String!
+  sk: String!
+  type: String!
+  description: String!
+  pk: String!
+  title: String!
+  image_url: String
+  schema_uri: String
+  created_by: String
+  secret_key: String
+}
+
+type ApiSubscription {
+  subscriptionDate: String
+  sk: String
+  pk1: String
+  pk: String
+  type: String
+  subscriptionId: String
+  token: String
+}
+
+type ApiSubscriptionWithDetails {
+  subscriptionDate: String
+  apiId: String
+  devId: String
+  type: String
+  subscriptionId: String
+  token: String
+  apiKey: String
+  apiTitle: String
+  apiDescription: String
+}
+
+type ApiCreation {
+  sk: String
+  pk: String
+  type: String
+}
+
+type Dev {
+  pk: String!
+  sk: String!
+  type: String!
+  address: String!
+  email: String!
+  name: String!
+  phone_number: String!
+}
+
+type ApiSubscriptionResponse {
+  apiKey: String!
+  jwt: String!
+  subscriptionId: String!
+}
+
+type Query {
+  fetchAllPublicApis: [Api]
+  fetchAllUnderdevelopmentApis: [Api]
+  fetchUnderdevelopmentApisForDev(devId: String!): [Api]
+  fetchPublishedApisForDev(devId: String!): [Api]
+  fetchCreatedApis(devId: String!): [ApiCreation]
+  fetchApiDetails(apiId: String!): Api
+  fetchDevDetails(devId: String!): Dev
+  fetchSubscriptions(devId: String!): [ApiSubscription]
+  fetchSubscriptionsWithDetails(devId: String!): [ApiSubscriptionWithDetails]
+  fetchSubscribers(apiId: String!): [ApiSubscription]
+  getTokenForKey(apiKey: String!): [ApiSubscription]
+}
+
+type Mutation {
+  createApi(
+    devId: String!
+    title: String!
+    description: String!
+    image_url: String
+    schema_uri: String
+  ): String!
+  createDevApi(
+    devId: String!
+    title: String!
+    description: String!
+    image_url: String
+    schema_uri: String
+  ): String!
+
+  subscribeToApi(devId: String!, apiId: String!): ApiSubscriptionResponse
+  publishApi(apiId: String!): String
+}

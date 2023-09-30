@@ -1,0 +1,90 @@
+type User {
+  id: ID!
+  userName:String!
+}
+type Review{
+  id: ID!
+  restaurantName:String!
+  text: String!
+  rating: Int!
+  city:String!
+  restaurantId:String!
+  personId:String!
+  date:String!
+}
+type Restaurant{
+	name: String!
+	city: String!
+  rating: Int!
+	cuisine: String!
+	id: ID!
+}
+
+type Friendship{
+  id:ID!
+  friendFrom:String!
+  friendWith:String!
+}
+
+input UserInput {
+  id: ID!
+  userName:String!
+}
+
+input ReviewInput{
+  id: ID!
+  restaurantName:String!
+	text: String!
+	rating: Int!
+  city:String!
+  restaurantId:String!
+  personId:String!
+}
+
+input RestaurantInput{
+  name: String!
+	city: String!
+  rating: Int!
+	cuisine: String!
+  id: ID!
+}
+input FriendshipInput{
+  id:ID!
+  friendFrom:String!
+  friendWith:String!
+}
+
+
+type Query {
+  userFriendList(userName:String!): [User]
+  friendofFriend(userName:String!):[User]
+  recommendByFriend(userName:String!):[Restaurant]
+  restaurantRatedByFriend(userName:String!):[Restaurant]
+  restaurantBycuisine(cuisine:String!):[Restaurant]
+  newestReview(restaurantName:String!):[Review]
+  nearestHRRestaurant(city:String!):[Restaurant]
+  getReview:[Review]
+  getRestaurant:[Restaurant]
+
+}
+
+type Mutation {
+  addUser(user: UserInput!): User
+  addReviews(review:ReviewInput!):Review
+  addRestaurant(restaurant: RestaurantInput!):Restaurant
+  createFriendShip(friendship:FriendshipInput!):Friendship
+  addReview(user:UserInput!):User
+  recommendRestaurant(user:UserInput!,restaurant:RestaurantInput!):Restaurant
+  about(restaurant:RestaurantInput!):Restaurant
+}
+
+type Subscription {
+  onAddUser: User
+    @aws_subscribe(mutations: ["addUser"])
+  onAddReviews : Review
+    @aws_subscribe(mutations: ["addReviews"])
+  onAddRestaurant: Restaurant
+    @aws_subscribe(mutations: ["addRestaurant"])
+  onCreateFriendShip: Friendship
+    @aws_subscribe(mutations: ["createFriendShip"])
+}

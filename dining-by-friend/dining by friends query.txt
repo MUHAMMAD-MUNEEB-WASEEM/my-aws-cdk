@@ -1,0 +1,35 @@
+For Gremlify:
+
+1. g.addV("Restaurant").property('id', '1').property("Name", "KarachiRestaurant").property("address", 'Defence').property('cuisine','fastfood')
+
+2. g.addV("Person").property('id', '2').property("Name", "muneeb")
+
+3. g.addV("Cuisine").property('id', '3').property("Dish1", "Burger").property("Dish2", "Sandwich")
+
+4. g.addV("Review").property('id', '4')
+
+USing TinkerPop:
+Without Attributes:
+
+Vertices:
+
+1. :> g.addV("Restaurant").property(id, '1') 
+
+2. :> g.addV("Cuisine").property(id, '2')
+
+3. :> g.addV("Person").property(id, '3')
+
+4. :> g.addV("Review").property(id, '4')
+
+Edges:
+ 
+1. :> g.addE("Serves").from(g.V().has(id,'1')).to(g.V().has(id,'2'))
+
+2. :> g.addE("Writes").from(g.V().has(id,'3')).to(g.V().has(id,'4'))
+
+3. :> g.addE("Are About").from(g.V().has(id,'4')).to(g.V().has(id,'1'))
+
+4. :> g.addE("Rates").from(g.V().has(id,'3')).to(g.V().has(id,'4'))
+
+5. :> g.addE("Friends").from(g.V().has(id,'3')).to(g.V().has(id,'3'))
+

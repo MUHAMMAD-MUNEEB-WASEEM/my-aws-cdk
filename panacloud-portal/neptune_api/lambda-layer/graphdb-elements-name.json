@@ -1,0 +1,474 @@
+{
+  "vertex": {
+    "user": {
+      "L": "user",
+      "prop": {
+        "pictureUrl": {
+          "N": "pictureUrl"
+        },
+        "headline": {
+          "N": "headline"
+        },
+        "id": {
+          "N": "id"
+        },
+        "secretText": {
+          "N": "secretText"
+        },
+        "phoneNumber": {
+          "N": "phoneNumber"
+        },
+        "city": {
+          "N": "city"
+        },
+        "country": {
+          "N": "country"
+        },
+        "email": {
+          "N": "email"
+        },
+        "dateCreated": {
+          "N": "dateCreated"
+        },
+        "firstName": {
+          "N": "firstName"
+        },
+        "lastName": {
+          "N": "lastName"
+        }
+      }
+    },
+    "userType": {
+      "L": "userType",
+      "prop": {
+        "id": {
+          "N": "id",
+          "V": {
+            "userTypeNormal": "userTypeNormal",
+            "userTypeAdmin": "userTypeAdmin"
+          }
+        },
+        "name": {
+          "N": "name",
+          "V": {
+            "NORMAL": "NORMAL",
+            "ADMIN": "ADMIN"
+          }
+        }
+      }
+    },
+    "profileStatus": {
+      "L": "profileStatus",
+      "prop": {
+        "id": {
+          "N": "id",
+          "V": {
+            "profileStatusPublished": "profileStatusPublished",
+            "profileStatusUnpublished": "profileStatusUnpublished"
+          }
+        },
+        "name": {
+          "N": "name",
+          "V": {
+            "PUBLISHED": "PUBLISHED",
+            "UNPUBLISHED": "UNPUBLISHED"
+          }
+        }
+      }
+    },
+    "company": {
+      "L": "company",
+      "prop": {
+        "id": {
+          "N": "id"
+        },
+        "name": {
+          "N": "name"
+        },
+        "city": {
+          "N": "city"
+        },
+        "country": {
+          "N": "country"
+        },
+        "email": {
+          "N": "email"
+        },
+        "phoneNumber": {
+          "N": "phoneNumber"
+        },
+        "pictureUrl": {
+          "N": "pictureUrl"
+        },
+        "headline": {
+          "N": "headline"
+        },
+        "secretText": {
+          "N": "secretText"
+        }
+      }
+    },
+    "graphQlApi": {
+      "L": "graphQlApi",
+      "prop": {
+        "title": {
+          "N": "title"
+        },
+        "shortDescription": {
+          "N": "shortDescription"
+        },
+        "imageUrl": {
+          "N": "imageUrl"
+        },
+        "id": {
+          "N": "id"
+        },
+        "graphQlSchema": {
+          "N": "graphQlSchema"
+        },
+        "apiUrl": {
+          "N": "apiUrl"
+        },
+        "secretText": {
+          "N": "secretText"
+        },
+        "apiToken": {
+          "N": "apiToken"
+        },
+        "longDescription": {
+          "N": "longDescription"
+        }
+      }
+    },
+    "openApi": {
+      "L": "openApi",
+      "prop": {
+        "title": {
+          "N": "title"
+        },
+        "shortDescription": {
+          "N": "shortDescription"
+        },
+        "imageUrl": {
+          "N": "imageUrl"
+        },
+        "id": {
+          "N": "id"
+        },
+        "apiRootUrl": {
+          "N": "apiRootUrl"
+        },
+        "openApiDef": {
+          "N": "openApiDef"
+        },
+        "secretText": {
+          "N": "secretText"
+        },
+        "apiToken": {
+          "N": "apiToken"
+        },
+        "longDescription": {
+          "N": "longDescription"
+        }
+      }
+    },
+    "apiType": {
+      "L": "apiType",
+      "prop": {
+        "id": {
+          "N": "id",
+          "V": {
+            "apiType_CRM": "apiType_CRM",
+            "apiType_ERP": "apiType_ERP",
+            "apiType_ACCOUNTING": "apiType_ACCOUNTING",
+            "apiType_PM": "apiType_PM",
+            "apiType_CMS": "apiType_CMS",
+            "apiType_COMMUNICATION": "apiType_COMMUNICATION",
+            "apiType_ECOMMERCE": "apiType_ECOMMERCE",
+            "apiType_HRM": "apiType_HRM",
+            "apiType_PAYMENT_GATEWAY": "apiType_PAYMENT_GATEWAY",
+            "apiType_BILLING": "apiType_BILLING",
+            "apiType_FINANCE": "apiType_FINANCE",
+            "apiType_EDUCATION": "apiType_EDUCATION",
+            "apiType_MEDICAL": "apiType_MEDICAL",
+            "apiType_MUSIC": "apiType_MUSIC",
+            "apiType_NEWS": "apiType_NEWS",
+            "apiType_SOCIAL_NETWORKING": "apiType_SOCIAL_NETWORKING",
+            "apiType_WEATHER": "apiType_WEATHER",
+            "apiType_LIFESTYLE": "apiType_LIFESTYLE",
+            "apiType_PRODUCTIVITY": "apiType_PRODUCTIVITY",
+            "apiType_SPORTS": "apiType_SPORTS",
+            "apiType_TRAVEL": "apiType_TRAVEL",
+            "apiType_FOOD": "apiType_FOOD",
+            "apiType_PHOTO_VIDEO": "apiType_PHOTO_VIDEO",
+            "apiType_UTILITIES": "apiType_UTILITIES",
+            "apiType_DATA": "apiType_DATA",
+            "apiType_AI": "apiType_AI",
+            "apiType_IOT": "apiType_IOT",
+            "apiType_BLOCKCHAIN_CRYPTO": "apiType_BLOCKCHAIN_CRYPTO",
+            "apiType_BUSINESS": "apiType_BUSINESS",
+            "apiType_REFERENCE": "apiType_REFERENCE",
+            "apiType_HEALTH_FITNESS": "apiType_HEALTH_FITNESS"
+          }
+        },
+        "name": {
+          "N": "name",
+          "V": {
+            "CRM": "CRM",
+            "ERP": "ERP",
+            "ACCOUNTING": "ACCOUNTING",
+            "PM": "PM",
+            "CMS": "CMS",
+            "COMMUNICATION": "COMMUNICATION",
+            "ECOMMERCE": "ECOMMERCE",
+            "HRM": "HRM",
+            "PAYMENT_GATEWAY": "PAYMENT_GATEWAY",
+            "BILLING": "BILLING",
+            "FINANCE": "FINANCE",
+            "EDUCATION": "EDUCATION",
+            "MEDICAL": "MEDICAL",
+            "MUSIC": "MUSIC",
+            "NEWS": "NEWS",
+            "SOCIAL_NETWORKING": "SOCIAL_NETWORKING",
+            "WEATHER": "WEATHER",
+            "LIFESTYLE": "LIFESTYLE",
+            "PRODUCTIVITY": "PRODUCTIVITY",
+            "SPORTS": "SPORTS",
+            "TRAVEL": "TRAVEL",
+            "FOOD": "FOOD",
+            "PHOTO_VIDEO": "PHOTO_VIDEO",
+            "UTILITIES": "UTILITIES",
+            "DATA": "DATA",
+            "AI": "AI",
+            "IOT": "IOT",
+            "BLOCKCHAIN_CRYPTO": "BLOCKCHAIN_CRYPTO",
+            "BUSINESS": "BUSINESS",
+            "REFERENCE": "REFERENCE",
+            "HEALTH_FITNESS": "HEALTH_FITNESS"
+          }
+        }
+      }
+    },
+    "apiStatus": {
+      "L": "apiStatus",
+      "prop": {
+        "id": {
+          "N": "id",
+          "V": {
+            "apiStatusUnderdevelopment": "apiStatusUnderdevelopment",
+            "apiStatusPublic": "apiStatusPublic",
+            "apiStatusPrivate": "apiStatusPrivate"
+          }
+        },
+        "name": {
+          "N": "name",
+          "V": {
+            "PRIVATE": "PRIVATE",
+            "PUBLIC": "PUBLIC",
+            "UNDERDEVELOPMENT": "UNDERDEVELOPMENT"
+          }
+        }
+      }
+    },
+    "subscription": {
+      "L": "subscription",
+      "prop": {
+        "id": {
+          "N": "id"
+        },
+        "subscriptionToken": {
+          "N": "subscriptionToken"
+        },
+        "paymentDayEveryMonth": {
+          "N": "paymentDayEveryMonth"
+        }
+      }
+    },
+    "subscriptionStatus": {
+      "L": "subscriptionStatus",
+      "prop": {
+        "id": {
+          "N": "id",
+          "V": {
+            "subscriptionStatusActive": "subscriptionStatusActive",
+            "subscriptionStatusInactive": "subscriptionStatusInactive"
+          }
+        },
+        "name": {
+          "N": "name",
+          "V": {
+            "ACTIVE": "ACTIVE",
+            "INACTIVE": "INACTIVE"
+          }
+        }
+      }
+    },
+    "socialMediaPost": {
+      "L": "socialMediaPost",
+      "prop": {
+        "id": {
+          "N": "id"
+        },
+        "text": {
+          "N": "text"
+        },
+        "image_url": {
+          "N": "image_url"
+        }
+      }
+    },
+    "comment": {
+      "L": "comment",
+      "prop": {
+        "id": {
+          "N": "id"
+        },
+        "text": {
+          "N": "text"
+        }
+      }
+    },
+    "subscriptionType": {
+      "L": "subscriptionType",
+      "prop": {
+        "id": {
+          "N": "id",
+          "V": {
+            "subscriptionType_normal": "subscriptionType_normal",
+            "subscriptionType_testing": "subscriptionType_testing"
+          }
+        },
+        "name": {
+          "N": "name",
+          "V": {
+            "NORMAL": "NORMAL",
+            "TESTING": "TESTING"
+          }
+        }
+      }
+    },
+    "apiReview": {
+      "L": "apiReview",
+      "prop": {
+        "id": {
+          "N": "id"
+        },
+        "text": {
+          "N": "text"
+        },
+        "stars": {
+          "N": "stars"
+        },
+        "title": {
+          "N": "title"
+        }
+      }
+    }
+  },
+  "edge": {
+    "follows": {
+      "L": "follows",
+      "prop": {
+        "timeStamp": {
+          "N": "timeStamp"
+        }
+      }
+    },
+    "has_type": {
+      "L": "has_type",
+      "prop": {}
+    },
+    "has_status": {
+      "L": "has_status",
+      "prop": {
+        "timeStamp": {
+          "N": "timeStamp"
+        }
+      }
+    },
+    "OWNER": {
+      "L": "OWNER",
+      "prop": {
+        "timeStamp": {
+          "N": "timeStamp"
+        }
+      }
+    },
+    "DEVELOPER": {
+      "L": "DEVELOPER",
+      "prop": {
+        "timeStamp": {
+          "N": "timeStamp"
+        }
+      }
+    },
+    "OTHER_EMPLOYEE": {
+      "L": "OTHER_EMPLOYEE",
+      "prop": {
+        "timeStamp": {
+          "N": "timeStamp"
+        }
+      }
+    },
+    "creates": {
+      "L": "creates",
+      "prop": {
+        "timeStamp": {
+          "N": "timeStamp"
+        }
+      }
+    },
+    "subscribes": {
+      "L": "subscribes",
+      "prop": {
+        "timeStamp": {
+          "N": "timeStamp"
+        }
+      }
+    },
+    "subscription_for": {
+      "L": "subscription_for",
+      "prop": {}
+    },
+    "posts": {
+      "L": "posts",
+      "prop": {
+        "timeStamp": {
+          "N": "timeStamp"
+        }
+      }
+    },
+    "liked_by": {
+      "L": "liked_by",
+      "prop": {
+        "timeStamp": {
+          "N": "timeStamp"
+        }
+      }
+    },
+    "has": {
+      "L": "has",
+      "prop": {}
+    },
+    "commented_by": {
+      "L": "commented_by",
+      "prop": {
+        "timeStamp": {
+          "N": "timeStamp"
+        }
+      }
+    },
+    "reviewed_by": {
+      "L": "reviewed_by",
+      "prop": {
+        "timeStamp": {
+          "N": "timeStamp"
+        }
+      }
+    },
+    "review_for": {
+      "L": "review_for",
+      "prop": {}
+    }
+  }
+}

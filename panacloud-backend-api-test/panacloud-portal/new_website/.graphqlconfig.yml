@@ -1,0 +1,15 @@
+projects:
+  main-graphDbNewApi:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/graphql/API.ts
+        docsFilePath: src/graphql
+        region: eu-west-2
+        apiId: jd2fiyu7g5ebfk3vwiegrxv5zm
+        maxDepth: 2

@@ -1,0 +1,754 @@
+{
+  "version": "9.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "ServerStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "ServerStack.template.json"
+      },
+      "metadata": {
+        "/ServerStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.a623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30",
+              "id": "a623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30",
+              "packaging": "zip",
+              "sourceHash": "a623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30",
+              "s3BucketParameter": "AssetParametersa623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30S3Bucket4E815BE5",
+              "s3KeyParameter": "AssetParametersa623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30S3VersionKey56374F1B",
+              "artifactHashParameter": "AssetParametersa623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30ArtifactHashC8CB18CF"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "ServerStack.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:151:40)",
+              "AssetCode.bind (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:251:20)",
+              "new Function (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:79:24)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiF70053CD",
+            "trace": [
+              "new GraphqlApi (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi.ts:416:16)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:14:17)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/Schema": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiSchema510EECD7",
+            "trace": [
+              "Schema.bind (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\schema.ts:80:21)",
+              "new GraphqlApi (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi.ts:431:39)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:14:17)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/DefaultApiKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiDefaultApiKeyF991C37B",
+            "trace": [
+              "GraphqlApi.createAPIKey (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi.ts:571:12)",
+              "new GraphqlApi (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi.ts:437:34)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:14:17)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/theTodoTable/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApitheTodoTableServiceRole9AB26CF4",
+            "trace": [
+              "new Role (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "new BaseDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:111:47)",
+              "new BackedDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:158:5)",
+              "new DynamoDbDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:208:5)",
+              "GraphqlApi.addDynamoDbDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi-base.ts:165:12)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:34:25)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/theTodoTable/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApitheTodoTableServiceRoleDefaultPolicyC23D3152",
+            "trace": [
+              "new Policy (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:368:28)",
+              "Function.addToPrincipal (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:168:61)",
+              "Table.combinedGrant (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:910:29)",
+              "Table.grantReadWriteData (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:685:17)",
+              "new DynamoDbDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:219:19)",
+              "GraphqlApi.addDynamoDbDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi-base.ts:165:12)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:34:25)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/theTodoTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApitheTodoTable61E9D7D1",
+            "trace": [
+              "new BaseDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:114:15)",
+              "new BackedDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:158:5)",
+              "new DynamoDbDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:208:5)",
+              "GraphqlApi.addDynamoDbDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi-base.ts:165:12)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:34:25)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/theTodoTable/QuerytodosResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApitheTodoTableQuerytodosResolverBA5337B3",
+            "trace": [
+              "new Resolver (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\resolver.ts:89:21)",
+              "DynamoDbDataSource.createResolver (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:129:12)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:36:13)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/ds/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApidsServiceRoleADC7D124",
+            "trace": [
+              "new Role (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "new BaseDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:111:47)",
+              "new BackedDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:158:5)",
+              "new HttpDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:266:5)",
+              "GraphqlApi.addHttpDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi-base.ts:181:12)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:44:24)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/ds/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApidsServiceRoleDefaultPolicyE5E18D6D",
+            "trace": [
+              "new Policy (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:368:28)",
+              "Function.addToPrincipal (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:168:61)",
+              "Function.grantPutEvents (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-events\\lib\\event-bus.ts:150:22)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:56:21)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/ds/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Apids0DB53FEA",
+            "trace": [
+              "new BaseDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:114:15)",
+              "new BackedDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:158:5)",
+              "new HttpDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:266:5)",
+              "GraphqlApi.addHttpDataSource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi-base.ts:181:12)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:44:24)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/ds/MutationaddTodoResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApidsMutationaddTodoResolver390DA5F5",
+            "trace": [
+              "new Resolver (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\resolver.ts:89:21)",
+              "HttpDataSource.createResolver (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:129:12)",
+              "C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:71:16",
+              "Array.forEach (<anonymous>)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:61:15)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/CDKTodoTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKTodoTable66E67402",
+            "trace": [
+              "new Table (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:1096:18)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:26:23)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/AppSyncNotesHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppSyncNotesHandlerServiceRole34415D7F",
+            "trace": [
+              "new Role (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "new Function (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:552:31)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:79:24)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/AppSyncNotesHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppSyncNotesHandlerServiceRoleDefaultPolicy12C70C4F",
+            "trace": [
+              "new Policy (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:368:28)",
+              "Function.addToPrincipal (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:168:61)",
+              "Table.combinedGrant (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:910:29)",
+              "Table.grantReadWriteData (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:685:17)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:88:15)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/AppSyncNotesHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppSyncNotesHandler4B870A76",
+            "trace": [
+              "new Function (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:614:35)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:79:24)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/AssetParameters/a623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30S3Bucket4E815BE5",
+            "trace": [
+              "new FileAssetParameters (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "ServerStack.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:151:40)",
+              "AssetCode.bind (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:251:20)",
+              "new Function (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:79:24)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/AssetParameters/a623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30S3VersionKey56374F1B",
+            "trace": [
+              "new FileAssetParameters (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "ServerStack.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:151:40)",
+              "AssetCode.bind (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:251:20)",
+              "new Function (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:79:24)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/AssetParameters/a623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30ArtifactHashC8CB18CF",
+            "trace": [
+              "new FileAssetParameters (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "ServerStack.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:151:40)",
+              "AssetCode.bind (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:251:20)",
+              "new Function (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:79:24)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/the-Ruleee/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "theRuleee11DD74A3",
+            "trace": [
+              "new Rule (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-events\\lib\\rule.ts:130:22)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:92:18)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/the-Ruleee/AllowEventRuleServerStacktheRuleee3E4DA65B": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "theRuleeeAllowEventRuleServerStacktheRuleee3E4DA65B28D8247B",
+            "trace": [
+              "Function.addPermission (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:245:5)",
+              "Object.addLambdaPermission (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-events-targets\\lib\\util.ts:44:13)",
+              "LambdaFunction.bind (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-events-targets\\lib\\lambda.ts:33:5)",
+              "Rule.addTarget (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\aws-events\\lib\\rule.ts:166:32)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:100:10)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/GraphQLAPIURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphQLAPIURL",
+            "trace": [
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:103:5)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/GraphQLAPIKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphQLAPIKey",
+            "trace": [
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:108:5)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Stack Region": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StackRegion",
+            "trace": [
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\lib\\server-stack.ts:113:5)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:51:24)",
+              "C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:201:5)",
+              "visit (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:197:5)",
+              "injectMetadataResources (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:483:12)",
+              "process.emit (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/ServerStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:60:27)",
+              "C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:201:5)",
+              "visit (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:197:5)",
+              "injectMetadataResources (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:483:12)",
+              "process.emit (C:\\Github_1\\Aws\\AWS CDK\\todo-app-eventbridge\\server\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+    "entity":{
+        "entityId": "uzair",
+        "userMuneeb" : "muneeb"
+    },
+    "apiBasicInfoOpenApi": {
+        "apiId": "261",
+        "apiKind": "OPENAPI",
+        "apiType": [
+          "CRM"
+        ],
+        "latest_published_version": null,
+        "latest_unpublished_version": {
+          "dateCreated": "#string",
+          "datePublished": null,
+          "releaseNotes": "test release",
+          "versionId": "#string",
+          "versionNumber": "#number",
+          "versionStatus": "UNPUBLISHED",
+          "apiRootUrl": "apiurl.com",
+          "openApiDef": "test def"
+        },
+        "longDescription": "test long description",
+        "status": "UNDERDEVELOPMENT",
+        "shortDescription": "test short description",
+        "title": "test open api"  
+    },
+    "apiBasicInfoGraphql": {
+        "apiId": "262",
+        "apiType": [
+          "CRM"
+        ],
+        "apiKind": "GRAPHQL",
+        "latest_published_version": null,
+        "latest_unpublished_version": {
+          "dateCreated": "#string",
+          "datePublished": null,
+          "releaseNotes": "test release",
+          "versionId": "#string",
+          "versionStatus": "UNPUBLISHED",
+          "versionNumber": 1,
+          "apiUrl": "apiurl.com",
+          "graphQlSchema": "test schema"
+        },
+        "longDescription": "test long description",
+        "shortDescription": "test short description",
+        "status": "UNDERDEVELOPMENT",
+        "title": "test graphql api"
+    },
+    "apiIdeaBasicInfo":  {
+        "apiKind": ["OPENAPI"],
+        "apiType": ["CRM"],
+        "description": "test description",
+        "id": "263",
+        "title": "test api idea"
+    },
+    "reactOnApiIdeaOutput": {
+        "apiIdeaId": "134",
+        "by": "uzair",
+        "reaction": "DISLIKED"
+    },
+    "joinApiIdeaPageOutput": {
+        "apiIdeaId": "134",
+        "entityId": "muneeb",
+        "action": "leave",
+        "joiningDate": "#string",
+        "joined": true
+    },    
+    "changeSubscriptionStatusInput":{
+        "subscriptionId": "5161f5f8-d622-45b5-b5d4-a82925f81d7a",
+        "subscriptionCreationDate": "#string",
+        "status": "INACTIVE",
+        "type": "TESTING",
+        "subscription_token": "#string",
+        "paymentDayEveryMonth": "#string",
+        "api": {
+            "id": "142",
+            "picture_url": "",
+            "title": "test open api",
+            "versionId": "8698fbc6-a344-41a1-af45-eded4d3eeb98",
+            "versionNumber": "#number"
+        }
+    },
+    "openApiVersion": {
+        "testingSubscriptions": [
+            {
+              "subscriptionCreationDate": "#string",
+              "status": "ACTIVE",
+              "subscriptionId": "#string"
+            },
+            {
+              "subscriptionCreationDate": "#string",
+              "status": "ACTIVE",
+              "subscriptionId": "#string"
+            },
+            {
+              "subscriptionCreationDate": "#string",
+              "status": "ACTIVE",
+              "subscriptionId": "#string"
+            }
+          ],
+          "versionDetails": {
+            "apiRootUrl": "apiurl.com",
+            "dateCreated": "#string",
+            "datePublished": null,
+            "openApiDef": "test def",
+            "releaseNotes": "test release",
+            "versionId": "#string",
+            "versionNumber": 2,
+            "versionStatus": "UNPUBLISHED"
+          }
+    },  
+    "apiBasicInfochangeStatus": {
+        "apiId": "183",
+        "latest_published_version": {
+          "versionId": "#string",
+          "dateCreated": "#string",
+          "datePublished": "#string",
+          "releaseNotes": "test release",
+          "versionNumber": 1,
+          "versionStatus": "PUBLISHED",
+          "apiRootUrl": "apiurl.com",
+          "openApiDef": "test def"
+        },
+        "apiKind": "OPENAPI",
+        "apiType": [
+          "CRM"
+        ],
+        "latest_unpublished_version": null,
+        "longDescription": "test long description",
+        "shortDescription": "test short description",
+        "status": "PUBLIC",
+        "title": "test open api"
+    },
+    "apiQuestionUser": {
+        "apiId": "124",
+        "apiQuestionId": "#string",
+        "by": {
+          "id": "muneeb",
+          "picture_url": "",
+          "firstName": "muneeb",
+          "lastName": "waseem"
+        },
+        "dateCreated": "#string",
+        "latest_published_version": 1,
+        "latest_responses": [],
+        "text": "test Question?",
+        "total_responses": "#number"
+    },
+    "apiQuestionCompany": {
+        "apiId": "124",
+        "apiQuestionId": "#string",
+        "by": {
+          "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+          "picture_url": "",
+          "name": "tech-company"
+        },
+        "dateCreated": "#string",
+        "latest_published_version": 1,
+        "latest_responses": [],
+        "text": "test Question?",
+        "total_responses": 0
+    },
+    "apiQuestionResponseUser": {
+        "apiQuestionId": "28bceaf0-ebdc-dd01-8c67-9aa31b1dc1ef",
+        "apiQuestionResponseId": "#string",
+        "by": {
+          "id": "uzair",
+          "picture_url": "",
+          "firstName": "uzair",
+          "lastName": "bangee"
+        },
+        "dateCreated": "#string",
+        "text": "test Answer"
+    },
+    "apiQuestionResponseCompany": {
+        "apiQuestionId": "66bceaff-d849-25f4-fbad-7e6b0c9012f5",
+        "apiQuestionResponseId": "#string",
+        "by": {
+          "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+          "picture_url": "",
+          "name": "tech-company"
+        },
+        "dateCreated": "#string",
+        "text": "test Answer"
+    },
+    "apiSubscription": {
+        "paymentDayEveryMonth": "#string",
+        "api": {
+          "id": "183",
+          "picture_url": "",
+          "title": "test open api",
+          "versionId": "183-1",
+          "versionNumber": "#number"
+        },
+        "status": "ACTIVE",
+        "subscriptionCreationDate": "#string",
+        "subscriptionId": "#string",
+        "subscription_token": "#string",
+        "type": "NORMAL"
+    },
+    "apiReview": {
+        "by": {
+        "id": "muneeb",
+        "picture_url": "",
+        "firstName": "muneeb",
+        "lastName": "waseem"
+      },
+        "apiId": "183",
+        "dateCreated": "#string",
+        "reviewId": "#string",
+        "stars": 4,
+        "text": "test api review",
+        "title": "test api"
+    },
+    "apiReviewCompany":{
+        "by": {
+            "id": "515969afd7-5c73-4b03-9155-65a5f1cfcd30",
+            "picture_url": "",
+            "name": "tech-company"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-apibazaar-dev-94256-authRole",
+      "UnauthRoleArn": "arn:aws:iam::625562161580:role/amplify-apibazaar-dev-94256-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::625562161580:role/amplify-apibazaar-dev-94256-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-apibazaar-dev-94256-deployment",
+      "UnauthRoleName": "amplify-apibazaar-dev-94256-unauthRole",
+      "StackName": "amplify-apibazaar-dev-94256",
+      "StackId": "arn:aws:cloudformation:us-east-2:625562161580:stack/amplify-apibazaar-dev-94256/b9764a60-a0c9-11eb-ab55-0a337b461fd4",
+      "AmplifyAppId": "dfssl8gl1y7xa"
+    }
+  },
+  "fdev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-apibazaar-fdev-94903-authRole",
+      "UnauthRoleArn": "arn:aws:iam::625562161580:role/amplify-apibazaar-fdev-94903-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::625562161580:role/amplify-apibazaar-fdev-94903-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-apibazaar-fdev-94903-deployment",
+      "UnauthRoleName": "amplify-apibazaar-fdev-94903-unauthRole",
+      "StackName": "amplify-apibazaar-fdev-94903",
+      "StackId": "arn:aws:cloudformation:us-east-1:625562161580:stack/amplify-apibazaar-fdev-94903/946161a0-a0ca-11eb-9c58-0ec446493c7d",
+      "AmplifyAppId": "d2q77ntqmxob4f"
+    }
+  }
+}

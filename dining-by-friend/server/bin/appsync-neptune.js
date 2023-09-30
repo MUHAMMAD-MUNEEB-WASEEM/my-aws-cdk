@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("source-map-support/register");
+const cdk = require("@aws-cdk/core");
+const appsync_neptune_stack_1 = require("../lib/appsync-neptune-stack");
+const app = new cdk.App();
+new appsync_neptune_stack_1.AppsyncNeptuneStack(app, 'NewAppsyncNeptuneStack');
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwc3luYy1uZXB0dW5lLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiYXBwc3luYy1uZXB0dW5lLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUNBLHVDQUFxQztBQUNyQyxxQ0FBcUM7QUFDckMsd0VBQW1FO0FBRW5FLE1BQU0sR0FBRyxHQUFHLElBQUksR0FBRyxDQUFDLEdBQUcsRUFBRSxDQUFDO0FBQzFCLElBQUksMkNBQW1CLENBQUMsR0FBRyxFQUFFLHdCQUF3QixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIjIS91c3IvYmluL2VudiBub2RlXHJcbmltcG9ydCAnc291cmNlLW1hcC1zdXBwb3J0L3JlZ2lzdGVyJztcclxuaW1wb3J0ICogYXMgY2RrIGZyb20gJ0Bhd3MtY2RrL2NvcmUnO1xyXG5pbXBvcnQgeyBBcHBzeW5jTmVwdHVuZVN0YWNrIH0gZnJvbSAnLi4vbGliL2FwcHN5bmMtbmVwdHVuZS1zdGFjayc7XHJcblxyXG5jb25zdCBhcHAgPSBuZXcgY2RrLkFwcCgpO1xyXG5uZXcgQXBwc3luY05lcHR1bmVTdGFjayhhcHAsICdOZXdBcHBzeW5jTmVwdHVuZVN0YWNrJyk7XHJcbiJdfQ==

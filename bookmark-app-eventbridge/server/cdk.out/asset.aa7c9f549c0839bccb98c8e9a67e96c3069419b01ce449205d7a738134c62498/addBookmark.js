@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const AWS = require('aws-sdk');
+const docClient = new AWS.DynamoDB.DocumentClient();
+async function addBookmark(bookmark) {
+    const params = {
+        TableName: process.env.BOOKMARK_TABLE,
+        Item: bookmark
+    };
+    try {
+        await docClient.put(params).promise();
+        return bookmark;
+    }
+    catch (err) {
+        console.log('DynamoDB error: ', err);
+        return null;
+    }
+}
+exports.default = addBookmark;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYWRkQm9va21hcmsuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJhZGRCb29rbWFyay50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLE1BQU0sR0FBRyxHQUFHLE9BQU8sQ0FBQyxTQUFTLENBQUMsQ0FBQztBQUMvQixNQUFNLFNBQVMsR0FBRyxJQUFJLEdBQUcsQ0FBQyxRQUFRLENBQUMsY0FBYyxFQUFFLENBQUM7QUFHcEQsS0FBSyxVQUFVLFdBQVcsQ0FBQyxRQUFrQjtJQUN6QyxNQUFNLE1BQU0sR0FBRztRQUNYLFNBQVMsRUFBRSxPQUFPLENBQUMsR0FBRyxDQUFDLGNBQWM7UUFDckMsSUFBSSxFQUFFLFFBQVE7S0FDakIsQ0FBQTtJQUNELElBQUk7UUFDQSxNQUFNLFNBQVMsQ0FBQyxHQUFHLENBQUMsTUFBTSxDQUFDLENBQUMsT0FBTyxFQUFFLENBQUM7UUFDdEMsT0FBTyxRQUFRLENBQUM7S0FDbkI7SUFBQyxPQUFPLEdBQUcsRUFBRTtRQUNWLE9BQU8sQ0FBQyxHQUFHLENBQUMsa0JBQWtCLEVBQUUsR0FBRyxDQUFDLENBQUM7UUFDckMsT0FBTyxJQUFJLENBQUM7S0FDZjtBQUNMLENBQUM7QUFFRCxrQkFBZSxXQUFXLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBBV1MgPSByZXF1aXJlKCdhd3Mtc2RrJyk7XHJcbmNvbnN0IGRvY0NsaWVudCA9IG5ldyBBV1MuRHluYW1vREIuRG9jdW1lbnRDbGllbnQoKTtcclxuaW1wb3J0IEJvb2ttYXJrIGZyb20gJy4vYm9va21hcmsnO1xyXG5cclxuYXN5bmMgZnVuY3Rpb24gYWRkQm9va21hcmsoYm9va21hcms6IEJvb2ttYXJrKSB7XHJcbiAgICBjb25zdCBwYXJhbXMgPSB7XHJcbiAgICAgICAgVGFibGVOYW1lOiBwcm9jZXNzLmVudi5CT09LTUFSS19UQUJMRSxcclxuICAgICAgICBJdGVtOiBib29rbWFya1xyXG4gICAgfVxyXG4gICAgdHJ5IHtcclxuICAgICAgICBhd2FpdCBkb2NDbGllbnQucHV0KHBhcmFtcykucHJvbWlzZSgpO1xyXG4gICAgICAgIHJldHVybiBib29rbWFyaztcclxuICAgIH0gY2F0Y2ggKGVycikge1xyXG4gICAgICAgIGNvbnNvbGUubG9nKCdEeW5hbW9EQiBlcnJvcjogJywgZXJyKTtcclxuICAgICAgICByZXR1cm4gbnVsbDtcclxuICAgIH1cclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgYWRkQm9va21hcms7Il19

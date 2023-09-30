@@ -1,0 +1,60 @@
+{
+    "entity": {
+        "userId": "uzair",
+        "firstName": "tanzeel",
+        "lastName": "tanzeel",
+        "city": "karachi",
+        "country": "pakistan",
+        "phone_number": "123456",
+        "headline": "headline"
+    },
+    "followEntity": {
+        "city": "karachi",
+        "country": "pakistan",
+        "id": "tanzeel",
+        "picture_url": "",
+        "profileStatus": "UNPUBLISHED",
+        "total_followers": "#number"
+    },
+    "companyInfo": {
+        "name": "testing-company",
+        "companyId": "5",
+        "email": "company@example.com",
+        "city": "karachi",
+        "country": "pakistan",
+        "phone_number": "+93658741235",
+        "owner": "uzair"
+    },
+    "userInfo": {
+        "userId": "uzair",
+        "firstName": "tanzeel",
+        "lastName": "tanzeel",
+        "city": "karachi",
+        "country": "pakistan",
+        "phone_number": "123456",
+        "headline": "headline"
+    },
+    "post":{
+        "id":"uzair",
+        "text":"hello world post",
+        "imageUrl":"https://dummyimage.com/600x400/000/fff.jpg&text=test"
+    },
+    "profilePicture":{
+        "entityId": "tanzeel",
+        "picture_url": ""
+    },
+    "createOpenApiInput":{
+        "entityId": "uzair",
+        "apiId":"119",
+        "title": "Api test",
+        "apiType": "EDUCATION",
+        "apiRootUrl": "123.com", 
+        "openApiDef": "123Def" 
+    },
+    "changeApiStatusInput": {
+        "apiId": "119",
+        "status": "PUBLIC",
+        "entityId": "uzair"
+      }
+    
+}

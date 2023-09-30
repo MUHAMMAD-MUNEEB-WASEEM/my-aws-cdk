@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: examples.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.897 s <<< FAILURE! - in examples.ExamplesTest
+testParallel  Time elapsed: 4.881 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 719, url: https://jsonplaceholder.typicode.com/users, response: 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>No such app</title>
+<style media="screen">
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		</style>
+</head>
+<body>
+<iframe src="//www.herokucdn.com/error-pages/no-such-app.html"></iframe>
+</body>
+</html>
+classpath:examples/users/users.feature:10 ==> expected: <0> but was: <1>
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:16)
+

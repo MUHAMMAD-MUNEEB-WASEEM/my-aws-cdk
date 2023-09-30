@@ -1,0 +1,15 @@
+{
+  "vstudio": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-virtuallolly-vstudio-140751-authRole",
+      "UnauthRoleArn": "arn:aws:iam::254259915840:role/amplify-virtuallolly-vstudio-140751-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::254259915840:role/amplify-virtuallolly-vstudio-140751-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-virtuallolly-vstudio-140751-deployment",
+      "UnauthRoleName": "amplify-virtuallolly-vstudio-140751-unauthRole",
+      "StackName": "amplify-virtuallolly-vstudio-140751",
+      "StackId": "arn:aws:cloudformation:us-east-2:254259915840:stack/amplify-virtuallolly-vstudio-140751/6ec2f9a0-87c9-11eb-b759-0ae7bc5e833e",
+      "AmplifyAppId": "d2te7qcrzi0t95"
+    }
+  }
+}

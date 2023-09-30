@@ -1,0 +1,878 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree",
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Construct",
+          "version": "1.91.0"
+        }
+      },
+      "ServerStack": {
+        "id": "ServerStack",
+        "path": "ServerStack",
+        "children": {
+          "Api": {
+            "id": "Api",
+            "path": "ServerStack/Api",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "ServerStack/Api/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::AppSync::GraphQLApi",
+                  "aws:cdk:cloudformation:props": {
+                    "authenticationType": "API_KEY",
+                    "name": "cdk-todo-appsync-api"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-appsync.CfnGraphQLApi",
+                  "version": "1.91.0"
+                }
+              },
+              "Schema": {
+                "id": "Schema",
+                "path": "ServerStack/Api/Schema",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::AppSync::GraphQLSchema",
+                  "aws:cdk:cloudformation:props": {
+                    "apiId": {
+                      "Fn::GetAtt": [
+                        "ApiF70053CD",
+                        "ApiId"
+                      ]
+                    },
+                    "definition": "type Event{\r\n  result:String\r\n}\r\n\r\ntype Query {\r\n    todos: [Todo]\r\n  }\r\n  type Todo {\r\n    id: ID!\r\n    description: String!\r\n  }\r\ninput TodoInput {\r\n    id: ID!\r\n    description: String!\r\n  }\r\n\r\n  type Mutation {\r\n    addTodo(todo: TodoInput!): Event\r\n  }"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-appsync.CfnGraphQLSchema",
+                  "version": "1.91.0"
+                }
+              },
+              "DefaultApiKey": {
+                "id": "DefaultApiKey",
+                "path": "ServerStack/Api/DefaultApiKey",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::AppSync::ApiKey",
+                  "aws:cdk:cloudformation:props": {
+                    "apiId": {
+                      "Fn::GetAtt": [
+                        "ApiF70053CD",
+                        "ApiId"
+                      ]
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-appsync.CfnApiKey",
+                  "version": "1.91.0"
+                }
+              },
+              "theTodoTable": {
+                "id": "theTodoTable",
+                "path": "ServerStack/Api/theTodoTable",
+                "children": {
+                  "ServiceRole": {
+                    "id": "ServiceRole",
+                    "path": "ServerStack/Api/theTodoTable/ServiceRole",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "ServerStack/Api/theTodoTable/ServiceRole/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                          "aws:cdk:cloudformation:props": {
+                            "assumeRolePolicyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": "sts:AssumeRole",
+                                  "Effect": "Allow",
+                                  "Principal": {
+                                    "Service": "appsync.amazonaws.com"
+                                  }
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.CfnRole",
+                          "version": "1.91.0"
+                        }
+                      },
+                      "DefaultPolicy": {
+                        "id": "DefaultPolicy",
+                        "path": "ServerStack/Api/theTodoTable/ServiceRole/DefaultPolicy",
+                        "children": {
+                          "Resource": {
+                            "id": "Resource",
+                            "path": "ServerStack/Api/theTodoTable/ServiceRole/DefaultPolicy/Resource",
+                            "attributes": {
+                              "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                              "aws:cdk:cloudformation:props": {
+                                "policyDocument": {
+                                  "Statement": [
+                                    {
+                                      "Action": [
+                                        "dynamodb:BatchGetItem",
+                                        "dynamodb:GetRecords",
+                                        "dynamodb:GetShardIterator",
+                                        "dynamodb:Query",
+                                        "dynamodb:GetItem",
+                                        "dynamodb:Scan",
+                                        "dynamodb:ConditionCheckItem",
+                                        "dynamodb:BatchWriteItem",
+                                        "dynamodb:PutItem",
+                                        "dynamodb:UpdateItem",
+                                        "dynamodb:DeleteItem"
+                                      ],
+                                      "Effect": "Allow",
+                                      "Resource": [
+                                        {
+                                          "Fn::GetAtt": [
+                                            "CDKTodoTable66E67402",
+                                            "Arn"
+                                          ]
+                                        },
+                                        {
+                                          "Ref": "AWS::NoValue"
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "Version": "2012-10-17"
+                                },
+                                "policyName": "ApitheTodoTableServiceRoleDefaultPolicyC23D3152",
+                                "roles": [
+                                  {
+                                    "Ref": "ApitheTodoTableServiceRole9AB26CF4"
+                                  }
+                                ]
+                              }
+                            },
+                            "constructInfo": {
+                              "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                              "version": "1.91.0"
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.Policy",
+                          "version": "1.91.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.Role",
+                      "version": "1.91.0"
+                    }
+                  },
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "ServerStack/Api/theTodoTable/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::AppSync::DataSource",
+                      "aws:cdk:cloudformation:props": {
+                        "apiId": {
+                          "Fn::GetAtt": [
+                            "ApiF70053CD",
+                            "ApiId"
+                          ]
+                        },
+                        "name": "theTodoTable",
+                        "type": "AMAZON_DYNAMODB",
+                        "dynamoDbConfig": {
+                          "tableName": {
+                            "Ref": "CDKTodoTable66E67402"
+                          },
+                          "awsRegion": {
+                            "Ref": "AWS::Region"
+                          }
+                        },
+                        "serviceRoleArn": {
+                          "Fn::GetAtt": [
+                            "ApitheTodoTableServiceRole9AB26CF4",
+                            "Arn"
+                          ]
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-appsync.CfnDataSource",
+                      "version": "1.91.0"
+                    }
+                  },
+                  "QuerytodosResolver": {
+                    "id": "QuerytodosResolver",
+                    "path": "ServerStack/Api/theTodoTable/QuerytodosResolver",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "ServerStack/Api/theTodoTable/QuerytodosResolver/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::AppSync::Resolver",
+                          "aws:cdk:cloudformation:props": {
+                            "apiId": {
+                              "Fn::GetAtt": [
+                                "ApiF70053CD",
+                                "ApiId"
+                              ]
+                            },
+                            "fieldName": "todos",
+                            "typeName": "Query",
+                            "dataSourceName": "theTodoTable",
+                            "kind": "UNIT",
+                            "requestMappingTemplate": "{\"version\" : \"2017-02-28\", \"operation\" : \"Scan\"}",
+                            "responseMappingTemplate": "$util.toJson($ctx.result.items)"
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-appsync.CfnResolver",
+                          "version": "1.91.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-appsync.Resolver",
+                      "version": "1.91.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-appsync.DynamoDbDataSource",
+                  "version": "1.91.0"
+                }
+              },
+              "ds": {
+                "id": "ds",
+                "path": "ServerStack/Api/ds",
+                "children": {
+                  "ServiceRole": {
+                    "id": "ServiceRole",
+                    "path": "ServerStack/Api/ds/ServiceRole",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "ServerStack/Api/ds/ServiceRole/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                          "aws:cdk:cloudformation:props": {
+                            "assumeRolePolicyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": "sts:AssumeRole",
+                                  "Effect": "Allow",
+                                  "Principal": {
+                                    "Service": "appsync.amazonaws.com"
+                                  }
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.CfnRole",
+                          "version": "1.91.0"
+                        }
+                      },
+                      "DefaultPolicy": {
+                        "id": "DefaultPolicy",
+                        "path": "ServerStack/Api/ds/ServiceRole/DefaultPolicy",
+                        "children": {
+                          "Resource": {
+                            "id": "Resource",
+                            "path": "ServerStack/Api/ds/ServiceRole/DefaultPolicy/Resource",
+                            "attributes": {
+                              "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                              "aws:cdk:cloudformation:props": {
+                                "policyDocument": {
+                                  "Statement": [
+                                    {
+                                      "Action": "events:PutEvents",
+                                      "Effect": "Allow",
+                                      "Resource": "*"
+                                    }
+                                  ],
+                                  "Version": "2012-10-17"
+                                },
+                                "policyName": "ApidsServiceRoleDefaultPolicyE5E18D6D",
+                                "roles": [
+                                  {
+                                    "Ref": "ApidsServiceRoleADC7D124"
+                                  }
+                                ]
+                              }
+                            },
+                            "constructInfo": {
+                              "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                              "version": "1.91.0"
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.Policy",
+                          "version": "1.91.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.Role",
+                      "version": "1.91.0"
+                    }
+                  },
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "ServerStack/Api/ds/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::AppSync::DataSource",
+                      "aws:cdk:cloudformation:props": {
+                        "apiId": {
+                          "Fn::GetAtt": [
+                            "ApiF70053CD",
+                            "ApiId"
+                          ]
+                        },
+                        "name": "httpDsWithEventBridge",
+                        "type": "HTTP",
+                        "description": "From Appsync to Eventbridge",
+                        "httpConfig": {
+                          "endpoint": {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "https://events.",
+                                {
+                                  "Ref": "AWS::Region"
+                                },
+                                ".amazonaws.com/"
+                              ]
+                            ]
+                          },
+                          "authorizationConfig": {
+                            "authorizationType": "AWS_IAM",
+                            "awsIamConfig": {
+                              "signingRegion": {
+                                "Ref": "AWS::Region"
+                              },
+                              "signingServiceName": "events"
+                            }
+                          }
+                        },
+                        "serviceRoleArn": {
+                          "Fn::GetAtt": [
+                            "ApidsServiceRoleADC7D124",
+                            "Arn"
+                          ]
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-appsync.CfnDataSource",
+                      "version": "1.91.0"
+                    }
+                  },
+                  "MutationaddTodoResolver": {
+                    "id": "MutationaddTodoResolver",
+                    "path": "ServerStack/Api/ds/MutationaddTodoResolver",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "ServerStack/Api/ds/MutationaddTodoResolver/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::AppSync::Resolver",
+                          "aws:cdk:cloudformation:props": {
+                            "apiId": {
+                              "Fn::GetAtt": [
+                                "ApiF70053CD",
+                                "ApiId"
+                              ]
+                            },
+                            "fieldName": "addTodo",
+                            "typeName": "Mutation",
+                            "dataSourceName": "httpDsWithEventBridge",
+                            "kind": "UNIT",
+                            "requestMappingTemplate": "{\n          \"version\": \"2018-05-29\",\n          \"method\": \"POST\", \n          \"resourcePath\": \"/\",\n          \"params\": {\n            \"headers\": {\n              \"content-type\": \"application/x-amz-json-1.1\",\n              \"x-amz-target\":\"AWSEvents.PutEvents\"\n            },\n            \"body\": {\n              \"Entries\":[\n                {\n                  \"DetailType\":\"addTodo\",\n                  \"Source\":\"TodoEvents\",\n                  \"EventBusName\": \"default\",\n                  \"Detail\": \"{\\\"description\\\":\\\"$ctx.args.todo.description\\\"}\"\n                }\n              ]\n            }\n          }\n        }",
+                            "responseMappingTemplate": "\n          #if($ctx.error)\n              $util.error($ctx.error.message, $ctx.error.type)\n          #end\n          #if($ctx.result.statusCode == 200)\n          {\n              \"result\": \"$util.parseJson($ctx.result.body)\"\n          }\n          #else\n              $utils.appendError($ctx.result.body, $ctx.result.statusCode)\n          #end\n      "
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-appsync.CfnResolver",
+                          "version": "1.91.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-appsync.Resolver",
+                      "version": "1.91.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-appsync.HttpDataSource",
+                  "version": "1.91.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-appsync.GraphqlApi",
+              "version": "1.91.0"
+            }
+          },
+          "CDKTodoTable": {
+            "id": "CDKTodoTable",
+            "path": "ServerStack/CDKTodoTable",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "ServerStack/CDKTodoTable/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "keySchema": [
+                      {
+                        "attributeName": "id",
+                        "keyType": "HASH"
+                      }
+                    ],
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "id",
+                        "attributeType": "S"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-dynamodb.CfnTable",
+                  "version": "1.91.0"
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "ServerStack/CDKTodoTable/ScalingRole",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Resource",
+                  "version": "1.91.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-dynamodb.Table",
+              "version": "1.91.0"
+            }
+          },
+          "AppSyncNotesHandler": {
+            "id": "AppSyncNotesHandler",
+            "path": "ServerStack/AppSyncNotesHandler",
+            "children": {
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "ServerStack/AppSyncNotesHandler/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "ServerStack/AppSyncNotesHandler/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.91.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "ServerStack/AppSyncNotesHandler/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "ServerStack/AppSyncNotesHandler/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "dynamodb:BatchGetItem",
+                                    "dynamodb:GetRecords",
+                                    "dynamodb:GetShardIterator",
+                                    "dynamodb:Query",
+                                    "dynamodb:GetItem",
+                                    "dynamodb:Scan",
+                                    "dynamodb:ConditionCheckItem",
+                                    "dynamodb:BatchWriteItem",
+                                    "dynamodb:PutItem",
+                                    "dynamodb:UpdateItem",
+                                    "dynamodb:DeleteItem"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "CDKTodoTable66E67402",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Action": "dynamodb:*",
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "CDKTodoTable66E67402",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "AppSyncNotesHandlerServiceRoleDefaultPolicy12C70C4F",
+                            "roles": [
+                              {
+                                "Ref": "AppSyncNotesHandlerServiceRole34415D7F"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                          "version": "1.91.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.Policy",
+                      "version": "1.91.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.Role",
+                  "version": "1.91.0"
+                }
+              },
+              "Code": {
+                "id": "Code",
+                "path": "ServerStack/AppSyncNotesHandler/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "ServerStack/AppSyncNotesHandler/Code/Stage",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.AssetStaging",
+                      "version": "1.91.0"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "ServerStack/AppSyncNotesHandler/Code/AssetBucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.Resource",
+                      "version": "1.91.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                  "version": "1.91.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "ServerStack/AppSyncNotesHandler/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                  "aws:cdk:cloudformation:props": {
+                    "code": {
+                      "s3Bucket": {
+                        "Ref": "AssetParametersa623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30S3Bucket4E815BE5"
+                      },
+                      "s3Key": {
+                        "Fn::Join": [
+                          "",
+                          [
+                            {
+                              "Fn::Select": [
+                                0,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParametersa623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30S3VersionKey56374F1B"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Fn::Select": [
+                                1,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParametersa623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30S3VersionKey56374F1B"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "role": {
+                      "Fn::GetAtt": [
+                        "AppSyncNotesHandlerServiceRole34415D7F",
+                        "Arn"
+                      ]
+                    },
+                    "environment": {
+                      "variables": {
+                        "DYNAMO_TABLE_NAME": {
+                          "Ref": "CDKTodoTable66E67402"
+                        }
+                      }
+                    },
+                    "handler": "index.handler",
+                    "memorySize": 1024,
+                    "runtime": "nodejs12.x"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-lambda.CfnFunction",
+                  "version": "1.91.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-lambda.Function",
+              "version": "1.91.0"
+            }
+          },
+          "AssetParameters": {
+            "id": "AssetParameters",
+            "path": "ServerStack/AssetParameters",
+            "children": {
+              "a623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30": {
+                "id": "a623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30",
+                "path": "ServerStack/AssetParameters/a623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "ServerStack/AssetParameters/a623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.91.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "ServerStack/AssetParameters/a623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.91.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "ServerStack/AssetParameters/a623c943efeff2c51048948749b8e05d7a0708cf44f4e41e45f0cb8f7086fa30/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.91.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.91.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.91.0"
+            }
+          },
+          "the-Ruleee": {
+            "id": "the-Ruleee",
+            "path": "ServerStack/the-Ruleee",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "ServerStack/the-Ruleee/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Events::Rule",
+                  "aws:cdk:cloudformation:props": {
+                    "eventPattern": {
+                      "source": [
+                        "TodoEvents"
+                      ]
+                    },
+                    "name": "Rulesfortodo",
+                    "state": "ENABLED",
+                    "targets": [
+                      {
+                        "id": "Target0",
+                        "arn": {
+                          "Fn::GetAtt": [
+                            "AppSyncNotesHandler4B870A76",
+                            "Arn"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-events.CfnRule",
+                  "version": "1.91.0"
+                }
+              },
+              "AllowEventRuleServerStacktheRuleee3E4DA65B": {
+                "id": "AllowEventRuleServerStacktheRuleee3E4DA65B",
+                "path": "ServerStack/the-Ruleee/AllowEventRuleServerStacktheRuleee3E4DA65B",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                  "aws:cdk:cloudformation:props": {
+                    "action": "lambda:InvokeFunction",
+                    "functionName": {
+                      "Fn::GetAtt": [
+                        "AppSyncNotesHandler4B870A76",
+                        "Arn"
+                      ]
+                    },
+                    "principal": "events.amazonaws.com",
+                    "sourceArn": {
+                      "Fn::GetAtt": [
+                        "theRuleee11DD74A3",
+                        "Arn"
+                      ]
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-lambda.CfnPermission",
+                  "version": "1.91.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-events.Rule",
+              "version": "1.91.0"
+            }
+          },
+          "GraphQLAPIURL": {
+            "id": "GraphQLAPIURL",
+            "path": "ServerStack/GraphQLAPIURL",
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.CfnOutput",
+              "version": "1.91.0"
+            }
+          },
+          "GraphQLAPIKey": {
+            "id": "GraphQLAPIKey",
+            "path": "ServerStack/GraphQLAPIKey",
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.CfnOutput",
+              "version": "1.91.0"
+            }
+          },
+          "Stack Region": {
+            "id": "Stack Region",
+            "path": "ServerStack/Stack Region",
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.CfnOutput",
+              "version": "1.91.0"
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "ServerStack/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "ServerStack/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.91.0"
+                }
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "ServerStack/CDKMetadata/Condition",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnCondition",
+                  "version": "1.91.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.91.0"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.91.0"
+        }
+      }
+    },
+    "constructInfo": {
+      "fqn": "@aws-cdk/core.App",
+      "version": "1.91.0"
+    }
+  }
+}

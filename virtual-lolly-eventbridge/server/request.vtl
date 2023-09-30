@@ -1,0 +1,22 @@
+  
+{
+  "version": "2018-05-29",
+  "method": "POST",
+  "resourcePath": "/",
+  "params": {
+    "headers": {
+      "content-type": "application/x-amz-json-1.1",
+      "x-amz-target":"AWSEvents.PutEvents"
+    },
+    "body": {
+      "Entries":[
+        {
+          "Source":"LollyEvents",
+          "EventBusName": "default",
+          "Detail": "{\"color1\":\"$ctx.args.lolly.color1\" , \"color2\":\"$ctx.args.lolly.color2\" , \"color3\":\"$ctx.args.lolly.color3\" ,\"reciever\":\"$ctx.args.lolly.reciever\" ,\"sender\":\"$ctx.args.lolly.sender\" , \"message\":\"$ctx.args.lolly.message\" , \"link\":\"$ctx.args.lolly.link\"}",
+          "DetailType":"addLolly"
+        }
+      ]
+    }
+  }
+}

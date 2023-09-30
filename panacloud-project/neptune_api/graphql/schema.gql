@@ -1,0 +1,906 @@
+type Mutation {
+    createCompany(input: createCompanyInput!): companyBasicProfileInfo! #Waris
+    updateCompanyInfo(input: updateCompanyInfoInput!): companyBasicProfileInfo! #Waris
+    updateProfilePicture(input: updateProfilePictureInput!): updateDisplayPicture! #Waris
+    addUserToCompany(input:addUserToCompanyInput! ) :userShowcaseProfileInCompany! #Waris
+    updateUserInfo(input: updateUserInput!): userBasicProfileInfo! #Uzair
+    createOpenApi(input: createOpenApiInput!): openAPiBasicInfo! #Uzair
+    createGraphQlApi(input: createGraphQLApiInput!): graphQlBasicInfo! #Uzair
+    changeApiStatus(input: changeApiStatusInput!): apiShowcaseInfo! #Murtuza
+    subscribeToApi(input: subscribeToApiInput!): apiSubscription! #Shaheryar
+    changeSubscriptionStatus(input: changeSubscriptionStatusInput!): apiSubscription! #Shaheryar
+    changeEntityProfileStatus(input: changeEntityProfileStatusInput!): entityShowcaseProfileInfo! 
+
+    updateOpenApi(input: updateOpenApiInput!): openAPiBasicInfo!
+    updateGraphQlApi(input: updateGraphQlInput!): graphQlBasicInfo!
+    updateApiImage(input: updateApiImageInput!): updateDisplayPicture!
+    createNewTestingSubscription(input:createNewTestingSubscriptionInput!): apiSubscription!
+    createApiReview(input: createApiReviewInput!): apiReview!
+
+
+    followEntity(input: followEntityInput!): followEntityOutput!
+	  unFollowEntity(input: unFollowEntityInput!): unFollowEntityOutput!
+	  publishSocialMediaPost(input: SocialMediaPostInput!): SocialMediaPost!
+    commentOnSocialMediaPost(input: commentOnSocialMediaPostInput!): comment!
+	  likeOnSocialMediaPost(input: likeOnSocialMediaPostInput!): socialMediaPostLike!
+
+
+}
+
+
+type Query {
+  fetchMyApiTestingSubscriptions(input:fetchMyApiTestingSubscriptionInput!):[apiSubscription]! #uzair
+  fetchMyUnderDevelopmentApis(input: fetchMyUnderDevelopmentApisInput!): fetchMyUnderdevelopmentApisOutput! #murtaza
+  fetchMyPublicApis(input:fetchMyPublicApisInput!): fetchMyPublicApisOutput!#shahryar
+  fetchMyPrivateApis(input:fetchMyPrivateApisInput!): fetchMyPrivateApisOutput!#waris
+  fetchMySubscribedApis(input: fetchMySubscribedApisInput!):fetchMySubscribedApisOutput! #raffay
+  fetchMyApiSubscription(input: fetchMyApiSubscriptionInput!): apiSubscription! #raffay 
+  fetchMyApiToken(input:fetchMyApiTokenInput!): apiTokenInfo! #raffay 
+  fetchAllPublicApis(input: fetchAllPublicApisInput):fetchallPublicApisOutput! #raffay
+  @aws_api_key 
+  fetchMyCompanies(input:fetchMyCompaniesInput!):fetchMyCompaniesOutput! #raffay
+  fetchApiInfo(input:fetchApiInfoInput!):apiFullInfo!
+
+  fetchApiReviews(input: fetchApiReviewsInput!): fetchApiReviewsOutput!
+
+  getEntityFollowers(input: getEntityFollowersInput!): getEntityFollowersOutput!
+  getEntityFollowings(input: getEntityFollowingsInput!): getEntityFollowingsOutput!
+	getEntityPosts(input: getEntityPostsInput!): getEntityPostsOutput!
+	getEntityProfile(input: getEntityProfileInput!): entityFullProfileInfo!
+	getPostComments(input: getPostCommentsInput!): getPostCommentsOutput!
+  getEntityNewsFeed(input: getEntityNewsFeedInput!): getEntityNewsFeedOutput!
+  getUsersList(input: getUsersListInput!):getUsersListOutput!
+  @aws_api_key 
+
+  getPublicApisCountByType:[getPublicApisCountByTypeOutput]!
+  @aws_api_key 
+
+  fetchNewsFeedSideMenu(input: fetchNewsFeedSideMenuInput!): fetchNewsFeedSideMenuOutput!
+
+
+}
+
+
+input fetchNewsFeedSideMenuInput{
+  entityId:String!
+}
+
+type fetchNewsFeedSideMenuOutput{
+  followers: Int!
+  following: Int!
+  companies: Int!
+  my_apis: Int!
+  subscribed_apis: Int!
+}
+
+type apiReview{
+  reviewId:String!
+  by: entityIdentifier!
+  apiId:String!
+  title:String!
+  text:String!
+  stars:Int!
+  dateCreated:String!
+}
+
+
+input createApiReviewInput{
+  by:String!
+  apiId:String!
+  title:String!
+  text:String!
+  stars:Int!
+}
+
+
+input fetchApiReviewsInput{
+  entityId:String!
+  apiId:String!
+  pageSize:Int!
+  pageNumber:Int!
+
+}
+
+type fetchApiReviewsOutput{
+  count:Int!
+  reviews: [apiReview]!
+}
+
+
+input getUsersListInput{
+  pageSize:Int!
+  pageNumber:Int!
+}
+
+type getUsersListOutput @aws_api_key {
+  count: Int!
+  users: [userShowcaseProfileInfo]!
+}
+
+
+input createNewTestingSubscriptionInput{
+entityId:String!
+apiId:String!
+}
+
+input updateApiImageInput{
+  entityId:String!
+  apiId:String!
+  picture_url:String!
+}
+
+type getPublicApisCountByTypeOutput @aws_api_key {
+  type:apiType!
+  count: Int!
+}
+
+input fetchApiInfoInput{
+  apiId:String!
+  entityId:String!
+}
+
+
+type getEntityNewsFeedOutput{
+  count:Int!
+  posts: [SocialMediaPost]!
+}
+
+input getEntityNewsFeedInput{
+  entityId:String!
+  pageSize:Int!
+  pageNumber:Int!
+}
+
+
+type getPostCommentsOutput{
+  count:Int!
+  comments:[comment]!
+}
+
+input getPostCommentsInput{
+  postId:String!
+  pageSize:Int!
+  pageNumber:Int!
+}
+
+input getEntityProfileInput{
+  requesterEntityId:String!
+  requestedEntityId:String!
+}
+
+input getEntityPostsInput{
+  entityId:String!
+  pageSize:Int!
+  pageNumber:Int!
+}
+
+input getEntityFollowingsInput{
+  entityId:String!
+  pageSize:Int!
+  pageNumber:Int!
+}
+
+
+input getEntityFollowersInput{
+  entityId:String!
+  pageSize:Int!
+  pageNumber:Int!
+}
+
+type getEntityFollowersOutput {
+  entities: [entityShowcaseProfileInfo]!
+  count: Int!
+}
+
+
+
+type getEntityPostsOutput {
+  posts: [SocialMediaPost]!
+  count: Int!
+}
+
+
+type getEntityFollowingsOutput {
+  entities: [entityShowcaseProfileInfo]!
+  count: Int!
+}
+
+
+
+type socialMediaPostLike{
+	postId:String!
+	by: entityIdentifier!
+  reaction: reactionType!
+}
+
+
+input likeOnSocialMediaPostInput {
+	postId: String!
+	by: String!
+}
+
+enum reactionType{
+  LIKED
+  NONE
+}
+
+
+input SocialMediaPostInput {
+	text: String
+	by: String!
+	imageUrl: String
+}
+
+
+input commentOnSocialMediaPostInput {
+  postId: String!
+	text: String!
+	by: String!
+}
+
+type comment {
+	id: String!
+	text: String!
+	createdAt: String!
+	postId: String!
+	by: entityIdentifier!
+}
+
+type SocialMediaPost {
+	id: String!
+	createdAt: String!
+	by: entityIdentifier!
+	imageUrl: String!
+	text: String!
+	numOfLikes: Int!
+  latestComments: [comment]!
+  totalComments: Int!
+}
+
+
+type unFollowEntityOutput {
+  entity: entityShowcaseProfileInfo!
+  unFollowEntity: entityShowcaseProfileInfo!
+}
+
+
+type followEntityOutput {
+  entity: entityShowcaseProfileInfo!
+  followEntity: entityShowcaseProfileInfo!
+}
+
+
+ input followEntityInput {
+	entityId: String!
+  followEntityId: String!
+}
+
+
+ input unFollowEntityInput {
+	entityId: String!
+  unFollowEntityId: String!
+}
+
+type fetchMyCompaniesOutput{
+  companies: [companyShowcaseProfileInfo]!
+  count: Int!
+}
+
+
+type fetchMySubscribedApisOutput{
+  apis: [apiShowcaseInfo]!
+  count: Int!
+}
+
+
+type fetchallPublicApisOutput @aws_api_key{
+  apis: [apiShowcaseInfo]!
+  count: Int!
+}
+
+type fetchMyPublicApisOutput{
+  apis: [apiShowcaseInfo]!
+  count: Int!
+}
+
+type fetchMyPrivateApisOutput{
+  apis: [apiShowcaseInfo]!
+  count: Int!
+}
+
+type fetchMyUnderdevelopmentApisOutput{
+  apis: [apiShowcaseInfo]!
+  count: Int!
+}
+
+
+input fetchAllPublicApisInput{
+    pageSize:Int!
+    pageNumber:Int!
+    apiType:[apiType]
+}
+
+
+
+input fetchMyCompaniesInput{
+    userId:String!
+    pageSize:Int!
+    pageNumber:Int!
+}
+
+input fetchProfileInput{
+    entityId:String!
+}
+
+input fetchMyApiTokenInput{
+    entityId:String!
+    apiId:String!
+}
+
+input fetchMySubscribedApisInput{
+    entityId:String!
+    pageSize:Int!
+    pageNumber:Int!
+}
+
+input fetchMyApiSubscriptionInput{
+    apiId:String!
+    entityId: String!
+}
+
+input fetchMyPrivateApisInput{
+    entityId: String!
+    pageSize:Int!
+    pageNumber:Int!
+}
+
+input fetchMyPublicApisInput{
+    entityId: String!
+    pageSize:Int!
+    pageNumber:Int!
+}
+
+input fetchMyUnderDevelopmentApisInput{
+    entityId: String!
+    pageSize:Int!
+    pageNumber:Int!
+}
+
+
+input fetchMyApiTestingSubscriptionInput{
+    entityId: String!
+    apiId: String!
+    pageSize:Int!
+    pageNumber:Int!
+}
+
+
+input updateProfilePictureInput{ 
+  entityId: String!
+  picture_url: String!
+}
+
+input createCompanyInput {
+  name: String!
+  email: String!
+  city: String!
+  country: String!
+  phone_number: String!
+  owner:String!
+}
+
+input updateCompanyInfoInput {
+  companyId:String!
+#  owner:String!
+  name: String
+  email: String
+  city: String
+  country: String
+  phone_number: String
+  headline:String
+}
+
+
+input updateUserInput {
+  userId: String!
+  firstName: String
+  lastName: String
+  city: String
+  country: String
+  phone_number: String
+  headline: String
+}
+
+
+input addUserToCompanyInput {
+    userId: String!
+    companyId: String!
+    role: mutableUserRolesInCompany!
+}
+
+input createOpenApiInput{
+  entityId: String!
+  apiId:String!
+  title: String!
+  apiType: [apiType!]! # max 3
+  apiRootUrl: String! 
+  openApiDef: String! 
+}
+
+input updateOpenApiInput{
+  entityId: String!
+  apiId:String!
+  title: String
+  shortDescription:String
+  longDescription:String
+  apiType: [apiType!] # max 3
+  apiRootUrl: String
+  openApiDef: String
+
+}
+
+
+input updateGraphQlInput{
+  entityId: String!
+  apiId:String!
+  title: String
+  shortDescription:String
+  longDescription:String
+  apiType: [apiType!] # max 3
+  apiUrl: String
+  graphQlSchema: String
+
+}
+
+
+input changeSubscriptionStatusInput {
+  subscriptionId: String!
+  status: subscriptionStatus!
+  entityId: String!
+}
+
+input subscribeToApiInput {
+  apiId: String!
+  entityId: String!
+}
+
+input createGraphQLApiInput{
+    entityId: String!
+    apiId:String!
+    title: String!
+    apiType: [apiType!]! # max 3
+    apiUrl: String! 
+    graphQlSchema: String!
+}
+
+input changeApiStatusInput {
+  apiId: String!
+  status: apiStatus!
+  entityId: String!
+}
+
+type updateDisplayPicture{
+  id: String!
+  picture_url: String!
+}
+
+
+
+type apiTokenInfo {
+    api_token: String!
+    apiId: String!
+    entityId:String!
+}
+
+enum ProfileStatus {
+    PUBLISHED
+    UNPUBLISHED
+}
+
+input changeEntityProfileStatusInput {
+  entityId:String!
+  status: ProfileStatus!
+}
+
+interface entityBasicProfileInfo{
+  id:String!
+  city:String!
+  country:String! 
+  email:String! 
+  phone_number:String!
+  headline:String!
+}
+
+
+type companyBasicProfileInfo implements entityBasicProfileInfo{
+
+  id:String!
+  name:String!
+  city:String!
+  country:String! 
+  email:String! 
+  phone_number:String!  
+  headline:String!
+}
+
+type userBasicProfileInfo implements entityBasicProfileInfo{
+
+  id:String!
+  firstName:String!
+  lastName:String!
+  city:String!
+  country:String! 
+  email:String! 
+  phone_number:String!
+  headline:String!
+}
+
+interface entityShowcaseProfileInfo {
+  id:String!
+  city: String!
+  country:String!
+  picture_url:String!
+  total_followers: Int!
+  profileStatus: ProfileStatus!
+}
+
+
+type userShowcaseProfileInCompany implements entityShowcaseProfileInfo {
+  id:String!
+  firstName:String!
+  lastName:String!
+  city:String!
+  country:String! 
+  picture_url:String!
+  total_followers: Int!
+  profileStatus: ProfileStatus!
+  company_relation_info: userCompanyRelation!
+}
+
+type companyShowcaseProfileInfo implements entityShowcaseProfileInfo{
+  id:String!
+  name: String!
+  city: String!
+  country:String!
+  picture_url:String!
+  owner: userIdentifier!
+  total_followers: Int!
+  profileStatus: ProfileStatus! 
+}
+
+
+type userShowcaseProfileInfo implements entityShowcaseProfileInfo  @aws_cognito_user_pools @aws_api_key {
+  id:String!
+  firstName:String!
+  lastName:String!
+  city: String!
+  country:String!
+  picture_url:String!
+  total_followers: Int!
+  profileStatus: ProfileStatus!
+}
+
+interface entityFullProfileInfo {
+  id:String!
+  city:String!
+  country:String! 
+  email:String! 
+  phone_number:String!
+  picture_url:String! 
+  headline:String! 
+  total_followers: Int! 
+  total_following: Int!
+  profileStatus: ProfileStatus!
+
+}
+
+type companyFullProfileInfo implements entityFullProfileInfo{
+  id:String!
+  name:String!
+  city:String!
+  country:String! 
+  email:String! 
+  phone_number:String! 
+  picture_url:String! 
+  headline:String! 
+  total_followers: Int! 
+  total_following: Int!
+  owner: userShowcaseProfileInCompany!
+  developers: [userShowcaseProfileInCompany]!
+  other_employees: [userShowcaseProfileInCompany]!
+  profileStatus: ProfileStatus!
+
+}
+
+type userFullProfileInfo implements entityFullProfileInfo{
+  id:String!
+  firstName:String!
+  lastName:String!
+  city:String!
+  country:String! 
+  email:String! 
+  phone_number:String!
+  picture_url:String! 
+  headline:String! 
+  total_followers: Int! 
+  total_following: Int!
+  profileStatus: ProfileStatus!
+
+}
+
+interface entityIdentifier {
+  id:String!
+  picture_url:String!
+}
+
+
+type userIdentifier implements entityIdentifier{
+  id:String!
+  firstName:String!
+  lastName:String!
+  picture_url:String!
+}
+
+
+type companyIdentifier implements entityIdentifier{
+  id:String!
+  name:String!
+  picture_url:String!
+}
+
+
+
+
+type apiIdentifier {
+  id:String!
+  title:String!
+  imageUrl:String!
+}
+
+
+# union UserResult = UserInfo | Error
+
+# type userProfileInfo implements entityProfileInfo{
+# id:String!
+# name:String!
+# city:String!
+# country:String! 
+# email:String! 
+# phone_number:String! 
+# picture_url:String 
+# headline:String 
+# }
+
+type userCompanyRelation{
+  role:allUserRolesInCompany!
+  date_added:String!
+}
+
+
+enum mutableUserRolesInCompany {
+  OTHER_EMPLOYEE
+  DEVELOPER
+}
+
+enum allUserRolesInCompany{
+  OTHER_EMPLOYEE
+  DEVELOPER
+  OWNER
+}
+
+
+
+
+
+
+type apiShowcaseInfo @aws_cognito_user_pools @aws_api_key{
+  apiId: String!
+  owner: entityIdentifier!
+  title: String!
+  shortDescription: String!
+  apiType: [apiType]!
+  imageUrl: String!
+  status: apiStatus!
+  numOfSubscribers: Int!
+  apiKind: apiKind!
+}
+
+
+
+
+interface apiFullInfo {
+  apiId: String!
+  owner: entityIdentifier!
+  title: String!
+  shortDescription: String!
+  longDescription: String!
+  apiType: [apiType]!
+  imageUrl: String!
+  status: apiStatus!
+  numOfSubscribers: Int!
+  creationDate:String!
+  apiKind: apiKind!
+}
+
+
+
+type openApiFullInfo implements apiFullInfo{
+  apiId: String!
+  title: String!
+  shortDescription: String!
+  longDescription: String!
+  apiType: [apiType]!
+  imageUrl: String!
+  apiRootUrl: String! 
+  openApiDef: String!
+  owner: entityIdentifier!  
+  status: apiStatus!
+  numOfSubscribers: Int!
+  creationDate:String!
+  apiKind: apiKind!
+
+}
+
+
+
+type graphQlApiFullInfo implements apiFullInfo{
+  apiId: String!
+  title: String!
+  shortDescription: String!
+  longDescription: String!
+  apiType: [apiType]!
+  imageUrl: String!
+  apiUrl: String! 
+  graphQlSchema: String!
+  owner: entityIdentifier!  
+  status: apiStatus!
+  numOfSubscribers: Int!
+  creationDate:String!
+  apiKind: apiKind!
+
+}
+
+
+interface apiBasicInfo {
+  apiId: String!
+  title: String!
+  shortDescription: String!
+  longDescription: String!
+  apiType: [apiType]!
+}
+
+type graphQlBasicInfo implements apiBasicInfo{
+  apiId: String!
+  title: String!
+  shortDescription: String!
+  longDescription: String!
+  apiType: [apiType]!
+  apiUrl: String! 
+  graphQlSchema: String!
+}
+
+type openAPiBasicInfo implements apiBasicInfo{
+  apiId: String!
+  title: String!
+  shortDescription: String!
+  longDescription: String!
+  apiType: [apiType]!
+  apiRootUrl: String! 
+  openApiDef: String! 
+}
+
+
+enum apiStatus {
+  PUBLIC
+  PRIVATE
+  UNDERDEVELOPMENT
+}
+
+
+enum apiKind{
+GRAPHQL
+OPENAPI
+}
+
+
+type apiSubscription {
+  subscriptionId: String!
+  subscriptionCreationDate: String!
+  paymentDayEveryMonth: String!
+  api: apiIdentifier!
+  subscription_token: String!
+  status: subscriptionStatus!
+  type: subscriptionType!
+}
+
+
+
+enum subscriptionStatus{
+  ACTIVE
+  INACTIVE
+}
+
+
+
+enum subscriptionType{
+  NORMAL
+  TESTING
+}
+
+
+
+
+
+enum apiType {
+  
+    CRM
+    
+   
+    ERP 
+
+  
+    ACCOUNTING
+
+  
+    PM 
+
+
+  
+    CMS
+
+
+    COMMUNICATION
+
+  
+    ECOMMERCE
+    
+  
+    HRM
+
+    PAYMENT_GATEWAY
+
+    BILLING
+
+    FINANCE 
+
+    EDUCATION 
+
+    MEDICAL 
+
+    MUSIC 
+
+    NEWS 
+
+    SOCIAL_NETWORKING 
+
+    WEATHER 
+
+    LIFESTYLE 
+
+    PRODUCTIVITY 
+
+    SPORTS 
+
+    TRAVEL 
+
+    FOOD 
+
+    PHOTO_VIDEO 
+
+    UTILITIES 
+
+    DATA 
+
+    AI 
+
+    IOT 
+
+    BLOCKCHAIN_CRYPTO
+
+    BUSINESS 
+
+    REFERENCE 
+
+    HEALTH_FITNESS 
+
+}

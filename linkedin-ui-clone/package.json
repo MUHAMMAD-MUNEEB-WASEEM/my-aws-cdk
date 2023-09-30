@@ -1,0 +1,79 @@
+{
+  "name": "linkedin-ui-clone",
+  "description": "This application contains an UI Clone (partial) from LinkedIn website.",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "repository": "https://github.com/leoronne/linkedin-ui-clone",
+  "author": "Leonardo Ronne <leoronne@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.6.0",
+    "@types/jest": "^26.0.19",
+    "@types/node": "^14.14.14",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0",
+    "react-scripts": "^4.0.1",
+    "styled-components": "^5.2.1",
+    "typescript": "^4.1.3"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/node-logger": "^6.1.11",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.11",
+    "@types/react-icons": "^3.0.0",
+    "@types/styled-components": "^5.1.7",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "8.1.0",
+    "babel-plugin-root-import": "^6.6.0",
+    "customize-cra": "^1.0.0",
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import-helpers": "^1.0.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
+    "react-app-rewired": "^2.1.8",
+    "react-is": "^17.0.1",
+    "storybook": "^6.1.11"
+  }
+}

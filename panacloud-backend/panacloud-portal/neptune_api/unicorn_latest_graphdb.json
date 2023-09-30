@@ -1,0 +1,2793 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "collectionName": "user",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "pictureUrl",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "5a1c58f0-93ab-11eb-92cb-43adf6300048",
+                    "required": true,
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "headline",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "5a1c58f1-93ab-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "5a1c58f2-93ab-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "secretText",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "5a1c58f3-93ab-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "phoneNumber",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "5a1c58f4-93ab-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "city",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "5a1c58f5-93ab-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "country",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "5a1c58f6-93ab-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "email",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "5a1c58f8-93ab-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "dateCreated",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "ae73e7c0-93b4-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "firstName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00cfd110-9805-11eb-8f8e-bb433a1fa88f",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "lastName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0be138a0-9805-11eb-8f8e-bb433a1fa88f",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "5a1c58fa-93ab-11eb-92cb-43adf6300048"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        },
+        {
+            "collectionName": "userType",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "1b204610-93ac-11eb-92cb-43adf6300048",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false
+                        ],
+                        "name": false,
+                        "code": false
+                    },
+                    "enum": [
+                        "userTypeNormal",
+                        "userTypeAdmin"
+                    ]
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "1b204611-93ac-11eb-92cb-43adf6300048",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false
+                        ]
+                    },
+                    "enum": [
+                        "NORMAL",
+                        "ADMIN"
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "1b204612-93ac-11eb-92cb-43adf6300048"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "1b1e9860-93ac-11eb-92cb-43adf6300048",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        },
+        {
+            "collectionName": "profileStatus",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "8a2af0a0-93ac-11eb-92cb-43adf6300048",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false
+                        ]
+                    },
+                    "enum": [
+                        "profileStatusPublished",
+                        "profileStatusUnpublished"
+                    ]
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "8a2af0a1-93ac-11eb-92cb-43adf6300048",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false
+                        ]
+                    },
+                    "enum": [
+                        "PUBLISHED",
+                        "UNPUBLISHED"
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "8a2af0a2-93ac-11eb-92cb-43adf6300048"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "8a296a00-93ac-11eb-92cb-43adf6300048",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        },
+        {
+            "collectionName": "company",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "d0ecf420-93ac-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "d0ecf421-93ac-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "city",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "d0ecf422-93ac-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "country",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "d0ecf423-93ac-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "email",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "d0ecf424-93ac-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "phoneNumber",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "d0ecf425-93ac-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "pictureUrl",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "d0ecf426-93ac-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "headline",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "d0ecf427-93ac-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "secretText",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "d0ecf428-93ac-11eb-92cb-43adf6300048",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "d0ecf429-93ac-11eb-92cb-43adf6300048"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        },
+        {
+            "collectionName": "graphQlApi",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "title",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "391b86f0-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "shortDescription",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "391b86f1-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "imageUrl",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "391b86f2-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "391b86f3-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "graphQlSchema",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "391b86f4-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "apiUrl",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "391b86f5-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "secretText",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "391b86f6-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "apiToken",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "391b86f7-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "longDescription",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "6eab6d70-9413-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "391b86f8-93ae-11eb-92cb-43adf6300048"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "39154560-93ae-11eb-92cb-43adf6300048",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        },
+        {
+            "collectionName": "openApi",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "title",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "6ceac590-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "shortDescription",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "6ceaeca0-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "imageUrl",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "6ceaeca1-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "6ceaeca2-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "apiRootUrl",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "6ceaeca3-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "openApiDef",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "6ceaeca4-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "secretText",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "6ceaeca5-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "apiToken",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "6ceaeca6-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "longDescription",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "62d38190-9413-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "6ceaeca7-93ae-11eb-92cb-43adf6300048"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "6ce96600-93ae-11eb-92cb-43adf6300048",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        },
+        {
+            "collectionName": "apiType",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "ccc23c90-93b4-11eb-92cb-43adf6300048",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false
+                        ]
+                    },
+                    "enum": [
+                        "apiType_CRM",
+                        "apiType_ERP",
+                        "apiType_ACCOUNTING",
+                        "apiType_PM",
+                        "apiType_CMS",
+                        "apiType_COMMUNICATION",
+                        "apiType_ECOMMERCE",
+                        "apiType_HRM",
+                        "apiType_PAYMENT_GATEWAY",
+                        "apiType_BILLING",
+                        "apiType_FINANCE",
+                        "apiType_EDUCATION",
+                        "apiType_MEDICAL",
+                        "apiType_MUSIC",
+                        "apiType_NEWS",
+                        "apiType_SOCIAL_NETWORKING",
+                        "apiType_WEATHER",
+                        "apiType_LIFESTYLE",
+                        "apiType_PRODUCTIVITY",
+                        "apiType_SPORTS",
+                        "apiType_TRAVEL",
+                        "apiType_FOOD",
+                        "apiType_PHOTO_VIDEO",
+                        "apiType_UTILITIES",
+                        "apiType_DATA",
+                        "apiType_AI",
+                        "apiType_IOT",
+                        "apiType_BLOCKCHAIN_CRYPTO",
+                        "apiType_BUSINESS",
+                        "apiType_REFERENCE",
+                        "apiType_HEALTH_FITNESS"
+                    ]
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "ccc23c91-93b4-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "enum": [
+                        "CRM",
+                        "ERP",
+                        "ACCOUNTING",
+                        "PM",
+                        "CMS",
+                        "COMMUNICATION",
+                        "ECOMMERCE",
+                        "HRM",
+                        "PAYMENT_GATEWAY",
+                        "BILLING",
+                        "FINANCE",
+                        "EDUCATION",
+                        "MEDICAL",
+                        "MUSIC",
+                        "NEWS",
+                        "SOCIAL_NETWORKING",
+                        "WEATHER",
+                        "LIFESTYLE",
+                        "PRODUCTIVITY",
+                        "SPORTS",
+                        "TRAVEL",
+                        "FOOD",
+                        "PHOTO_VIDEO",
+                        "UTILITIES",
+                        "DATA",
+                        "AI",
+                        "IOT",
+                        "BLOCKCHAIN_CRYPTO",
+                        "BUSINESS",
+                        "REFERENCE",
+                        "HEALTH_FITNESS"
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "ccc23c92-93b4-11eb-92cb-43adf6300048"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "ccc0b5f0-93b4-11eb-92cb-43adf6300048",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        },
+        {
+            "collectionName": "apiStatus",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "c58b48b0-93b7-11eb-92cb-43adf6300048",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false,
+                            false
+                        ]
+                    },
+                    "enum": [
+                        "apiStatusUnderdevelopment",
+                        "apiStatusPublic",
+                        "apiStatusPrivate"
+                    ]
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "c58b48b1-93b7-11eb-92cb-43adf6300048",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false,
+                            false
+                        ]
+                    },
+                    "enum": [
+                        "PRIVATE",
+                        "PUBLIC",
+                        "UNDERDEVELOPMENT"
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "c58b48b2-93b7-11eb-92cb-43adf6300048"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "c58925d0-93b7-11eb-92cb-43adf6300048",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "comments": "Has two more Vertices\n\n1. Private Api (if user wants to keep api private)\n2. Under development Api"
+        },
+        {
+            "collectionName": "subscription",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "f79450d0-93b8-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "subscriptionToken",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "f79450d2-93b8-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "paymentDayEveryMonth",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "f79450d3-93b8-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "f79450d4-93b8-11eb-92cb-43adf6300048"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "f7925500-93b8-11eb-92cb-43adf6300048",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        },
+        {
+            "collectionName": "subscriptionStatus",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "dcfe2c90-93b9-11eb-92cb-43adf6300048",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false
+                        ]
+                    },
+                    "enum": [
+                        "subscriptionStatusActive",
+                        "subscriptionStatusInactive"
+                    ]
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "dcfe2c91-93b9-11eb-92cb-43adf6300048",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false
+                        ]
+                    },
+                    "enum": [
+                        "ACTIVE",
+                        "INACTIVE"
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "dcfe2c92-93b9-11eb-92cb-43adf6300048"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "dcfc7ee0-93b9-11eb-92cb-43adf6300048",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        },
+        {
+            "collectionName": "socialMediaPost",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "631edfe0-93ba-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "text",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "631edfe1-93ba-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "image_url",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "7840e0d0-93ba-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "631edfe3-93ba-11eb-92cb-43adf6300048"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "631ce410-93ba-11eb-92cb-43adf6300048",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        },
+        {
+            "collectionName": "comment",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "1e8ca2c0-93bc-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "text",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "1e8ca2c1-93bc-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "1e8ca2c3-93bc-11eb-92cb-43adf6300048"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "1e8a7fe0-93bc-11eb-92cb-43adf6300048",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        },
+        {
+            "collectionName": "subscriptionType",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "f636f160-9481-11eb-a0c9-894e8315220a",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false
+                        ]
+                    },
+                    "enum": [
+                        "subscriptionType_normal",
+                        "subscriptionType_testing"
+                    ]
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "02c757d0-9482-11eb-a0c9-894e8315220a",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false
+                        ]
+                    },
+                    "enum": [
+                        "NORMAL",
+                        "TESTING"
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "e1e22b80-9481-11eb-a0c9-894e8315220a"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "e1de8200-9481-11eb-a0c9-894e8315220a",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        },
+        {
+            "collectionName": "apiReview",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "86854720-9b81-11eb-806f-17108e4b14b1",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "text",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "86854721-9b81-11eb-806f-17108e4b14b1",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "stars",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "86854723-9b81-11eb-806f-17108e4b14b1",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "title",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "617feec0-9b82-11eb-806f-17108e4b14b1",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "86854724-9b81-11eb-806f-17108e4b14b1"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "86828800-9b81-11eb-806f-17108e4b14b1",
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "New graph",
+            "type": "bucket",
+            "collectionIds": [
+                "5a1999d1-93ab-11eb-92cb-43adf6300048",
+                "1b1e9860-93ac-11eb-92cb-43adf6300048",
+                "8a296a00-93ac-11eb-92cb-43adf6300048",
+                "d0e8d571-93ac-11eb-92cb-43adf6300048",
+                "39154560-93ae-11eb-92cb-43adf6300048",
+                "6ce96600-93ae-11eb-92cb-43adf6300048",
+                "ccc0b5f0-93b4-11eb-92cb-43adf6300048",
+                "c58925d0-93b7-11eb-92cb-43adf6300048",
+                "f7925500-93b8-11eb-92cb-43adf6300048",
+                "dcfc7ee0-93b9-11eb-92cb-43adf6300048",
+                "631ce410-93ba-11eb-92cb-43adf6300048",
+                "1e8a7fe0-93bc-11eb-92cb-43adf6300048",
+                "e1de8200-9481-11eb-a0c9-894e8315220a",
+                "86828800-9b81-11eb-806f-17108e4b14b1"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "traversalSource": "g",
+            "GUID": "72fdc850-93aa-11eb-92cb-43adf6300048"
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "follows",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "5a1999d2-93ab-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "childCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "b2a48830-93ab-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "has_type",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "1dd999b0-93ac-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "childCollection": "1b1e9860-93ac-11eb-92cb-43adf6300048",
+            "properties": []
+        },
+        {
+            "name": "has_status",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "b303c9c0-93ac-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "childCollection": "8a296a00-93ac-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "56a2fec0-93ad-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "follows",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "d0e8d575-93ac-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "childCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "74a83ca0-93ad-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "follows",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "7a7efce0-93ad-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "childCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "8616ab70-93ad-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "follows",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "8a4735c0-93ad-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "childCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "94333020-93ad-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "has_status",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "9de44460-93ad-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "childCollection": "8a296a00-93ac-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "a73c1510-93ad-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "OWNER",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "e0ab9aa0-93ad-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "childCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "fdf06eb0-93ad-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "DEVELOPER",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "060beed0-93ae-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "childCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0e8ac4a0-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "OTHER_EMPLOYEE",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "1167f3f0-93ae-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "childCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "1d7bb050-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "creates",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "e177ced0-93ae-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "childCollection": "39154560-93ae-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "fef40690-93ae-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "has_type",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "ae0b5a90-93b7-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "39154560-93ae-11eb-92cb-43adf6300048",
+            "childCollection": "ccc0b5f0-93b4-11eb-92cb-43adf6300048",
+            "properties": []
+        },
+        {
+            "name": "has_status",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "eca09fe0-93b7-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "39154560-93ae-11eb-92cb-43adf6300048",
+            "childCollection": "c58925d0-93b7-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "f8d1a840-93b7-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "creates",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "cec98170-93b8-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "childCollection": "39154560-93ae-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "db3dd460-93b8-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "subscribes",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "2dee31f0-93b9-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "childCollection": "f7925500-93b8-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "5609ae80-93b9-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "subscribes",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "644a5d00-93b9-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "childCollection": "f7925500-93b8-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "6db89be0-93b9-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "subscription_for",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "9547de00-93b9-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "f7925500-93b8-11eb-92cb-43adf6300048",
+            "childCollection": "39154560-93ae-11eb-92cb-43adf6300048",
+            "properties": []
+        },
+        {
+            "name": "has_status",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "f0e626e0-93b9-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "f7925500-93b8-11eb-92cb-43adf6300048",
+            "childCollection": "dcfc7ee0-93b9-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0bf703f0-93ba-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "posts",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "36870d80-93bb-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "childCollection": "631ce410-93ba-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "4a0ee670-93bb-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "posts",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "56655120-93bb-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "childCollection": "631ce410-93ba-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "5f7f0760-93bb-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "liked_by",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "b3a7fb30-93bb-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "631ce410-93ba-11eb-92cb-43adf6300048",
+            "childCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "bd872450-93bb-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "liked_by",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "c232ab00-93bb-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "631ce410-93ba-11eb-92cb-43adf6300048",
+            "childCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "d046f250-93bb-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "has",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "4afc8550-93bc-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "631ce410-93ba-11eb-92cb-43adf6300048",
+            "childCollection": "1e8a7fe0-93bc-11eb-92cb-43adf6300048",
+            "properties": []
+        },
+        {
+            "name": "commented_by",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "a94cced0-93bc-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "1e8a7fe0-93bc-11eb-92cb-43adf6300048",
+            "childCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "b76e3580-93bc-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "commented_by",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "c78307c0-93bc-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "1e8a7fe0-93bc-11eb-92cb-43adf6300048",
+            "childCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "d3efe0a0-93bc-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "liked_by",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "dc7dd1a0-93bc-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "1e8a7fe0-93bc-11eb-92cb-43adf6300048",
+            "childCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "eededdd0-93bc-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "liked_by",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "fe22a470-93bc-11eb-92cb-43adf6300048",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "1e8a7fe0-93bc-11eb-92cb-43adf6300048",
+            "childCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "06869f40-93bd-11eb-92cb-43adf6300048",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "has_type",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "26cb9e70-9482-11eb-a0c9-894e8315220a",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "f7925500-93b8-11eb-92cb-43adf6300048",
+            "childCollection": "e1de8200-9481-11eb-a0c9-894e8315220a",
+            "properties": []
+        },
+        {
+            "name": "reviewed_by",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "f21605d0-9b84-11eb-806f-17108e4b14b1",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "86828800-9b81-11eb-806f-17108e4b14b1",
+            "childCollection": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "1c4f3240-9b85-11eb-806f-17108e4b14b1",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "reviewed_by",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "296c4850-9b85-11eb-806f-17108e4b14b1",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "86828800-9b81-11eb-806f-17108e4b14b1",
+            "childCollection": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "number",
+                    "name": "timeStamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "356cf1e0-9b85-11eb-806f-17108e4b14b1",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "review_for",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "level": "entity",
+            "GUID": "440c1410-9b85-11eb-806f-17108e4b14b1",
+            "lineSize": 2,
+            "bucketId": "72fdc850-93aa-11eb-92cb-43adf6300048",
+            "parentCollection": "86828800-9b81-11eb-806f-17108e4b14b1",
+            "childCollection": "39154560-93ae-11eb-92cb-43adf6300048",
+            "properties": []
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "72fdc850-93aa-11eb-92cb-43adf6300048": "New graph",
+        "5a1c58f0-93ab-11eb-92cb-43adf6300048": "pictureUrl",
+        "5a1c58f1-93ab-11eb-92cb-43adf6300048": "headline",
+        "5a1c58f2-93ab-11eb-92cb-43adf6300048": "id",
+        "5a1c58f3-93ab-11eb-92cb-43adf6300048": "secretText",
+        "5a1c58f4-93ab-11eb-92cb-43adf6300048": "phoneNumber",
+        "5a1c58f5-93ab-11eb-92cb-43adf6300048": "city",
+        "5a1c58f6-93ab-11eb-92cb-43adf6300048": "country",
+        "5a1c58f8-93ab-11eb-92cb-43adf6300048": "email",
+        "5a1999d1-93ab-11eb-92cb-43adf6300048": "user",
+        "5a1999d2-93ab-11eb-92cb-43adf6300048": "follows",
+        "b2a48830-93ab-11eb-92cb-43adf6300048": "timeStamp",
+        "1b204610-93ac-11eb-92cb-43adf6300048": "id",
+        "1b204611-93ac-11eb-92cb-43adf6300048": "name",
+        "1b1e9860-93ac-11eb-92cb-43adf6300048": "userType",
+        "1dd999b0-93ac-11eb-92cb-43adf6300048": "has_type",
+        "8a2af0a0-93ac-11eb-92cb-43adf6300048": "id",
+        "8a2af0a1-93ac-11eb-92cb-43adf6300048": "name",
+        "8a296a00-93ac-11eb-92cb-43adf6300048": "profileStatus",
+        "b303c9c0-93ac-11eb-92cb-43adf6300048": "has_status",
+        "d0ecf420-93ac-11eb-92cb-43adf6300048": "id",
+        "d0ecf421-93ac-11eb-92cb-43adf6300048": "name",
+        "d0ecf422-93ac-11eb-92cb-43adf6300048": "city",
+        "d0ecf423-93ac-11eb-92cb-43adf6300048": "country",
+        "d0ecf424-93ac-11eb-92cb-43adf6300048": "email",
+        "d0ecf425-93ac-11eb-92cb-43adf6300048": "phoneNumber",
+        "d0ecf426-93ac-11eb-92cb-43adf6300048": "pictureUrl",
+        "d0ecf427-93ac-11eb-92cb-43adf6300048": "headline",
+        "d0ecf428-93ac-11eb-92cb-43adf6300048": "secretText",
+        "d0e8d571-93ac-11eb-92cb-43adf6300048": "company",
+        "d0e8d575-93ac-11eb-92cb-43adf6300048": "follows",
+        "56a2fec0-93ad-11eb-92cb-43adf6300048": "timeStamp",
+        "74a83ca0-93ad-11eb-92cb-43adf6300048": "timeStamp",
+        "7a7efce0-93ad-11eb-92cb-43adf6300048": "follows",
+        "8616ab70-93ad-11eb-92cb-43adf6300048": "timeStamp",
+        "8a4735c0-93ad-11eb-92cb-43adf6300048": "follows",
+        "94333020-93ad-11eb-92cb-43adf6300048": "timeStamp",
+        "9de44460-93ad-11eb-92cb-43adf6300048": "has_status",
+        "a73c1510-93ad-11eb-92cb-43adf6300048": "timeStamp",
+        "e0ab9aa0-93ad-11eb-92cb-43adf6300048": "OWNER",
+        "fdf06eb0-93ad-11eb-92cb-43adf6300048": "timeStamp",
+        "060beed0-93ae-11eb-92cb-43adf6300048": "DEVELOPER",
+        "0e8ac4a0-93ae-11eb-92cb-43adf6300048": "timeStamp",
+        "1167f3f0-93ae-11eb-92cb-43adf6300048": "OTHER_EMPLOYEE",
+        "1d7bb050-93ae-11eb-92cb-43adf6300048": "timeStamp",
+        "391b86f0-93ae-11eb-92cb-43adf6300048": "title",
+        "391b86f1-93ae-11eb-92cb-43adf6300048": "shortDescription",
+        "391b86f2-93ae-11eb-92cb-43adf6300048": "imageUrl",
+        "391b86f3-93ae-11eb-92cb-43adf6300048": "id",
+        "391b86f4-93ae-11eb-92cb-43adf6300048": "graphQlSchema",
+        "391b86f5-93ae-11eb-92cb-43adf6300048": "apiUrl",
+        "391b86f6-93ae-11eb-92cb-43adf6300048": "secretText",
+        "391b86f7-93ae-11eb-92cb-43adf6300048": "apiToken",
+        "39154560-93ae-11eb-92cb-43adf6300048": "graphQlApi",
+        "6ceac590-93ae-11eb-92cb-43adf6300048": "title",
+        "6ceaeca0-93ae-11eb-92cb-43adf6300048": "shortDescription",
+        "6ceaeca1-93ae-11eb-92cb-43adf6300048": "imageUrl",
+        "6ceaeca2-93ae-11eb-92cb-43adf6300048": "id",
+        "6ceaeca3-93ae-11eb-92cb-43adf6300048": "apiRootUrl",
+        "6ceaeca4-93ae-11eb-92cb-43adf6300048": "openApiDef",
+        "6ceaeca5-93ae-11eb-92cb-43adf6300048": "secretText",
+        "6ceaeca6-93ae-11eb-92cb-43adf6300048": "apiToken",
+        "6ce96600-93ae-11eb-92cb-43adf6300048": "openApi",
+        "e177ced0-93ae-11eb-92cb-43adf6300048": "creates",
+        "fef40690-93ae-11eb-92cb-43adf6300048": "timeStamp",
+        "ae73e7c0-93b4-11eb-92cb-43adf6300048": "dateCreated",
+        "ccc23c90-93b4-11eb-92cb-43adf6300048": "id",
+        "ccc23c91-93b4-11eb-92cb-43adf6300048": "name",
+        "ccc0b5f0-93b4-11eb-92cb-43adf6300048": "apiType",
+        "ae0b5a90-93b7-11eb-92cb-43adf6300048": "has_type",
+        "c58b48b0-93b7-11eb-92cb-43adf6300048": "id",
+        "c58b48b1-93b7-11eb-92cb-43adf6300048": "name",
+        "c58925d0-93b7-11eb-92cb-43adf6300048": "apiStatus",
+        "eca09fe0-93b7-11eb-92cb-43adf6300048": "has_status",
+        "f8d1a840-93b7-11eb-92cb-43adf6300048": "timeStamp",
+        "cec98170-93b8-11eb-92cb-43adf6300048": "creates",
+        "db3dd460-93b8-11eb-92cb-43adf6300048": "timeStamp",
+        "f79450d0-93b8-11eb-92cb-43adf6300048": "id",
+        "f79450d2-93b8-11eb-92cb-43adf6300048": "subscriptionToken",
+        "f79450d3-93b8-11eb-92cb-43adf6300048": "paymentDayEveryMonth",
+        "f7925500-93b8-11eb-92cb-43adf6300048": "subscription",
+        "2dee31f0-93b9-11eb-92cb-43adf6300048": "subscribes",
+        "5609ae80-93b9-11eb-92cb-43adf6300048": "timeStamp",
+        "644a5d00-93b9-11eb-92cb-43adf6300048": "subscribes",
+        "6db89be0-93b9-11eb-92cb-43adf6300048": "timeStamp",
+        "9547de00-93b9-11eb-92cb-43adf6300048": "subscription_for",
+        "dcfe2c90-93b9-11eb-92cb-43adf6300048": "id",
+        "dcfe2c91-93b9-11eb-92cb-43adf6300048": "name",
+        "dcfc7ee0-93b9-11eb-92cb-43adf6300048": "subscriptionStatus",
+        "f0e626e0-93b9-11eb-92cb-43adf6300048": "has_status",
+        "0bf703f0-93ba-11eb-92cb-43adf6300048": "timeStamp",
+        "631edfe0-93ba-11eb-92cb-43adf6300048": "id",
+        "631edfe1-93ba-11eb-92cb-43adf6300048": "text",
+        "631ce410-93ba-11eb-92cb-43adf6300048": "socialMediaPost",
+        "7840e0d0-93ba-11eb-92cb-43adf6300048": "image_url",
+        "36870d80-93bb-11eb-92cb-43adf6300048": "posts",
+        "4a0ee670-93bb-11eb-92cb-43adf6300048": "timeStamp",
+        "56655120-93bb-11eb-92cb-43adf6300048": "posts",
+        "5f7f0760-93bb-11eb-92cb-43adf6300048": "timeStamp",
+        "b3a7fb30-93bb-11eb-92cb-43adf6300048": "liked_by",
+        "bd872450-93bb-11eb-92cb-43adf6300048": "timeStamp",
+        "c232ab00-93bb-11eb-92cb-43adf6300048": "liked_by",
+        "d046f250-93bb-11eb-92cb-43adf6300048": "timeStamp",
+        "1e8ca2c0-93bc-11eb-92cb-43adf6300048": "id",
+        "1e8ca2c1-93bc-11eb-92cb-43adf6300048": "text",
+        "1e8a7fe0-93bc-11eb-92cb-43adf6300048": "comment",
+        "4afc8550-93bc-11eb-92cb-43adf6300048": "has",
+        "a94cced0-93bc-11eb-92cb-43adf6300048": "commented_by",
+        "b76e3580-93bc-11eb-92cb-43adf6300048": "timeStamp",
+        "c78307c0-93bc-11eb-92cb-43adf6300048": "commented_by",
+        "d3efe0a0-93bc-11eb-92cb-43adf6300048": "timeStamp",
+        "dc7dd1a0-93bc-11eb-92cb-43adf6300048": "liked_by",
+        "eededdd0-93bc-11eb-92cb-43adf6300048": "timeStamp",
+        "fe22a470-93bc-11eb-92cb-43adf6300048": "liked_by",
+        "06869f40-93bd-11eb-92cb-43adf6300048": "timeStamp",
+        "62d38190-9413-11eb-92cb-43adf6300048": "longDescription",
+        "6eab6d70-9413-11eb-92cb-43adf6300048": "longDescription",
+        "e1de8200-9481-11eb-a0c9-894e8315220a": "subscriptionType",
+        "f636f160-9481-11eb-a0c9-894e8315220a": "id",
+        "02c757d0-9482-11eb-a0c9-894e8315220a": "name",
+        "26cb9e70-9482-11eb-a0c9-894e8315220a": "has_type",
+        "00cfd110-9805-11eb-8f8e-bb433a1fa88f": "firstName",
+        "0be138a0-9805-11eb-8f8e-bb433a1fa88f": "lastName",
+        "86854720-9b81-11eb-806f-17108e4b14b1": "id",
+        "86854721-9b81-11eb-806f-17108e4b14b1": "text",
+        "86854723-9b81-11eb-806f-17108e4b14b1": "stars",
+        "86828800-9b81-11eb-806f-17108e4b14b1": "apiReview",
+        "617feec0-9b82-11eb-806f-17108e4b14b1": "title",
+        "f21605d0-9b84-11eb-806f-17108e4b14b1": "reviewed_by",
+        "1c4f3240-9b85-11eb-806f-17108e4b14b1": "timeStamp",
+        "296c4850-9b85-11eb-806f-17108e4b14b1": "reviewed_by",
+        "356cf1e0-9b85-11eb-806f-17108e4b14b1": "timeStamp",
+        "440c1410-9b85-11eb-806f-17108e4b14b1": "review_for"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "705fc4e1-93aa-11eb-92cb-43adf6300048"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "705fc4e2-93aa-11eb-92cb-43adf6300048"
+    },
+    "decorativeSymbols": [],
+    "dbVendor": "Apache TinkerPop",
+    "appTarget": "TinkerPop",
+    "creationTS": "2021-04-02T11:56:20.398Z",
+    "GUID": "515c10a0-9beb-11eb-806f-17108e4b14b1",
+    "dbVersion": "3.x",
+    "lastModifTS": "2021-04-13T00:00:54.956Z",
+    "persistenceSchemaVersion": "4",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "TinkerPop",
+        "pluginVersion": "0.1.6",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.9"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+                        "x": 426.4,
+                        "y": 344.8,
+                        "width": 225,
+                        "height": 159,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "5a1999d2-93ab-11eb-92cb-43adf6300048",
+                        "x": 40,
+                        "y": 40,
+                        "width": 175,
+                        "height": 47,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "1b1e9860-93ac-11eb-92cb-43adf6300048",
+                        "x": 380,
+                        "y": 232,
+                        "width": 174,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "1dd999b0-93ac-11eb-92cb-43adf6300048",
+                        "x": 238.4,
+                        "y": 264,
+                        "width": 172,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "8a296a00-93ac-11eb-92cb-43adf6300048",
+                        "x": 356.8,
+                        "y": 227.2,
+                        "width": 194,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "b303c9c0-93ac-11eb-92cb-43adf6300048",
+                        "x": 312.8,
+                        "y": 105.6,
+                        "width": 182,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+                        "x": 408.8,
+                        "y": 411.2,
+                        "width": 201,
+                        "height": 159,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "d0e8d575-93ac-11eb-92cb-43adf6300048",
+                        "x": 80,
+                        "y": 80,
+                        "width": 175,
+                        "height": 47,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7a7efce0-93ad-11eb-92cb-43adf6300048",
+                        "x": 260.8,
+                        "y": 304,
+                        "width": 175,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "8a4735c0-93ad-11eb-92cb-43adf6300048",
+                        "x": 283.2,
+                        "y": 328,
+                        "width": 175,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "9de44460-93ad-11eb-92cb-43adf6300048",
+                        "x": 514.4,
+                        "y": 395.8400024414062,
+                        "width": 182,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "e0ab9aa0-93ad-11eb-92cb-43adf6300048",
+                        "x": 388.8,
+                        "y": 272.64000244140624,
+                        "width": 175,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "060beed0-93ae-11eb-92cb-43adf6300048",
+                        "x": 263.2,
+                        "y": 445.6,
+                        "width": 189,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "1167f3f0-93ae-11eb-92cb-43adf6300048",
+                        "x": 273.6,
+                        "y": 460,
+                        "width": 227,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "39154560-93ae-11eb-92cb-43adf6300048",
+                        "x": 528.3199996948242,
+                        "y": 472,
+                        "width": 208,
+                        "height": 145,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "6ce96600-93ae-11eb-92cb-43adf6300048",
+                        "x": 607.6399051984519,
+                        "y": 523.8826860154143,
+                        "width": 240,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "e177ced0-93ae-11eb-92cb-43adf6300048",
+                        "x": 409.2800048828125,
+                        "y": 506.24000244140626,
+                        "width": 175,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "ccc0b5f0-93b4-11eb-92cb-43adf6300048",
+                        "x": 954.560009765625,
+                        "y": 649.6,
+                        "width": 240,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ae0b5a90-93b7-11eb-92cb-43adf6300048",
+                        "x": 897.12001953125,
+                        "y": 589.7599975585938,
+                        "width": 172,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "c58925d0-93b7-11eb-92cb-43adf6300048",
+                        "x": 925.12001953125,
+                        "y": 624.1599975585938,
+                        "width": 240,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "eca09fe0-93b7-11eb-92cb-43adf6300048",
+                        "x": 925.92001953125,
+                        "y": 637.1199951171875,
+                        "width": 182,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "cec98170-93b8-11eb-92cb-43adf6300048",
+                        "x": 734.87998046875,
+                        "y": 652.3199951171875,
+                        "width": 175,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "f7925500-93b8-11eb-92cb-43adf6300048",
+                        "x": 802.87998046875,
+                        "y": 510.8800048828125,
+                        "width": 257,
+                        "height": 75,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "2dee31f0-93b9-11eb-92cb-43adf6300048",
+                        "x": 713.92001953125,
+                        "y": 588.4800048828125,
+                        "width": 182,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "644a5d00-93b9-11eb-92cb-43adf6300048",
+                        "x": 879.52001953125,
+                        "y": 510.0800048828125,
+                        "width": 182,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "9547de00-93b9-11eb-92cb-43adf6300048",
+                        "x": 954.87998046875,
+                        "y": 568.3199951171875,
+                        "width": 139,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "dcfc7ee0-93b9-11eb-92cb-43adf6300048",
+                        "x": 899.039990234375,
+                        "y": 803.839990234375,
+                        "width": 240,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "f0e626e0-93b9-11eb-92cb-43adf6300048",
+                        "x": 828.32001953125,
+                        "y": 701.9199951171875,
+                        "width": 182,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "631ce410-93ba-11eb-92cb-43adf6300048",
+                        "x": 1187.1999918619792,
+                        "y": 902.4000040690104,
+                        "width": 240,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "36870d80-93bb-11eb-92cb-43adf6300048",
+                        "x": 1073.3333333333333,
+                        "y": 810.1333414713541,
+                        "width": 175,
+                        "height": 47,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "56655120-93bb-11eb-92cb-43adf6300048",
+                        "x": 1210.6666666666667,
+                        "y": 1018.1333414713541,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "b3a7fb30-93bb-11eb-92cb-43adf6300048",
+                        "x": 551.7333374023438,
+                        "y": 861.3333333333334,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "c232ab00-93bb-11eb-92cb-43adf6300048",
+                        "x": 985.0666707356771,
+                        "y": 837.3333333333334,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "1e8a7fe0-93bc-11eb-92cb-43adf6300048",
+                        "x": 677.8666585286459,
+                        "y": 1019.7333374023438,
+                        "width": 240,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "4afc8550-93bc-11eb-92cb-43adf6300048",
+                        "x": 705.8666585286459,
+                        "y": 994.4000040690104,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "a94cced0-93bc-11eb-92cb-43adf6300048",
+                        "x": 1521.066650390625,
+                        "y": 806.4000040690104,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "c78307c0-93bc-11eb-92cb-43adf6300048",
+                        "x": 1439.7333170572917,
+                        "y": 674.4000040690104,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "dc7dd1a0-93bc-11eb-92cb-43adf6300048",
+                        "x": 1483.7333170572917,
+                        "y": 752,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "fe22a470-93bc-11eb-92cb-43adf6300048",
+                        "x": 1585.066650390625,
+                        "y": 522.6666666666666,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "e1de8200-9481-11eb-a0c9-894e8315220a",
+                        "x": 886.5333251953125,
+                        "y": 747.5999959309896,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "26cb9e70-9482-11eb-a0c9-894e8315220a",
+                        "x": 1014.6666666666666,
+                        "y": 854.9333292643229,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "86828800-9b81-11eb-806f-17108e4b14b1",
+                        "x": 1765.86669921875,
+                        "y": 1126.3999837239583,
+                        "width": 240,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "f21605d0-9b84-11eb-806f-17108e4b14b1",
+                        "x": 2338.4000651041665,
+                        "y": 1266.3999837239583,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "296c4850-9b85-11eb-806f-17108e4b14b1",
+                        "x": 2363.4666341145835,
+                        "y": 1049.6000162760417,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "440c1410-9b85-11eb-806f-17108e4b14b1",
+                        "x": 2007.7333984375,
+                        "y": 1373.86669921875,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "GUID": "72fdc850-93aa-11eb-92cb-43adf6300048"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [
+                    "39154560-93ae-11eb-92cb-43adf6300048"
+                ],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "5a1999d1-93ab-11eb-92cb-43adf6300048",
+                            "size": 100,
+                            "x": 1583.175943383352,
+                            "y": 770.1243764664023
+                        },
+                        {
+                            "GUID": "1b1e9860-93ac-11eb-92cb-43adf6300048",
+                            "size": 100,
+                            "x": 1168.1542247078432,
+                            "y": 1048.0002841606
+                        },
+                        {
+                            "GUID": "8a296a00-93ac-11eb-92cb-43adf6300048",
+                            "size": 100,
+                            "x": 1806.1613007610158,
+                            "y": 317.60500148360455
+                        },
+                        {
+                            "GUID": "d0e8d571-93ac-11eb-92cb-43adf6300048",
+                            "size": 100,
+                            "x": 1999.7223175100012,
+                            "y": 773.8493925279523
+                        },
+                        {
+                            "GUID": "39154560-93ae-11eb-92cb-43adf6300048",
+                            "size": 100,
+                            "x": 1332.4087196833314,
+                            "y": 754.8472853549544,
+                            "isPined": true
+                        },
+                        {
+                            "GUID": "6ce96600-93ae-11eb-92cb-43adf6300048",
+                            "size": 100,
+                            "x": 1428.7432731554222,
+                            "y": 4953.0788733883655
+                        },
+                        {
+                            "GUID": "ccc0b5f0-93b4-11eb-92cb-43adf6300048",
+                            "size": 100,
+                            "x": 966.3295747730037,
+                            "y": 414.5118209764543
+                        },
+                        {
+                            "GUID": "c58925d0-93b7-11eb-92cb-43adf6300048",
+                            "size": 100,
+                            "x": 1192.605176305649,
+                            "y": 275.23960878459104
+                        },
+                        {
+                            "GUID": "f7925500-93b8-11eb-92cb-43adf6300048",
+                            "size": 100,
+                            "x": 1709.458408390506,
+                            "y": 343.0579458492423
+                        },
+                        {
+                            "GUID": "dcfc7ee0-93b9-11eb-92cb-43adf6300048",
+                            "size": 100,
+                            "x": 2193.516773264434,
+                            "y": 219.9121745150585
+                        },
+                        {
+                            "GUID": "631ce410-93ba-11eb-92cb-43adf6300048",
+                            "size": 100,
+                            "x": 1609.7917765173916,
+                            "y": 334.93745950835495
+                        },
+                        {
+                            "GUID": "1e8a7fe0-93bc-11eb-92cb-43adf6300048",
+                            "size": 100,
+                            "x": 1954.6429187385825,
+                            "y": 333.99241832378425
+                        },
+                        {
+                            "GUID": "e1de8200-9481-11eb-a0c9-894e8315220a",
+                            "size": 100,
+                            "x": 1855.2237776702705,
+                            "y": 820.5469639071225
+                        },
+                        {
+                            "GUID": "86828800-9b81-11eb-806f-17108e4b14b1",
+                            "size": 100,
+                            "x": 1678.4523053841467,
+                            "y": 1195.1930945023582
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 926.3295747730037,
+                            "y": 179.9121745150585,
+                            "GUID": "72fdc850-93aa-11eb-92cb-43adf6300048"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 499
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

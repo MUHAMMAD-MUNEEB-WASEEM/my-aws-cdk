@@ -1,0 +1,609 @@
+{
+  "version": "9.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "ServerStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "ServerStack.template.json"
+      },
+      "metadata": {
+        "/ServerStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.7aee8ad89171dca871103840b4e633e5e8dd6bdfbe3a380725de4f9ab8dfbd6a",
+              "id": "7aee8ad89171dca871103840b4e633e5e8dd6bdfbe3a380725de4f9ab8dfbd6a",
+              "packaging": "zip",
+              "sourceHash": "7aee8ad89171dca871103840b4e633e5e8dd6bdfbe3a380725de4f9ab8dfbd6a",
+              "s3BucketParameter": "AssetParameters7aee8ad89171dca871103840b4e633e5e8dd6bdfbe3a380725de4f9ab8dfbd6aS3BucketFF1C98BD",
+              "s3KeyParameter": "AssetParameters7aee8ad89171dca871103840b4e633e5e8dd6bdfbe3a380725de4f9ab8dfbd6aS3VersionKey9050058F",
+              "artifactHashParameter": "AssetParameters7aee8ad89171dca871103840b4e633e5e8dd6bdfbe3a380725de4f9ab8dfbd6aArtifactHash11735010"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "ServerStack.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:151:40)",
+              "AssetCode.bind (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:251:20)",
+              "new Function (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:23:29)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiF70053CD",
+            "trace": [
+              "new GraphqlApi (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi.ts:416:16)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:11:17)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/Schema": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiSchema510EECD7",
+            "trace": [
+              "Schema.bind (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\schema.ts:80:21)",
+              "new GraphqlApi (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi.ts:431:39)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:11:17)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/DefaultApiKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiDefaultApiKeyF991C37B",
+            "trace": [
+              "GraphqlApi.createAPIKey (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi.ts:571:12)",
+              "new GraphqlApi (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi.ts:437:34)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:11:17)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/lambdaDatasource/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceServiceRole2CA75790",
+            "trace": [
+              "new Role (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "new BaseDataSource (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:111:47)",
+              "new BackedDataSource (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:158:5)",
+              "new LambdaDataSource (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:291:5)",
+              "GraphqlApi.addLambdaDataSource (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi-base.ts:198:12)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:29:26)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/lambdaDatasource/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceServiceRoleDefaultPolicy3A97E34D",
+            "trace": [
+              "new Policy (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:368:28)",
+              "Function.addToPrincipal (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:168:61)",
+              "Function.addToPrincipalOrResource (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:119:26)",
+              "Function.grantInvoke (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:311:25)",
+              "new LambdaDataSource (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:297:26)",
+              "GraphqlApi.addLambdaDataSource (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi-base.ts:198:12)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:29:26)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/lambdaDatasource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasource2C776EE2",
+            "trace": [
+              "new BaseDataSource (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:114:15)",
+              "new BackedDataSource (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:158:5)",
+              "new LambdaDataSource (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:291:5)",
+              "GraphqlApi.addLambdaDataSource (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi-base.ts:198:12)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:29:26)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/lambdaDatasource/QuerybookmarksResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceQuerybookmarksResolverB65EAAE1",
+            "trace": [
+              "new Resolver (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\resolver.ts:89:21)",
+              "LambdaDataSource.createResolver (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:129:12)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:31:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Api/lambdaDatasource/MutationaddBookmarkResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceMutationaddBookmarkResolverB5B995C1",
+            "trace": [
+              "new Resolver (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\resolver.ts:89:21)",
+              "LambdaDataSource.createResolver (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:129:12)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:36:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/AppSyncNotesHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppSyncNotesHandlerServiceRole34415D7F",
+            "trace": [
+              "new Role (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "new Function (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:552:31)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:23:29)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/AppSyncNotesHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppSyncNotesHandlerServiceRoleDefaultPolicy12C70C4F",
+            "trace": [
+              "new Policy (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:368:28)",
+              "Function.addToPrincipal (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:168:61)",
+              "Table.combinedGrant (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:910:29)",
+              "Table.grantFullAccess (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:698:17)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:50:20)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/AppSyncNotesHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppSyncNotesHandler4B870A76",
+            "trace": [
+              "new Function (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:614:35)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:23:29)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/AssetParameters/7aee8ad89171dca871103840b4e633e5e8dd6bdfbe3a380725de4f9ab8dfbd6a/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters7aee8ad89171dca871103840b4e633e5e8dd6bdfbe3a380725de4f9ab8dfbd6aS3BucketFF1C98BD",
+            "trace": [
+              "new FileAssetParameters (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "ServerStack.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:151:40)",
+              "AssetCode.bind (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:251:20)",
+              "new Function (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:23:29)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/AssetParameters/7aee8ad89171dca871103840b4e633e5e8dd6bdfbe3a380725de4f9ab8dfbd6a/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters7aee8ad89171dca871103840b4e633e5e8dd6bdfbe3a380725de4f9ab8dfbd6aS3VersionKey9050058F",
+            "trace": [
+              "new FileAssetParameters (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "ServerStack.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:151:40)",
+              "AssetCode.bind (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:251:20)",
+              "new Function (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:23:29)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/AssetParameters/7aee8ad89171dca871103840b4e633e5e8dd6bdfbe3a380725de4f9ab8dfbd6a/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters7aee8ad89171dca871103840b4e633e5e8dd6bdfbe3a380725de4f9ab8dfbd6aArtifactHash11735010",
+            "trace": [
+              "new FileAssetParameters (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "ServerStack.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:151:40)",
+              "AssetCode.bind (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:251:20)",
+              "new Function (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:23:29)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/CDKBookmarksTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKBookmarksTableBDA75684",
+            "trace": [
+              "new Table (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:1096:18)",
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:44:28)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/GraphQLAPIURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphQLAPIURL",
+            "trace": [
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:54:5)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/GraphQLAPIKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphQLAPIKey",
+            "trace": [
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:59:5)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/Stack Region": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StackRegion",
+            "trace": [
+              "new ServerStack (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\lib\\server-stack.ts:64:5)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\bin\\server.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Module.m._compile (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1137:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)",
+              "Module.load (internal/modules/cjs/loader.js:985:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:878:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/ServerStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:51:24)",
+              "C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:201:5)",
+              "visit (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:197:5)",
+              "injectMetadataResources (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:483:12)",
+              "process.emit (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/ServerStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:60:27)",
+              "C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:201:5)",
+              "visit (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:197:5)",
+              "injectMetadataResources (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:483:12)",
+              "process.emit (C:\\Github_1\\Aws\\AWS CDK\\bookmark-app-aws\\server\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+
+name: CI on dev
+
+on:
+  push:
+    branches: [ dev ]
+
+  workflow_dispatch:
+
+jobs:
+  API:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+         aws-access-key-id:  ${{ secrets.AWS_ACCESS_KEY_ID }}
+         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+         aws-region: eu-west-2
+      - name: Installing Nodejs
+        uses: actions/setup-node@v2-beta
+        with:
+           node-version: '12'
+      - name: Installing AWS-CDK
+        run: npm install -g aws-cdk
+      - name: Install Dependencies
+        run: |
+          cd panacloud_api/infrastructure
+          npm i
+          cd ../runtime/lambda
+          npm i
+          cd ../lambdaLayers/nodejs
+          npm i
+      - name: Build Typescript and CDK Deploy
+        run: |
+          cd panacloud_api/infrastructure
+          npm run build
+      - name: Run infrastructure Tests
+        run: |
+          cd panacloud_api/infrastructure
+          npm test      
+      - name: CDK Deploy
+        run: |
+          cd panacloud_api/infrastructure
+          cdk deploy --require-approval never
+#   Website:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v2
+#       - name: ls
+#         run: ls
+#       - name: Configure AWS Credentials
+#         uses: aws-actions/configure-aws-credentials@v1
+#         with:
+#          aws-access-key-id:  ${{ secrets.AWS_ACCESS_KEY_ID }}
+#          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#          aws-region: eu-west-2
+#       - name: Installing Nodejs
+#         uses: actions/setup-node@v2-beta
+#         with:
+#            node-version: '12'
+#       - name: Installing AWS-CDK
+#         run: npm install -g aws-cdk@1.87.1
+
+#       - name: Installing Gatsby
+#         run: npm install -g gatsby-cli
+
+#       - name: Installing Frontend dependencies and run test
+#         run: cd panacloud_website && npm install && cd cdk && npm install && cd .. && npm run test
+
+
+#       - name : build Frontend
+#         run : cd panacloud_website && npm run build && cd cdk && npm run build && cdk deploy --require-approval never

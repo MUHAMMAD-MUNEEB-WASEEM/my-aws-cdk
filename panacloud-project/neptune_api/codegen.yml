@@ -1,0 +1,7 @@
+overwrite: true
+schema: "graphql/schema.gql"
+generates:
+  lambda/graphqlSchemaTypes.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"

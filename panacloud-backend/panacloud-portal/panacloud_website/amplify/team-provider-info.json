@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-panacloudwebsite-dev-184218-authRole",
+      "UnauthRoleArn": "arn:aws:iam::625562161580:role/amplify-panacloudwebsite-dev-184218-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::625562161580:role/amplify-panacloudwebsite-dev-184218-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-panacloudwebsite-dev-184218-deployment",
+      "UnauthRoleName": "amplify-panacloudwebsite-dev-184218-unauthRole",
+      "StackName": "amplify-panacloudwebsite-dev-184218",
+      "StackId": "arn:aws:cloudformation:us-east-1:625562161580:stack/amplify-panacloudwebsite-dev-184218/cf91f650-7513-11eb-a88b-1203de0f9227",
+      "AmplifyAppId": "d19w0ms6mpjd2p"
+    }
+  }
+}
